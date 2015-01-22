@@ -21,10 +21,12 @@ The WasteWater package currently consists of the following subpackages
 
 ## Current release
 
-Download [WasteWater v2.0.1 (2003-10-31)](../../archive/v2.0.1.zip)
+Download [WasteWater v2.1.0 (2015-01-22)](../../archive/v2.1.0.zip)
 
 #### Release notes
 
+* [Version v2.1.0 (2015-01-22)](../../archive/v2.1.0.zip)
+  * Modelica 3.2.1 conversion.
 * [Version v2.0.1 (2003-10-31)](../../archive/v2.0.1.zip)
   * First official version of the library released at 3rd Modelica Conference.
 
@@ -33,8 +35,8 @@ Download [WasteWater v2.0.1 (2003-10-31)](../../archive/v2.0.1.zip)
 Copyright &copy; 2000 - 2003 Gerald Reichl
 
 This Modelica package is free software and the use is completely at your own risk;
-it can be redistributed and/or modified under the terms of the [Modelica License 2](http://www.modelica.org/licenses/ModelicaLicense2).
-For license conditions (including the disclaimer of warranty) visit [http://www.modelica.org/licenses/ModelicaLicense2](http://www.modelica.org/licenses/ModelicaLicense2).
+it can be redistributed and/or modified under the terms of the [Modelica License 1.1](http://www.modelica.org/licenses/ModelicaLicense1.1).
+For license conditions (including the disclaimer of warranty) visit [http://www.modelica.org/licenses/ModelicaLicense1.1](http://www.modelica.org/licenses/ModelicaLicense1.1).
 
 
 ## Development and contribution
