@@ -1,39 +1,36 @@
-package WasteWaterUnits 
-  "Type definitions for use with the activated sludge models" 
-  
+within WasteWater;
+package WasteWaterUnits
+  "Type definitions for use with the activated sludge models"
+
   extends Modelica.Icons.Library;
   type VolumeFlowRate = Real (final quantity="VolumeFlowRate", final unit=
           "m3/d");
   type MassConcentration = Real (
-      final quantity="MassConcentration", 
-      final unit="mg/l", 
+      final quantity="MassConcentration",
+      final unit="mg/l",
       final min=0.0);
   type Alkalinity = Real (
-      final quantity="Alkalinity", 
-      final unit="mmol/l", 
+      final quantity="Alkalinity",
+      final unit="mmol/l",
       final min=0.0);
-  type SedimentationVelocity = Real (final quantity="SedimentationVelocity", 
+  type SedimentationVelocity = Real (final quantity="SedimentationVelocity",
         final unit="m/d");
-  
-  type SedimentationFlux = Real (final quantity="SedimentationFlux", final unit
-        ="g/(m2*d)");
-  
-  type SludgeVolumeIndex = Real (final quantity="SludgeVolumeIndex", final unit
-        ="ml/g");
-  
+
+  type SedimentationFlux = Real (final quantity="SedimentationFlux", final unit=
+         "g/(m2*d)");
+
+  type SludgeVolumeIndex = Real (final quantity="SludgeVolumeIndex", final unit=
+         "ml/g");
+
   annotation (
-    Coordsys(
-      extent=[0, 0; 442, 386], 
-      grid=[1, 1], 
-      component=[20, 20]), 
     Window(
-      x=0.45, 
-      y=0.01, 
-      width=0.44, 
-      height=0.65, 
-      library=1, 
-      autolayout=1), 
-    Invisible=true, 
+      x=0.45,
+      y=0.01,
+      width=0.44,
+      height=0.65,
+      library=1,
+      autolayout=1),
+    Invisible=true,
     Documentation(info="This package provides special convention for units and types
 for use with the activated sludge models.
 
