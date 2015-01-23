@@ -7,7 +7,7 @@ package Simple "Simple ASM2d Secondary clarifier model"
 
     extends WasteWater.Icons.SecClarSimple;
     extends WasteWater.ASM2d.SecClar.Takacs.Interfaces.ratios;
-    package SI = Modelica.SIunits;
+    import SI = Modelica.SIunits;
     package WI = WasteWater.ASM2d.Interfaces;
     package WWU = WasteWater.WasteWaterUnits;
     parameter SI.Length hsc=4.0 "height of secondary clarifier";

@@ -85,7 +85,7 @@ package Takacs "Secondary settling tank modelling by Takacs"
 
     partial model SCParam "partial model providing clarifier parameters"
 
-      package SI = Modelica.SIunits;
+      import SI = Modelica.SIunits;
       parameter SI.Length zm;
       parameter SI.Area Asc;
 
@@ -216,7 +216,7 @@ Copyright (C) 2001 - 2002, Gerald Reichl
     extends WasteWater.Icons.SecClar;
     extends ASM2d.SecClar.Takacs.Interfaces.ratios;
     package SCP = ASM2d.SecClar.Takacs;
-    package SI = Modelica.SIunits;
+    import SI = Modelica.SIunits;
     package WI = ASM2d.Interfaces;
     package WWU = WasteWater.WasteWaterUnits;
 
@@ -374,7 +374,7 @@ Parameters:
 
   model bottom_layer "Bottom layer of Takac`s SC model"
 
-    package WWSC = WasteWater.ASM2d.SecClar.Takacs.Interfaces;
+    import WWSC = WasteWater.ASM2d.SecClar.Takacs.Interfaces;
     extends WWSC.SCParam;
     extends WWSC.SCVar;
     extends WWSC.ratios;
@@ -524,7 +524,7 @@ From here return and waste sludge is removed.
 
   model lower_layer "Layer below influent of Takac`s SC model"
 
-    package WWSC = WasteWater.ASM2d.SecClar.Takacs.Interfaces;
+    import WWSC = WasteWater.ASM2d.SecClar.Takacs.Interfaces;
     extends WWSC.SCParam;
     extends WWSC.SCVar;
 
@@ -659,7 +659,7 @@ function by Takacs."),
 
   model feed_layer "Influent layer of Takac`s SC model"
 
-    package WWSC = WasteWater.ASM2d.SecClar.Takacs.Interfaces;
+    import WWSC = WasteWater.ASM2d.SecClar.Takacs.Interfaces;
     extends WWSC.SCParam;
     extends WWSC.SCVar;
     WWSC.LowerLayerPin Dn annotation (Placement(transformation(extent={{-10,
@@ -811,7 +811,7 @@ function by Takacs."),
 
   model upper_layer "Layer above influent of Takac`s SC"
 
-    package WWSC = WasteWater.ASM2d.SecClar.Takacs.Interfaces;
+    import WWSC = WasteWater.ASM2d.SecClar.Takacs.Interfaces;
     extends WWSC.SCParam;
     extends WWSC.SCVar;
 
@@ -948,7 +948,7 @@ function by Takacs."),
 
   model top_layer "Effluent layer of Takac`s SC model"
 
-    package WWSC = WasteWater.ASM2d.SecClar.Takacs.Interfaces;
+    import WWSC = WasteWater.ASM2d.SecClar.Takacs.Interfaces;
     extends WWSC.SCParam;
     extends WWSC.SCVar;
     extends WWSC.ratios;

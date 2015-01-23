@@ -7,7 +7,7 @@ package Simple "Simple ASM3 Secondary clarifier model"
 
     extends WasteWater.Icons.SecClarSimple;
     extends WasteWater.ASM3.SecClar.Takacs.Interfaces.ratios;
-    package SI = Modelica.SIunits;
+    import SI = Modelica.SIunits;
     package WI = WasteWater.ASM3.Interfaces;
     package WWU = WasteWater.WasteWaterUnits;
 

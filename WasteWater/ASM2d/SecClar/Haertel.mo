@@ -10,7 +10,7 @@ package Haertel "Secondary settling tank modelling by Haertel (ASM2d)"
 
     connector UpperLayerPin "Connector above influent layer"
 
-      package WWU = WasteWater.WasteWaterUnits;
+      import WWU = WasteWater.WasteWaterUnits;
 
       // effluent flow
       flow WWU.VolumeFlowRate Qe;
@@ -43,7 +43,7 @@ package Haertel "Secondary settling tank modelling by Haertel (ASM2d)"
 
     connector LowerLayerPin "Connector below influent layer"
 
-      package WWU = WasteWater.WasteWaterUnits;
+      import WWU = WasteWater.WasteWaterUnits;
 
       // return and waste sludge flow Qr, Qw
       flow WWU.VolumeFlowRate Qr;
@@ -83,8 +83,8 @@ package Haertel "Secondary settling tank modelling by Haertel (ASM2d)"
 
     partial model SCParam "partial model providing clarifier parameters"
 
-      package SI = Modelica.SIunits;
-      package WWU = WasteWater.WasteWaterUnits;
+      import SI = Modelica.SIunits;
+      import WWU = WasteWater.WasteWaterUnits;
       parameter SI.Length zm;
       parameter SI.Area Asc;
       parameter WWU.SludgeVolumeIndex ISV;
@@ -101,7 +101,7 @@ package Haertel "Secondary settling tank modelling by Haertel (ASM2d)"
 
     partial model SCVar "partial models providing variables"
 
-      package WWU = WasteWater.WasteWaterUnits;
+      import WWU = WasteWater.WasteWaterUnits;
       WWU.MassConcentration X "total sludge concentration in m-th layer";
       WWU.SedimentationVelocity vS "sink velocity in m-th layer";
       WWU.SedimentationFlux Jsm "sedimentation flux m-th layer";
@@ -261,10 +261,10 @@ Copyright (C) 2001 - 2002, Gerald Reichl
 
     extends WasteWater.Icons.SecClar;
     extends ASM2d.SecClar.Haertel.Interfaces.ratios;
-    package SCP = ASM2d.SecClar.Haertel;
-    package SI = Modelica.SIunits;
-    package WI = ASM2d.Interfaces;
-    package WWU = WasteWater.WasteWaterUnits;
+    import SCP = ASM2d.SecClar.Haertel;
+    import SI = Modelica.SIunits;
+    import WI = ASM2d.Interfaces;
+    import WWU = WasteWater.WasteWaterUnits;
     parameter SI.Length hsc=4.0 "height of secondary clarifier";
     parameter Integer n=10 "number of layers of SC model";
     parameter SI.Length zm=hsc/(1.0*n)
@@ -443,7 +443,7 @@ Parameters:
 
   model bottom_layer "Bottom layer of Haertel`s SC model"
 
-    package WWSC = WasteWater.ASM2d.SecClar.Haertel.Interfaces;
+    import WWSC = WasteWater.ASM2d.SecClar.Haertel.Interfaces;
     extends WWSC.SCParam;
     extends WWSC.SCVar;
     extends WWSC.ratios;
@@ -595,7 +595,7 @@ From here return and waste sludge is removed.
 
   model lower_layer "Layer below influent of Haertel`s SC model"
 
-    package WWSC = WasteWater.ASM2d.SecClar.Haertel.Interfaces;
+    import WWSC = WasteWater.ASM2d.SecClar.Haertel.Interfaces;
     extends WWSC.SCParam;
     extends WWSC.SCVar;
     WWU.MassConcentration Xf "sludge concentration in clarifier feed";
@@ -737,7 +737,7 @@ function and the omega correction function by Haertel.
 
   model feed_layer "Influent layer of Haertel`s SC model"
 
-    package WWSC = WasteWater.ASM2d.SecClar.Haertel.Interfaces;
+    import WWSC = WasteWater.ASM2d.SecClar.Haertel.Interfaces;
     extends WWSC.SCParam;
     extends WWSC.SCVar;
 
@@ -898,7 +898,7 @@ function and the omega correction function by Haertel.
 
   model upper_layer "Layer above influent of Haertels`s SC"
 
-    package WWSC = WasteWater.ASM2d.SecClar.Haertel.Interfaces;
+    import WWSC = WasteWater.ASM2d.SecClar.Haertel.Interfaces;
     extends WWSC.SCParam;
     extends WWSC.SCVar;
 
@@ -1031,7 +1031,7 @@ function by Haertel."),
 
   model top_layer "Effluent layer of Haertel`s SC model"
 
-    package WWSC = WasteWater.ASM2d.SecClar.Haertel.Interfaces;
+    import WWSC = WasteWater.ASM2d.SecClar.Haertel.Interfaces;
     extends WWSC.SCParam;
     extends WWSC.SCVar;
     extends WWSC.ratios;
@@ -1167,7 +1167,7 @@ function by Haertel.
       library=1,
       autolayout=1),
     Documentation(info="This package contains classes (layer models) to built ASM2d secondary clarifier models, an Interfaces sub-library
-and provides an ASM2d 10-layer secondary clarifier model all bases on Haertel`s [1] 
+and provides an ASM2d 10-layer secondary clarifier model all bases on Haertel`s [1]
 sedimentation velocity and omega correction functions.
 
 A secondary clarifier layer model needs at least a top_layer, a feed_layer and a bottom_layer

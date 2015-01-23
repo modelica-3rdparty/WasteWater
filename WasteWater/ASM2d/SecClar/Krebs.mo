@@ -112,11 +112,11 @@ Copyright (C) 2003, Gerald Reichl
   model SecClarModKrebs "ASM2d Secondary Settling Tank Model based on Krebs"
 
     extends WasteWater.Icons.SecClarKrebs;
-    package WWSC = WasteWater.ASM2d.SecClar.Krebs.Interfaces;
+    import WWSC = WasteWater.ASM2d.SecClar.Krebs.Interfaces;
     extends WWSC.SCVar;
     extends WWSC.ratios;
     extends WasteWater.ASM2d.Interfaces.conversion_factors;
-    package SI = Modelica.SIunits;
+    import SI = Modelica.SIunits;
     package WI = WasteWater.ASM2d.Interfaces;
     package WWU = WasteWater.WasteWaterUnits;
 

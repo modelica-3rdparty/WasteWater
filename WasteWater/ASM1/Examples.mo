@@ -801,7 +801,7 @@ Main Author:
     extends WasteWater.Icons.SecClar;
     extends ASM1.SecClar.Takacs.Interfaces.ratios;
     package SCP = ASM1.SecClar.Takacs;
-    package SI = Modelica.SIunits;
+    import SI = Modelica.SIunits;
     package WI = ASM1.Interfaces;
     package WWU = WasteWater.WasteWaterUnits;
     parameter SI.Length hsc=4.0 "height of secondary clarifier";

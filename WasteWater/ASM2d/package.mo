@@ -224,7 +224,7 @@ model SecClarModTakacs "ASM2d Secondary Clarifier Model based on Takacs"
   extends WasteWater.Icons.SecClar;
   extends ASM2d.SecClar.Takacs.Interfaces.ratios;
   package SCP = ASM2d.SecClar.Takacs;
-  package SI = Modelica.SIunits;
+  import SI = Modelica.SIunits;
   package WI = ASM2d.Interfaces;
   package WWU = WasteWater.WasteWaterUnits;
 

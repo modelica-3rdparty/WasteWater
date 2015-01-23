@@ -92,7 +92,7 @@ package Otterpohl "Secondary settling tank modelling by Otterpohl"
 
     partial model SCParam "partial model providing clarifier parameters"
 
-      package SI = Modelica.SIunits;
+      import SI = Modelica.SIunits;
       package WWU = WasteWater.WasteWaterUnits;
       parameter SI.Length zm;
       parameter SI.Area Asc;
@@ -276,7 +276,7 @@ Copyright (C) 2003, Gerald Reichl
     extends WasteWater.Icons.SecClar;
     extends ASM2d.SecClar.Otterpohl.Interfaces.ratios;
     package SCP = ASM2d.SecClar.Otterpohl;
-    package SI = Modelica.SIunits;
+    import SI = Modelica.SIunits;
     package WI = ASM2d.Interfaces;
     package WWU = WasteWater.WasteWaterUnits;
     parameter SI.Length hsc=4.0 "height of secondary clarifier";
@@ -457,7 +457,7 @@ Parameters:
 
   model bottom_layer "Bottom layer of Otterpohls`s SC model"
 
-    package WWSC = WasteWater.ASM2d.SecClar.Otterpohl.Interfaces;
+    import WWSC = WasteWater.ASM2d.SecClar.Otterpohl.Interfaces;
     extends WWSC.SCParam;
     extends WWSC.SCVar;
     extends WWSC.ratios;
@@ -614,7 +614,7 @@ From here return and waste sludge is removed.
 
   model lower_layer "Layer below influent of Otterpohl`s SC model"
 
-    package WWSC = WasteWater.ASM2d.SecClar.Otterpohl.Interfaces;
+    import WWSC = WasteWater.ASM2d.SecClar.Otterpohl.Interfaces;
     extends WWSC.SCParam;
     extends WWSC.SCVar;
     WWU.MassConcentration Xf "sludge concentration in clarifier feed";
@@ -765,7 +765,7 @@ Sedimentation flux is calculated based on two sedimentation velocities
 
   model feed_layer "Influent layer of Otterpohl`s SC model"
 
-    package WWSC = WasteWater.ASM2d.SecClar.Otterpohl.Interfaces;
+    import WWSC = WasteWater.ASM2d.SecClar.Otterpohl.Interfaces;
     extends WWSC.SCParam;
     extends WWSC.SCVar;
 
@@ -935,7 +935,7 @@ Sedimentation flux is calculated based on two sedimentation velocities
 
   model upper_layer "Layer above influent of Otterpohl`s SC"
 
-    package WWSC = WasteWater.ASM2d.SecClar.Otterpohl.Interfaces;
+    import WWSC = WasteWater.ASM2d.SecClar.Otterpohl.Interfaces;
     extends WWSC.SCParam;
     extends WWSC.SCVar;
 
@@ -1074,7 +1074,7 @@ Sedimentation flux is calculated based on two sedimentation velocities
 
   model top_layer "Effluent layer of Otterpohl`s SC model"
 
-    package WWSC = WasteWater.ASM2d.SecClar.Otterpohl.Interfaces;
+    import WWSC = WasteWater.ASM2d.SecClar.Otterpohl.Interfaces;
     extends WWSC.SCParam;
     extends WWSC.SCVar;
     extends WWSC.ratios;

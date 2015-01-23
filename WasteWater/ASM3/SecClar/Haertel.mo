@@ -72,7 +72,7 @@ package Haertel "Secondary clarifier modelling by Haertel (ASM3)"
     end LowerLayerPin;
 
     partial model SCParam "partial model providing clarifier parameters"
-      package SI = Modelica.SIunits;
+      import SI = Modelica.SIunits;
       package WWU = WasteWater.WasteWaterUnits;
       parameter SI.Length zm;
       parameter SI.Area Asc;
@@ -237,7 +237,7 @@ Copyright (C) 2002 - 2003, Gerald Reichl
     extends WasteWater.Icons.SecClar;
     extends ASM3.SecClar.Haertel.Interfaces.ratios;
     package SCP = ASM3.SecClar.Haertel;
-    package SI = Modelica.SIunits;
+    import SI = Modelica.SIunits;
     package WI = ASM3.Interfaces;
     package WWU = WasteWater.WasteWaterUnits;
     parameter SI.Length hsc=4.0 "height of secondary clarifier";
@@ -404,7 +404,7 @@ Parameters:
   end SecClarModHaertel;
 
   model bottom_layer "Bottom layer of Haertel`s SC model"
-    package WWSC = WasteWater.ASM3.SecClar.Haertel.Interfaces;
+    import WWSC = WasteWater.ASM3.SecClar.Haertel.Interfaces;
     extends WWSC.SCParam;
     extends WWSC.SCVar;
     extends WWSC.ratios;
@@ -542,7 +542,7 @@ From here return and waste sludge is removed.
 
   model lower_layer "Layer below influent of Haertel`s SC model"
 
-    package WWSC = WasteWater.ASM3.SecClar.Haertel.Interfaces;
+    import WWSC = WasteWater.ASM3.SecClar.Haertel.Interfaces;
     extends WWSC.SCParam;
     extends WWSC.SCVar;
 
@@ -681,7 +681,7 @@ function and the omega correction function by Haertel.
 
   model feed_layer "Influent layer of Haertel`s SC model"
 
-    package WWSC = WasteWater.ASM3.SecClar.Haertel.Interfaces;
+    import WWSC = WasteWater.ASM3.SecClar.Haertel.Interfaces;
     extends WWSC.SCParam;
     extends WWSC.SCVar;
     WWU.MassConcentration Xf "sludge concentration in clarifier feed";
@@ -835,7 +835,7 @@ function and the omega correction function by Haertel.
   end feed_layer;
 
   model upper_layer "Layer above influent of Haertels`s SC"
-    package WWSC = WasteWater.ASM3.SecClar.Haertel.Interfaces;
+    import WWSC = WasteWater.ASM3.SecClar.Haertel.Interfaces;
     extends WWSC.SCParam;
     extends WWSC.SCVar;
 
@@ -963,7 +963,7 @@ function by Haertel.
   end upper_layer;
 
   model top_layer "Effluent layer of Haertel`s SC model"
-    package WWSC = WasteWater.ASM3.SecClar.Haertel.Interfaces;
+    import WWSC = WasteWater.ASM3.SecClar.Haertel.Interfaces;
     extends WWSC.SCParam;
     extends WWSC.SCVar;
     extends WWSC.ratios;

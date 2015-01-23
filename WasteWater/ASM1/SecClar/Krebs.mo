@@ -95,11 +95,11 @@ Copyright (C) 2003, Gerald Reichl
   model SecClarModKrebs "ASM1 Secondary Settling Tank Model based on Krebs"
 
     extends WasteWater.Icons.SecClarKrebs;
-    package WWSC = WasteWater.ASM1.SecClar.Krebs.Interfaces;
+    import WWSC = WasteWater.ASM1.SecClar.Krebs.Interfaces;
     extends WWSC.SCVar;
     extends WWSC.ratios;
 
-    package SI = Modelica.SIunits;
+    import SI = Modelica.SIunits;
     package WI = WasteWater.ASM1.Interfaces;
     package WWU = WasteWater.WasteWaterUnits;
     parameter SI.Length hsc=4.0 "height of secondary clarifier";
