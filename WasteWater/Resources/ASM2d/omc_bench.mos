@@ -1,0 +1,9 @@
+if not isPackage(WasteWater) then
+  loadModel(WasteWater);
+end if;
+res:=simulate(WasteWater.ASM2d.Examples.BenchPlant,simflags="-overrideFile='"+Modelica.Utilities.Files.loadResource("modelica://WasteWater/Resources/ASM2d/omc_bench.override.txt")+"'");
+resultFile := res.resultFile;
+getErrorString();
+if resultFile == "" then
+  exit(1);
+end if;

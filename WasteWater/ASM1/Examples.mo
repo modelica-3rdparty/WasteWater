@@ -25,7 +25,7 @@ package Examples "Demonstration examples of the components of the ASM1 library"
     ASM1.mixer3 mixer annotation (Placement(transformation(extent={{-104,22},{
               -84,42}}, rotation=0)));
     Modelica.Blocks.Sources.CombiTimeTable CombiTableTime(
-      fileName="Inf_dry.txt",
+      fileName=Modelica.Utilities.Files.loadResource("modelica://WasteWater/Resources/ASM1/Inf_dry.txt"),
       table=[0,0; 1,1],
       columns=integer(({16,3,4,5,6,7,8,9,10,11,12,13,14,15})),
       tableName="Inf_dry",
@@ -162,7 +162,7 @@ that is provided besides the model.
 A 14 days dynamic influent data file is provided. So you may simulate up to 14 days.
 But start with 1 day as it may take some time for simulation.
 After simulation you may have a look at internal concentrations but most interesting
-are the relevant concentrations at the effluent of a plant which can be viewed via the 
+are the relevant concentrations at the effluent of a plant which can be viewed via the
 sensors at the effluent of the secondary clarifier.
 
 Main Author:
@@ -205,7 +205,7 @@ Main Author:
     ASM1.mixer3 mixer annotation (Placement(transformation(extent={{-104,22},{
               -84,42}}, rotation=0)));
     Modelica.Blocks.Sources.CombiTimeTable CombiTableTime(
-      fileName="Inf_dry.txt",
+      fileName=Modelica.Utilities.Files.loadResource("modelica://WasteWater/Resources/ASM1/Inf_dry.txt"),
       table=[0,0; 1,1],
       columns=integer(({2,3,4,5,6,7,8,9,10,11,12,13,14,15})),
       tableName="Inf_dry",
@@ -379,10 +379,10 @@ that is provided besides the model.
 A 14 days dynamic influent data file is provided. So you may simulate up to 14 days.
 But start with 1 day as it may take some time for simulation.
 After simulation you may have a look at internal concentrations but most interesting
-are the relevant concentrations at the effluent of a plant which can be viewed via the 
+are the relevant concentrations at the effluent of a plant which can be viewed via the
 sensors at the effluent of the secondary clarifier.
 
-References: 
+References:
 
 [1] J.B. Copp: The COST Simulation Benchmark. 2000. http://www.ensic.u-nancy.fr/COSTWWTP/
 
@@ -545,7 +545,7 @@ PS: For those who want to reproduce the exact figures from the COST simulation b
     WasteWater.ASM1.sensor_TKN sensor_TKN1 annotation (Placement(transformation(
             extent={{68,-56},{88,-36}}, rotation=0)));
     Modelica.Blocks.Sources.CombiTimeTable CombiTableTime1(
-      fileName="drysim130303.txt",
+      fileName=Modelica.Utilities.Files.loadResource("modelica://WasteWater/Resources/ASM1/drysim130303.txt"),
       table=[0,0; 1,1],
       columns=integer(({2})),
       tableName="drysim130303",
@@ -553,7 +553,7 @@ PS: For those who want to reproduce the exact figures from the COST simulation b
       annotation (Placement(transformation(extent={{-198,96},{-184,112}},
             rotation=0)));
     Modelica.Blocks.Sources.CombiTimeTable CombiTableTime2(
-      fileName="drysim130303.txt",
+      fileName=Modelica.Utilities.Files.loadResource("modelica://WasteWater/Resources/ASM1/drysim130303.txt"),
       table=[0,0; 1,1],
       columns=integer(({3,7,4,6})),
       tableName="drysim130303",
@@ -780,7 +780,7 @@ that is provided besides the model.
 A 14 days dynamic influent data file is provided. So you may simulate up to 14 days.
 But start with 1 day as it may take some time for simulation.
 After simulation you may have a look at internal concentrations but most interesting
-are the relevant concentrations at the effluent of a plant which can be viewed via the 
+are the relevant concentrations at the effluent of a plant which can be viewed via the
 sensors at the effluent of the secondary clarifier.
 
 Main Author:
@@ -949,7 +949,7 @@ Parameters:
       height=0.65,
       library=1,
       autolayout=1),
-    Documentation(info="This package contains example ASM1 wastewater treatment plant models to demonstrate the usage of 
+    Documentation(info="This package contains example ASM1 wastewater treatment plant models to demonstrate the usage of
 the WasteWater.ASM1 library.
 Open the models and simulate them according to the description provided in the models.
 
