@@ -98,7 +98,7 @@ The connector consists of one flow variable and 13 potential variables (ASM3 con
         y=0.01,
         width=0.35,
         height=0.49),
-      Documentation(info="The Airflow connector consits of a flow variable describing the exchange of
+      Documentation(info="The Airflow connector consists of a flow variable describing the exchange of
 air between blower and nitrification tank."));
 
   end AirFlow;
@@ -146,7 +146,7 @@ air between blower and nitrification tank."));
     package WWU = WasteWater.WasteWaterUnits;
     extends Interfaces.stoichiometry;
 
-    // Stoichio. matrix coefficents x(So,Ss,Sn2,Snox),y(Snh),z(Salk),t(Xss)
+    // Stoichio. matrix coefficients x(So,Ss,Sn2,Snox),y(Snh),z(Salk),t(Xss)
     parameter Real x1=1 - f_Si;
     parameter Real x2=-(1 - Y_STO_O);
     parameter Real x3=-(1 - Y_STO_NOX)/2.86;

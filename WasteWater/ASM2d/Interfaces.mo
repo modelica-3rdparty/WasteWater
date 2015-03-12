@@ -112,7 +112,7 @@ The connector consists of one flow variable and 19 potential variables (ASM2d co
         y=0.01,
         width=0.35,
         height=0.49),
-      Documentation(info="The Airflow connector consits of a flow variable describing the exchange of
+      Documentation(info="The Airflow connector consists of a flow variable describing the exchange of
 air between blower and nitrification tank."));
 
   end AirFlow;
