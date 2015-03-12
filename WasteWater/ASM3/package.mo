@@ -69,7 +69,7 @@ model nitri "ASM3 nitrification tank"
   // tank specific parameters
   parameter Modelica.SIunits.Volume V=1000 "Volume of nitrification tank";
 
-  // aeration system dependend parameters
+  // aeration system dependent parameters
   parameter Real alpha=0.7 "Oxygen transfer factor";
   parameter Modelica.SIunits.Length de=4.5 "depth of aeration";
   parameter Real R_air=23.5 "specific oxygen feed factor [gO2/(m^3*m)]";
@@ -87,7 +87,7 @@ model nitri "ASM3 nitrification tank"
             -103},{5,-93}}, rotation=0)));
 equation
 
-  // Temperature dependend oxygen saturation by Simba
+  // Temperature dependent oxygen saturation by Simba
   So_sat =13.89 + (-0.3825 + (0.007311 - 0.00006588*T)*T)*T;
 
   // extends the Oxygen differential equation by an aeration term
@@ -601,7 +601,7 @@ end ControlledDivider2;
 
 model divider2 "Flowdivider"
 
-    // divides one flow of wastewater into 2 Flows; one amout needs to be specified
+    // divides one flow of wastewater into 2 Flows; one amount needs to be specified
 
   extends WasteWater.Icons.divider2;
   Interfaces.WWFlowAsm3in In annotation (Placement(transformation(extent={{-111,

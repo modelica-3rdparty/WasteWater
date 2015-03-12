@@ -89,7 +89,7 @@ The connector consists of one flow variable and 13 potential variables (ASM1 con
 
     flow WWU.VolumeFlowRate Q_air;
     annotation (
-      Documentation(info="The Airflow connector consits of a flow variable describing the exchange of
+      Documentation(info="The Airflow connector consists of a flow variable describing the exchange of
 air between blower and nitrification tank."),
       Window(
         x=0.4,
