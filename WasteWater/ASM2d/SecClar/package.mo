@@ -4,13 +4,6 @@ extends Modelica.Icons.Library;
 
 
 annotation (
-  Window(
-    x=0.45,
-    y=0.01,
-    width=0.44,
-    height=0.65,
-    library=1,
-    autolayout=1),
   Documentation(info="This library provides a collection of ASM2d secondary clarifier models based on
 several theories.
 

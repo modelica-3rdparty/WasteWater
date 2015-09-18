@@ -38,11 +38,11 @@ package PreClar "Primary clarifier modelling based on ASM1"
     Real XCODin;
     Real H;
     ASM1.Interfaces.WWFlowAsm1in In annotation (Placement(transformation(extent
-            ={{-110,-10},{-90,10}}, rotation=0)));
+            ={{-110,-10},{-90,10}})));
     ASM1.Interfaces.WWFlowAsm1out Out annotation (Placement(transformation(
-            extent={{90,-10},{110,10}}, rotation=0)));
+            extent={{90,-10},{110,10}})));
     ASM1.Interfaces.WWFlowAsm1out MeasurePort annotation (Placement(
-          transformation(extent={{32,90},{42,100}}, rotation=0)));
+          transformation(extent={{32,90},{42,100}})));
   equation
 
     // calculation of the hydraulic residence time
@@ -119,20 +119,12 @@ package PreClar "Primary clarifier modelling based on ASM1"
     MeasurePort.Xnd = (1 - n_X)*Xnd;
     MeasurePort.Salk = Salk;
     annotation (
-      Window(
-        x=0.06,
-        y=0.01,
-        width=0.35,
-        height=0.49),
       Documentation(info="This is an ASM1 dynamic primary clarifier model based on the theory
 by Otterpohl and Freund.
 
 Parameter:
   V - volume of the preclarifier
-"),   Diagram(coordinateSystem(
-          preserveAspectRatio=false,
-          extent={{-100,-100},{100,100}},
-          grid={2,2}), graphics));
+"));
   end preclar1;
 
   model preclar2 "Static ASM1 Primary Clarifier Model"
@@ -172,11 +164,11 @@ Parameter:
     Real XCODin;
     Real H;
     ASM1.Interfaces.WWFlowAsm1in In annotation (Placement(transformation(extent
-            ={{-110,-10},{-90,10}}, rotation=0)));
+            ={{-110,-10},{-90,10}})));
     ASM1.Interfaces.WWFlowAsm1out Out annotation (Placement(transformation(
-            extent={{90,-10},{110,10}}, rotation=0)));
+            extent={{90,-10},{110,10}})));
     ASM1.Interfaces.WWFlowAsm1out MeasurePort annotation (Placement(
-          transformation(extent={{32,90},{42,100}}, rotation=0)));
+          transformation(extent={{32,90},{42,100}})));
   equation
 
     // calculation of the hydraulic residence time
@@ -251,11 +243,6 @@ Parameter:
     MeasurePort.Salk = Salk;
 
     annotation (
-      Window(
-        x=0.1,
-        y=0.11,
-        width=0.35,
-        height=0.49),
       Documentation(info="This is an ASM1 static primary clarifier model based on the theory
 by Otterpohl and Freund.
 
@@ -319,9 +306,9 @@ Parameter:
     Real XCOD;
     Real H;
     ASM1.Interfaces.WWFlowAsm1in In annotation (Placement(transformation(extent
-            ={{-110,-10},{-90,10}}, rotation=0)));
+            ={{-110,-10},{-90,10}})));
     ASM1.Interfaces.WWFlowAsm1out Out annotation (Placement(transformation(
-            extent={{90,-10},{110,10}}, rotation=0)));
+            extent={{90,-10},{110,10}})));
     Modelica.Blocks.Interfaces.RealInput MeasurePort[4]
       annotation (Placement(transformation(
           origin={38,90},
@@ -406,11 +393,6 @@ Parameter:
     Out.Salk = Salk;
 
     annotation (
-      Window(
-        x=0.02,
-        y=0.01,
-        width=0.35,
-        height=0.49),
       Documentation(info="This is a special case of the ASM1 static primary clarifier model.
 Here measurement data at the end (effluent) of the preclarifier needs to be provided.
 This is typical for some real plants. Influent is then calculated.
@@ -430,13 +412,6 @@ Dimension of InPort is 4.
 "));
   end preclar3;
   annotation (
-    Window(
-      x=0.45,
-      y=0.01,
-      width=0.44,
-      height=0.65,
-      library=1,
-      autolayout=1),
     Documentation(info="This package provides one dynamic and two static ASM1 primary clarifier
 models based on Otterpohl [1].
 

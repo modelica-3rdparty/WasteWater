@@ -29,11 +29,6 @@ package Haertel "Secondary settling tank modelling by Haertel (ASM1)"
       WWU.MassConcentration Snd;
       WWU.Alkalinity Salk;
       annotation (
-        Window(
-          x=0.1,
-          y=0.03,
-          width=0.35,
-          height=0.49),
         Documentation(info=
               "Connector for ASM1 information and mass exchange between layers above the influent layer (feed_layer)."));
     end UpperLayerPin;
@@ -61,11 +56,6 @@ package Haertel "Secondary settling tank modelling by Haertel (ASM1)"
       WWU.MassConcentration Snd;
       WWU.Alkalinity Salk;
       annotation (
-        Window(
-          x=0.01,
-          y=0.02,
-          width=0.35,
-          height=0.49),
         Documentation(info=
               "Connector for ASM1 information and mass exchange between layers below the influent layer (feed_layer)."));
     end LowerLayerPin;
@@ -77,11 +67,6 @@ package Haertel "Secondary settling tank modelling by Haertel (ASM1)"
       parameter SI.Area Asc;
       parameter WWU.SludgeVolumeIndex ISV;
       annotation (
-        Window(
-          x=0.45,
-          y=0.01,
-          width=0.35,
-          height=0.49),
         Documentation(info="partial model providing clarifier parameters"));
     end SCParam;
 
@@ -99,11 +84,6 @@ package Haertel "Secondary settling tank modelling by Haertel (ASM1)"
       WWU.MassConcentration Snd "Soluble biodegradable organic nitrogen";
       WWU.Alkalinity Salk "Alkalinity";
       annotation (
-        Window(
-          x=0.58,
-          y=0.18,
-          width=0.35,
-          height=0.49),
         Documentation(info="partial models providing variables"));
     end SCVar;
 
@@ -116,11 +96,6 @@ package Haertel "Secondary settling tank modelling by Haertel (ASM1)"
       Real rXp;
       Real rXnd;
       annotation (
-        Window(
-          x=0.09,
-          y=0.04,
-          width=0.35,
-          height=0.49),
         Documentation(info="partial model for ASM1 ratios of solid components"));
     end ratios;
 
@@ -143,11 +118,6 @@ package Haertel "Secondary settling tank modelling by Haertel (ASM1)"
       //[l/g]
       vS := v0*exp(-nv*X/1000);
       annotation (
-        Window(
-          x=0.45,
-          y=0.01,
-          width=0.35,
-          height=0.49),
         Documentation(info="Sedimentation velocity function"));
     end vSfun;
 
@@ -189,22 +159,10 @@ package Haertel "Secondary settling tank modelling by Haertel (ASM1)"
       omega := (1.0 - B3*ht^(-B4))/(1.0 - B3*z^(-B4));
       omega := min(1.0, omega);
       annotation (
-        Window(
-          x=0.62,
-          y=0.18,
-          width=0.35,
-          height=0.49),
         Documentation(info=
               "This is Haertels omega correction function for the settling process."));
     end omega;
     annotation (
-      Window(
-        x=0.45,
-        y=0.01,
-        width=0.44,
-        height=0.65,
-        library=1,
-        autolayout=1),
       Documentation(info="This package contains connectors and interfaces (partial models) for
 the ASM1 secondary clarifier model based on Haertel [1] (settling velocity and omega correction function).
 
@@ -259,8 +217,7 @@ Copyright (C) 2002, Gerald Reichl
       rXba=rXba,
       rXp=rXp,
       rXi=rXi,
-      rXnd=rXnd) annotation (Placement(transformation(extent={{-35,-93},{35,-78}},
-            rotation=0)));
+      rXnd=rXnd) annotation (Placement(transformation(extent={{-35,-93},{35,-78}})));
     SCP.lower_layer S2(
       hsc=hsc,
       zm=zm,
@@ -268,8 +225,7 @@ Copyright (C) 2002, Gerald Reichl
       Asc=Asc,
       ISV=ISV,
       i=i,
-      Xf=Xf) annotation (Placement(transformation(extent={{-35,-74},{35,-59}},
-            rotation=0)));
+      Xf=Xf) annotation (Placement(transformation(extent={{-35,-74},{35,-59}})));
     SCP.lower_layer S3(
       hsc=hsc,
       zm=zm,
@@ -277,8 +233,7 @@ Copyright (C) 2002, Gerald Reichl
       Asc=Asc,
       ISV=ISV,
       i=i,
-      Xf=Xf) annotation (Placement(transformation(extent={{-35,-55},{35,-40}},
-            rotation=0)));
+      Xf=Xf) annotation (Placement(transformation(extent={{-35,-55},{35,-40}})));
     SCP.lower_layer S4(
       hsc=hsc,
       zm=zm,
@@ -286,8 +241,7 @@ Copyright (C) 2002, Gerald Reichl
       Asc=Asc,
       ISV=ISV,
       i=i,
-      Xf=Xf) annotation (Placement(transformation(extent={{-35,-36},{35,-21}},
-            rotation=0)));
+      Xf=Xf) annotation (Placement(transformation(extent={{-35,-36},{35,-21}})));
     SCP.lower_layer S5(
       hsc=hsc,
       zm=zm,
@@ -295,8 +249,7 @@ Copyright (C) 2002, Gerald Reichl
       Asc=Asc,
       ISV=ISV,
       i=i,
-      Xf=Xf) annotation (Placement(transformation(extent={{-35,-17},{35,-2}},
-            rotation=0)));
+      Xf=Xf) annotation (Placement(transformation(extent={{-35,-17},{35,-2}})));
     SCP.lower_layer S6(
       hsc=hsc,
       zm=zm,
@@ -304,8 +257,7 @@ Copyright (C) 2002, Gerald Reichl
       Asc=Asc,
       ISV=ISV,
       i=i,
-      Xf=Xf) annotation (Placement(transformation(extent={{-35,2},{35,17}},
-            rotation=0)));
+      Xf=Xf) annotation (Placement(transformation(extent={{-35,2},{35,17}})));
     SCP.lower_layer S7(
       hsc=hsc,
       zm=zm,
@@ -313,8 +265,7 @@ Copyright (C) 2002, Gerald Reichl
       Asc=Asc,
       ISV=ISV,
       i=i,
-      Xf=Xf) annotation (Placement(transformation(extent={{-35,21},{35,36}},
-            rotation=0)));
+      Xf=Xf) annotation (Placement(transformation(extent={{-35,21},{35,36}})));
     SCP.feed_layer S8(
       hsc=hsc,
       zm=zm,
@@ -322,13 +273,11 @@ Copyright (C) 2002, Gerald Reichl
       Asc=Asc,
       ISV=ISV,
       i=i,
-      Xf=Xf) annotation (Placement(transformation(extent={{-35,40},{35,55}},
-            rotation=0)));
+      Xf=Xf) annotation (Placement(transformation(extent={{-35,40},{35,55}})));
     SCP.upper_layer S9(
       zm=zm,
       Asc=Asc,
-      ISV=ISV) annotation (Placement(transformation(extent={{-35,59},{35,74}},
-            rotation=0)));
+      ISV=ISV) annotation (Placement(transformation(extent={{-35,59},{35,74}})));
     SCP.top_layer S10(
       zm=zm,
       Asc=Asc,
@@ -338,16 +287,15 @@ Copyright (C) 2002, Gerald Reichl
       rXba=rXba,
       rXp=rXp,
       rXi=rXi,
-      rXnd=rXnd) annotation (Placement(transformation(extent={{-35,78},{35,93}},
-            rotation=0)));
+      rXnd=rXnd) annotation (Placement(transformation(extent={{-35,78},{35,93}})));
     WI.WWFlowAsm1in Feed annotation (Placement(transformation(extent={{-110,4},
-              {-90,24}}, rotation=0)));
+              {-90,24}})));
     WI.WWFlowAsm1out Effluent annotation (Placement(transformation(extent={{92,
-              47},{112,67}}, rotation=0)));
+              47},{112,67}})));
     WI.WWFlowAsm1out Return annotation (Placement(transformation(extent={{-40,
-              -106},{-20,-86}}, rotation=0)));
+              -106},{-20,-86}})));
     WI.WWFlowAsm1out Waste annotation (Placement(transformation(extent={{20,
-              -106},{40,-86}}, rotation=0)));
+              -106},{40,-86}})));
   equation
 
     connect(S1.Up, S2.Dn) annotation (Line(points={{-2.22045e-15,-78},{
@@ -397,11 +345,7 @@ Parameters:
   Asc -  surface area of sec. clar. [m2]
   ISV -  Sludge Volume Index [ml/g]
   i   -  number of layers above feed layer
-"),   Window(
-        x=0.08,
-        y=0.01,
-        width=0.35,
-        height=0.49));
+"));
   end SecClarModHaertel;
 
   model bottom_layer "Bottom layer of Haertel`s SC model"
@@ -411,11 +355,11 @@ Parameters:
     extends WWSC.ratios;
 
     ASM1.Interfaces.WWFlowAsm1out PQr annotation (Placement(transformation(
-            extent={{-70,-110},{-50,-90}}, rotation=0)));
+            extent={{-70,-110},{-50,-90}})));
     ASM1.Interfaces.WWFlowAsm1out PQw annotation (Placement(transformation(
-            extent={{40,-110},{60,-90}}, rotation=0)));
+            extent={{40,-110},{60,-90}})));
     WWSC.LowerLayerPin Up annotation (Placement(transformation(extent={{-10,90},
-              {10,110}}, rotation=0)));
+              {10,110}})));
   equation
 
     // sink velocity
@@ -475,11 +419,6 @@ Parameters:
     PQw.Salk = Salk;
 
     annotation (
-      Window(
-        x=0.45,
-        y=0.01,
-        width=0.35,
-        height=0.49),
       Documentation(info="This class models the lowest layer of an ASM1 secondary clarifier based on Haertel.
 
 No sedimentation flux (mass exchange) with underneath but hydraulic and sedimentation flux (same direction)
@@ -554,9 +493,9 @@ From here return and waste sludge is removed.
     Real omega;
 
     WWSC.LowerLayerPin Up annotation (Placement(transformation(extent={{-10,90},
-              {10,110}}, rotation=0)));
+              {10,110}})));
     WWSC.LowerLayerPin Dn annotation (Placement(transformation(extent={{-10,
-              -110},{10,-90}}, rotation=0)));
+              -110},{10,-90}})));
   equation
 
     // sink velocity
@@ -598,11 +537,6 @@ From here return and waste sludge is removed.
     Up.vS_dn = vS;
     Up.X_dn = X;
     annotation (
-      Window(
-        x=0.45,
-        y=0.01,
-        width=0.35,
-        height=0.49),
       Documentation(info="This class models the layers between the influent layer (feed_layer) and the lowest layer (bottom_layer)
 of an ASM1 secondary clarifier based on Haertel.
 
@@ -693,11 +627,11 @@ function and the omega correction function by Haertel.
     Real omega;
 
     WWSC.LowerLayerPin Dn annotation (Placement(transformation(extent={{-10,
-              -110},{10,-90}}, rotation=0)));
+              -110},{10,-90}})));
     WWSC.UpperLayerPin Up annotation (Placement(transformation(extent={{-10,90},
-              {10,110}}, rotation=0)));
+              {10,110}})));
     ASM1.Interfaces.WWFlowAsm1in In annotation (Placement(transformation(extent
-            ={{-110,-6},{-90,14}}, rotation=0)));
+            ={{-110,-6},{-90,14}})));
   equation
 
     // sink velocity
@@ -747,15 +681,6 @@ function and the omega correction function by Haertel.
     Up.Salk = Salk;
 
     annotation (
-      Window(
-        x=0.45,
-        y=0.01,
-        width=0.35,
-        height=0.49),
-      Coordsys(
-        extent=[-100, -100; 100, 100],
-        grid=[2, 2],
-        component=[20, 20]),
       Documentation(info="This class models the influent layer of an ASM1 secondary clarifier based on Haertel.
 
 It receives the wastewater stream from the biological part (feed).
@@ -840,9 +765,9 @@ function and the omega correction function by Haertel.
     extends WWSC.SCParam;
     extends WWSC.SCVar;
     WWSC.UpperLayerPin Dn annotation (Placement(transformation(extent={{-10,
-              -110},{10,-90}}, rotation=0)));
+              -110},{10,-90}})));
     WWSC.UpperLayerPin Up annotation (Placement(transformation(extent={{-10,90},
-              {10,110}}, rotation=0)));
+              {10,110}})));
   equation
 
     // sink velocity
@@ -880,11 +805,6 @@ function and the omega correction function by Haertel.
     Up.Salk = Salk;
 
     annotation (
-      Window(
-        x=0.45,
-        y=0.01,
-        width=0.35,
-        height=0.49),
       Documentation(info="This class models the layers between the influent layer (feed_layer) and the effluent layer (top_layer)
 of an ASM1 secondary clarifier based on Haertel.
 
@@ -969,9 +889,9 @@ function by Haertel."),
     extends WWSC.SCVar;
     extends WWSC.ratios;
     WWSC.UpperLayerPin Dn annotation (Placement(transformation(extent={{-10,
-              -110},{10,-90}}, rotation=0)));
+              -110},{10,-90}})));
     ASM1.Interfaces.WWFlowAsm1out Out annotation (Placement(transformation(
-            extent={{90,-10},{110,10}}, rotation=0)));
+            extent={{90,-10},{110,10}})));
   equation
 
     // sink velocity
@@ -1014,11 +934,6 @@ function by Haertel."),
     Out.Salk = Salk;
 
     annotation (
-      Window(
-        x=0.45,
-        y=0.01,
-        width=0.35,
-        height=0.49),
       Documentation(info="This class models the top layer of an ASM1 secondary clarifier based on Haertel.
 
 No sedimentation flux (mass exchange) with above but hydraulic and sedimentation flux
@@ -1083,15 +998,8 @@ function by Haertel.
             fillPattern=FillPattern.Solid)}));
   end top_layer;
   annotation (
-    Window(
-      x=0.45,
-      y=0.01,
-      width=0.44,
-      height=0.65,
-      library=1,
-      autolayout=1),
     Documentation(info="This package contains classes (layer models) to built ASM1 secondary clarifier models, an Interfaces sub-library
-and provides an ASM1 10-layer secondary clarifier model all bases on Haertel`s [1] 
+and provides an ASM1 10-layer secondary clarifier model all bases on Haertel`s [1]
 sedimentation velocity and omega correction functions.
 
 A secondary clarifier layer model needs at least a top_layer, a feed_layer and a bottom_layer

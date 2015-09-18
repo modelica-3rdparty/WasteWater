@@ -45,11 +45,6 @@ package Krebs "Secondary settling tank modelling by Krebs (ASM3)"
         "Alkalinity, bicarbonate in second stirrer tank of the excess layer";
 
       annotation (
-        Window(
-          x=0.64,
-          y=0.03,
-          width=0.35,
-          height=0.49),
         Documentation(info="partial models providing ASM3 variables"));
 
     end SCVar;
@@ -63,21 +58,9 @@ package Krebs "Secondary settling tank modelling by Krebs (ASM3)"
       Real rXsto;
       Real rXa;
       annotation (
-        Window(
-          x=0.45,
-          y=0.01,
-          width=0.35,
-          height=0.49),
         Documentation(info="partial model for ASM3 ratios of solid components"));
     end ratios;
     annotation (
-      Window(
-        x=0.45,
-        y=0.01,
-        width=0.44,
-        height=0.65,
-        library=1,
-        autolayout=1),
       Documentation(info="This package contains partial models for ASM3 secondary clarifier models.
 
 Main Author:
@@ -113,13 +96,13 @@ Copyright (C) 2003, Gerald Reichl
     SI.Length he "height of excess layer";
 
     WI.WWFlowAsm3in Feed annotation (Placement(transformation(extent={{-110,4},
-              {-90,24}}, rotation=0)));
+              {-90,24}})));
     WI.WWFlowAsm3out Effluent annotation (Placement(transformation(extent={{92,
-              47},{112,67}}, rotation=0)));
+              47},{112,67}})));
     WI.WWFlowAsm3out Return annotation (Placement(transformation(extent={{-40,
-              -106},{-20,-86}}, rotation=0)));
+              -106},{-20,-86}})));
     WI.WWFlowAsm3out Waste annotation (Placement(transformation(extent={{20,
-              -106},{40,-86}}, rotation=0)));
+              -106},{40,-86}})));
   equation
 
     // total sludge concentration in clarifier feed
@@ -230,11 +213,6 @@ Copyright (C) 2003, Gerald Reichl
     Waste.Xss = XR;
 
     annotation (
-      Window(
-        x=0.45,
-        y=0.01,
-        width=0.35,
-        height=0.49),
       Documentation(info="This component models an ASM3 secondary clarifier based on Krebs conceptional model.
 It consists of two compartments: a \"sludge-bed\" and a clear water zone above.
 
@@ -278,13 +256,6 @@ Parameters:
             pattern=LinePattern.Dash)}));
   end SecClarModKrebs;
   annotation (
-    Window(
-      x=0.45,
-      y=0.01,
-      width=0.44,
-      height=0.65,
-      library=1,
-      autolayout=1),
     Documentation(info="This package contains an ASM3 secondary clarifier model and an Interfaces sub-library
 based on Krebs conceptional model [1].
 The settler model consists of two compartments, a \"sludge-bed\" and a clear water zone above.

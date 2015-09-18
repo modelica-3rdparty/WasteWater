@@ -13,13 +13,13 @@ model deni "ASM3 denitrification tank"
   // tank specific parameters
   parameter Modelica.SIunits.Volume V=1000 "Volume of denitrification tank";
   Interfaces.WWFlowAsm3in In annotation (Placement(transformation(extent={{-110,
-            -10},{-90,10}}, rotation=0)));
+            -10},{-90,10}})));
   Interfaces.WWFlowAsm3out Out annotation (Placement(transformation(extent={{90,
-            -10},{110,10}}, rotation=0)));
+            -10},{110,10}})));
   Interfaces.WWFlowAsm3out MeasurePort annotation (Placement(transformation(
-          extent={{50,40},{60,50}}, rotation=0)));
+          extent={{50,40},{60,50}})));
   Modelica.Blocks.Interfaces.RealInput T annotation (Placement(transformation(
-          extent={{-110,30},{-90,50}}, rotation=0)));
+          extent={{-110,30},{-90,50}})));
 equation
 
   aeration = 0;
@@ -42,11 +42,6 @@ equation
   inputXss = (In.Xss - Xss)*In.Q/V;
 
   annotation (
-    Window(
-      x=0.63,
-      y=0.03,
-      width=0.35,
-      height=0.49),
     Documentation(info="This component models the ASM3 processes and reactions taking place in an unaerated (denitrification) tank
 of a wastewater treatment plant.
 
@@ -76,15 +71,15 @@ model nitri "ASM3 nitrification tank"
   WWU.MassConcentration So_sat "Dissolved oxygen saturation";
 
   Interfaces.WWFlowAsm3in In annotation (Placement(transformation(extent={{-110,
-            -10},{-90,10}}, rotation=0)));
+            -10},{-90,10}})));
   Interfaces.WWFlowAsm3out Out annotation (Placement(transformation(extent={{90,
-            -10},{110,10}}, rotation=0)));
+            -10},{110,10}})));
   Interfaces.WWFlowAsm3out MeasurePort annotation (Placement(transformation(
-          extent={{50,40},{60,50}}, rotation=0)));
+          extent={{50,40},{60,50}})));
   Modelica.Blocks.Interfaces.RealInput T annotation (Placement(transformation(
-          extent={{-110,30},{-90,50}}, rotation=0)));
+          extent={{-110,30},{-90,50}})));
   Interfaces.AirFlow AirIn annotation (Placement(transformation(extent={{-5,
-            -103},{5,-93}}, rotation=0)));
+            -103},{5,-93}})));
 equation
 
   // Temperature dependent oxygen saturation by Simba
@@ -113,11 +108,6 @@ equation
 
   annotation (
     Documentaion(info="Nitrification Tank"),
-    Window(
-      x=0.45,
-      y=0.01,
-      width=0.35,
-      height=0.49),
     Documentation(info="This component models the ASM3 processes and reactions taking place in an aerated (nitrification) tank
 of a wastewater treatment plant.
 
@@ -152,13 +142,13 @@ model SecClarModTakacs "ASM3 Secondary Clarifier Model based on Takacs"
   WWU.MassConcentration Xf;
 
   WI.WWFlowAsm3in Feed annotation (Placement(transformation(extent={{-110,4},{
-            -90,24}}, rotation=0)));
+            -90,24}})));
   WI.WWFlowAsm3out Effluent annotation (Placement(transformation(extent={{92,47},
-            {112,67}}, rotation=0)));
+            {112,67}})));
   WI.WWFlowAsm3out Return annotation (Placement(transformation(extent={{-40,
-            -106},{-20,-86}}, rotation=0)));
+            -106},{-20,-86}})));
   WI.WWFlowAsm3out Waste annotation (Placement(transformation(extent={{20,-106},
-            {40,-86}}, rotation=0)));
+            {40,-86}})));
 
   // layers 1 to 10
   SCP.bottom_layer S1(
@@ -169,51 +159,42 @@ model SecClarModTakacs "ASM3 Secondary Clarifier Model based on Takacs"
     rXs=rXs,
     rXh=rXh,
     rXsto=rXsto,
-    rXa=rXa) annotation (Placement(transformation(extent={{-35,-93},{35,-78}},
-          rotation=0)));
+    rXa=rXa) annotation (Placement(transformation(extent={{-35,-93},{35,-78}})));
   SCP.lower_layer S2(
     zm=zm,
     Asc=Asc,
-    Xf=Xf) annotation (Placement(transformation(extent={{-35,-74},{35,-59}},
-          rotation=0)));
+    Xf=Xf) annotation (Placement(transformation(extent={{-35,-74},{35,-59}})));
   SCP.lower_layer S3(
     zm=zm,
     Asc=Asc,
-    Xf=Xf) annotation (Placement(transformation(extent={{-35,-55},{35,-40}},
-          rotation=0)));
+    Xf=Xf) annotation (Placement(transformation(extent={{-35,-55},{35,-40}})));
   SCP.lower_layer S4(
     zm=zm,
     Asc=Asc,
-    Xf=Xf) annotation (Placement(transformation(extent={{-35,-36},{35,-21}},
-          rotation=0)));
+    Xf=Xf) annotation (Placement(transformation(extent={{-35,-36},{35,-21}})));
   SCP.lower_layer S5(
     zm=zm,
     Asc=Asc,
-    Xf=Xf) annotation (Placement(transformation(extent={{-35,-17},{35,-2}},
-          rotation=0)));
+    Xf=Xf) annotation (Placement(transformation(extent={{-35,-17},{35,-2}})));
   SCP.feed_layer S6(
     zm=zm,
     Asc=Asc,
-    Xf=Xf) annotation (Placement(transformation(extent={{-35,2},{35,17}},
-          rotation=0)));
+    Xf=Xf) annotation (Placement(transformation(extent={{-35,2},{35,17}})));
   SCP.upper_layer S7(
     zm=zm,
     Asc=Asc,
     Xf=Xf,
-    Xt=Xt) annotation (Placement(transformation(extent={{-35,21},{35,36}},
-          rotation=0)));
+    Xt=Xt) annotation (Placement(transformation(extent={{-35,21},{35,36}})));
   SCP.upper_layer S8(
     zm=zm,
     Asc=Asc,
     Xt=Xt,
-    Xf=Xf) annotation (Placement(transformation(extent={{-35,40},{35,55}},
-          rotation=0)));
+    Xf=Xf) annotation (Placement(transformation(extent={{-35,40},{35,55}})));
   SCP.upper_layer S9(
     zm=zm,
     Asc=Asc,
     Xf=Xf,
-    Xt=Xt) annotation (Placement(transformation(extent={{-35,59},{35,74}},
-          rotation=0)));
+    Xt=Xt) annotation (Placement(transformation(extent={{-35,59},{35,74}})));
   SCP.top_layer S10(
     zm=zm,
     Asc=Asc,
@@ -223,8 +204,7 @@ model SecClarModTakacs "ASM3 Secondary Clarifier Model based on Takacs"
     rXs=rXs,
     rXh=rXh,
     rXsto=rXsto,
-    rXa=rXa) annotation (Placement(transformation(extent={{-35,78},{35,93}},
-          rotation=0)));
+    rXa=rXa) annotation (Placement(transformation(extent={{-35,78},{35,93}})));
 equation
 
   connect(S1.Up, S2.Dn) annotation (Line(points={{-2.22045e-15,-78},{
@@ -274,11 +254,7 @@ Parameters:
   Asc -  surface area of sec. clar. [m2]
   Xt  -  threshold value for Xtss [mg/l]
 
-"), Window(
-      x=0.63,
-      y=0.38,
-      width=0.35,
-      height=0.49));
+"));
 end SecClarModTakacs;
 
 
@@ -291,7 +267,7 @@ model blower "Blower for the aeration of the nitrification tanks"
   Real H;
   //help variable to reduce expressions
   Interfaces.AirFlow AirOut annotation (Placement(transformation(extent={{-20,
-            90},{0,110}}, rotation=0)));
+            90},{0,110}})));
   Modelica.Blocks.Interfaces.RealInput u
     annotation (Placement(transformation(
         origin={99,-30},
@@ -303,11 +279,6 @@ equation
   AirOut.Q_air = -(if H > Q_max then Q_max else if H < Q_min then Q_min else H);
 
   annotation (
-    Window(
-      x=0.45,
-      y=0.01,
-      width=0.35,
-      height=0.49),
     Documentation(info="This component models a blower of a wastewater treatment plant which generates an airflow that is needed
 for the nitrification.
 The blower is connected to the nitrification tank.
@@ -332,11 +303,11 @@ model pump "ASM3 wastewater pump"
   Real H;
   // help variable to reduce expressions
   Interfaces.WWFlowAsm3in In annotation (Placement(transformation(extent={{-110,
-            -43},{-90,-23}}, rotation=0)));
+            -43},{-90,-23}})));
   Interfaces.WWFlowAsm3out Out annotation (Placement(transformation(extent={{90,
-            19},{110,39}}, rotation=0)));
+            19},{110,39}})));
   Modelica.Blocks.Interfaces.RealInput u annotation (Placement(transformation(
-          extent={{-98,15},{-78,35}}, rotation=0)));
+          extent={{-98,15},{-78,35}})));
 equation
 
   H =0.5*(-Q_min + Q_max) + u*0.5*(-Q_min + Q_max) + Q_min;
@@ -359,11 +330,6 @@ equation
   Out.Xss = In.Xss;
 
   annotation (
-    Window(
-      x=0.45,
-      y=0.01,
-      width=0.35,
-      height=0.49),
     Documentation(info="This component models an ASM3 wastewater pump. It generates a wastewater flow
 that is controlled by the signal u (-1 <= u <=1).
 
@@ -380,20 +346,14 @@ model FlowSource "Flowsource"
 
   extends WasteWater.Icons.FlowSource;
   Interfaces.WWFlowAsm3out Out annotation (Placement(transformation(extent={{88,
-            -80},{108,-60}}, rotation=0)));
+            -80},{108,-60}})));
   Modelica.Blocks.Interfaces.RealInput data
-    annotation (Placement(transformation(extent={{-100,-10},{-80,10}}, rotation
-          =0)));
+    annotation (Placement(transformation(extent={{-100,-10},{-80,10}})));
 equation
 
   Out.Q =-data;
 
   annotation (
-    Window(
-      x=0.45,
-      y=0.01,
-      width=0.35,
-      height=0.49),
     Documentation(info="This component is used to feed an ASM3 wwtp model with flow data from measurement
 when e.g. concentration is measured after the primary clarifier.
 
@@ -437,11 +397,9 @@ The dimension of InPort is 1.
           fillPattern=FillPattern.Solid),
         Line(
           points={{-4,-54},{-4,-74},{88,-74}},
-          color={0,0,0},
           thickness=0.5),
         Line(
           points={{4,-54},{4,-68},{88,-68}},
-          color={0,0,0},
           thickness=0.5)}));
 end FlowSource;
 
@@ -451,10 +409,9 @@ model WWSource "Wastewater source"
   extends WasteWater.Icons.WWSource;
   extends ASM3.Interfaces.stoichiometry;
   Interfaces.WWFlowAsm3out Out annotation (Placement(transformation(extent={{88,
-            -80},{108,-60}}, rotation=0)));
+            -80},{108,-60}})));
   Modelica.Blocks.Interfaces.RealInput data[13]
-    annotation (Placement(transformation(extent={{-100,-10},{-80,10}}, rotation
-          =0)));
+    annotation (Placement(transformation(extent={{-100,-10},{-80,10}})));
 equation
 
   Out.Q =-data[1];
@@ -475,11 +432,6 @@ equation
   //Out.Xss = data.signal[14];
 
   annotation (
-    Window(
-      x=0.45,
-      y=0.01,
-      width=0.35,
-      height=0.49),
     Documentation(info="This component provides all ASM3 data at the influent of a wastewater treatment plant.
 The dimension of InPort is 13.
 
@@ -507,13 +459,8 @@ model EffluentSink "Receiving water (river)"
 
   extends WasteWater.Icons.EffluentSink;
   Interfaces.WWFlowAsm3in In annotation (Placement(transformation(extent={{-110,
-            10},{-90,30}}, rotation=0)));
+            10},{-90,30}})));
   annotation (
-    Window(
-      x=0.65,
-      y=0.09,
-      width=0.35,
-      height=0.49),
     Documentation(info="This component terminates an ASM3 wastewater treatment plant model e.g. the wastewater flow to the receiving water.
 "));
 end EffluentSink;
@@ -524,13 +471,8 @@ model SludgeSink "Wastesludge sink"
 
   extends WasteWater.Icons.SludgeSink;
   Interfaces.WWFlowAsm3in In annotation (Placement(transformation(extent={{-110,
-            -22},{-90,-2}}, rotation=0)));
+            -22},{-90,-2}})));
   annotation (
-    Window(
-      x=0.45,
-      y=0.01,
-      width=0.35,
-      height=0.49),
     Documentation(info="This component terminates the waste sludge stream of an ASM3 wastewater treatment plant model.
 Storage or further sludge treatment is not jet considered."));
 end SludgeSink;
@@ -543,11 +485,11 @@ model ControlledDivider2 "Controlled flow divider"
   extends WasteWater.Icons.ControlledDivider2;
 
   Interfaces.WWFlowAsm3in In annotation (Placement(transformation(extent={{-111,
-            -6},{-91,14}}, rotation=0)));
+            -6},{-91,14}})));
   Interfaces.WWFlowAsm3out Out1 annotation (Placement(transformation(extent={{
-            90,20},{110,40}}, rotation=0)));
+            90,20},{110,40}})));
   Interfaces.WWFlowAsm3out Out2 annotation (Placement(transformation(extent={{
-            90,-28},{110,-8}}, rotation=0)));
+            90,-28},{110,-8}})));
   Modelica.Blocks.Interfaces.RealInput u
     annotation (
     layer="icon", Placement(transformation(
@@ -588,11 +530,6 @@ equation
   Out2.Xss = In.Xss;
 
   annotation (
-    Window(
-      x=0.38,
-      y=0.09,
-      width=0.35,
-      height=0.49),
     Documentation(info="This component divides one wastewater flow (ASM3) into two flows which are controlled by the signal u (0...1).
 Is u.signal=1, the flow goes to output 1 (Out1) and is u.signal=0, the flow goes to output 2 (Out2).
 The concentrations of the outport-flows are equal to the concentration at inport."));
@@ -605,11 +542,11 @@ model divider2 "Flowdivider"
 
   extends WasteWater.Icons.divider2;
   Interfaces.WWFlowAsm3in In annotation (Placement(transformation(extent={{-111,
-            -7},{-91,13}}, rotation=0)));
+            -7},{-91,13}})));
   Interfaces.WWFlowAsm3out Out1 annotation (Placement(transformation(extent={{
-            89,20},{109,40}}, rotation=0)));
+            89,20},{109,40}})));
   Interfaces.WWFlowAsm3out Out2 annotation (Placement(transformation(extent={{
-            90,-28},{110,-8}}, rotation=0)));
+            90,-28},{110,-8}})));
 equation
 
   In.Q + Out1.Q + Out2.Q = 0;
@@ -643,11 +580,6 @@ equation
   Out2.Xss = In.Xss;
 
   annotation (
-    Window(
-      x=0.45,
-      y=0.01,
-      width=0.35,
-      height=0.49),
     Documentation(info=
           "This component divides one ASM3 wastewater flow into two ASM3 wastewater flows."));
 end divider2;
@@ -657,11 +589,11 @@ model mixer2 "Mixer of two ASM3 characterised flows"
 
   extends WasteWater.Icons.mixer2;
   Interfaces.WWFlowAsm3in In1 annotation (Placement(transformation(extent={{
-            -111,20},{-91,40}}, rotation=0)));
+            -111,20},{-91,40}})));
   Interfaces.WWFlowAsm3in In2 annotation (Placement(transformation(extent={{
-            -111,-30},{-91,-10}}, rotation=0)));
+            -111,-30},{-91,-10}})));
   Interfaces.WWFlowAsm3out Out annotation (Placement(transformation(extent={{90,
-            -5},{110,15}}, rotation=0)));
+            -5},{110,15}})));
 equation
 
   In1.Q + In2.Q + Out.Q = 0;
@@ -681,11 +613,6 @@ equation
   Out.Xss = (In1.Xss*In1.Q + In2.Xss*In2.Q)/(In1.Q + In2.Q);
 
   annotation (
-    Window(
-      x=0.45,
-      y=0.01,
-      width=0.35,
-      height=0.49),
     Documentation(info=
           "This component mixes two flows of wastewater (ASM3) of different concentration and different amount."));
 end mixer2;
@@ -697,13 +624,13 @@ model mixer3 "Mixer of 3 ASM3 characterised flows"
 
   extends WasteWater.Icons.mixer3;
   Interfaces.WWFlowAsm3in In1 annotation (Placement(transformation(extent={{
-            -110,29},{-90,49}}, rotation=0)));
+            -110,29},{-90,49}})));
   Interfaces.WWFlowAsm3in In2 annotation (Placement(transformation(extent={{
-            -111,-14},{-91,6}}, rotation=0)));
+            -111,-14},{-91,6}})));
   Interfaces.WWFlowAsm3in In3 annotation (Placement(transformation(extent={{
-            -109,-59},{-89,-39}}, rotation=0)));
+            -109,-59},{-89,-39}})));
   Interfaces.WWFlowAsm3out Out annotation (Placement(transformation(extent={{90,
-            -13},{110,7}}, rotation=0)));
+            -13},{110,7}})));
 equation
 
   In1.Q + In2.Q + In3.Q + Out.Q = 0;
@@ -728,11 +655,6 @@ equation
     In3.Q);
 
   annotation (
-    Window(
-      x=0.45,
-      y=0.01,
-      width=0.35,
-      height=0.49),
     Documentation(info=
           "This component mixes 3 flows of wastewater (ASM3) of different concentration and different amount."));
 end mixer3;
@@ -742,20 +664,15 @@ model sensor_COD "Ideal sensor to measure chemical oxygen demand (COD)"
 
   extends WasteWater.Icons.sensor_COD;
   Interfaces.WWFlowAsm3in In annotation (Placement(transformation(extent={{-10,
-            -110},{10,-90}}, rotation=0)));
+            -110},{10,-90}})));
   Modelica.Blocks.Interfaces.RealOutput COD annotation (Placement(
-        transformation(extent={{88,-10},{108,10}}, rotation=0)));
+        transformation(extent={{88,-10},{108,10}})));
 equation
 
   In.Q = 0.0;
   COD = In.Si + In.Ss + In.Xi + In.Xs + In.Xh + In.Xsto + In.Xa;
 
   annotation (
-    Window(
-      x=0.45,
-      y=0.01,
-      width=0.35,
-      height=0.49),
     Documentation(info="This component measures the chemical oxygen demand (COD) concentration [g/m3]
 of ASM3 wastewater and provides the result as output signal (to be
 further processed with blocks of the Modelica.Blocks library).
@@ -767,20 +684,15 @@ model sensor_NH "Ideal sensor to measure ammonium nitrogen"
 
   extends WasteWater.Icons.sensor_NH;
   Interfaces.WWFlowAsm3in In annotation (Placement(transformation(extent={{-10,
-            -110},{10,-90}}, rotation=0)));
+            -110},{10,-90}})));
   Modelica.Blocks.Interfaces.RealOutput Snh annotation (Placement(
-        transformation(extent={{88,-10},{108,10}}, rotation=0)));
+        transformation(extent={{88,-10},{108,10}})));
 equation
 
   In.Q = 0;
   Snh = In.Snh;
 
   annotation (
-    Window(
-      x=0.45,
-      y=0.01,
-      width=0.35,
-      height=0.49),
     Documentation(info="This component measures the ammonium nitrogen concentration [g/m3]
 of ASM3 wastewater and provides the result as output signal (to be
 further processed with blocks of the Modelica.Blocks library).
@@ -792,20 +704,15 @@ model sensor_NO "Ideal sensor to measure nitrate nitrogen"
 
   extends WasteWater.Icons.sensor_NO;
   Interfaces.WWFlowAsm3in In annotation (Placement(transformation(extent={{-10,
-            -110},{10,-90}}, rotation=0)));
+            -110},{10,-90}})));
   Modelica.Blocks.Interfaces.RealOutput Sno annotation (Placement(
-        transformation(extent={{88,-10},{108,10}}, rotation=0)));
+        transformation(extent={{88,-10},{108,10}})));
 equation
 
   In.Q = 0;
   Sno = In.Snox;
 
   annotation (
-    Window(
-      x=0.45,
-      y=0.01,
-      width=0.35,
-      height=0.49),
     Documentation(info="This component measures the nitrate nitrogen concentration [g/m3]
 of ASM3 wastewater and provides the result as output signal (to be
 further processed with blocks of the Modelica.Blocks library).
@@ -817,20 +724,15 @@ model sensor_O2 "Ideal sensor to measure dissolved oxygen concentration"
 
   extends WasteWater.Icons.sensor_O2;
   Interfaces.WWFlowAsm3in In annotation (Placement(transformation(extent={{-10,
-            -110},{10,-90}}, rotation=0)));
+            -110},{10,-90}})));
   Modelica.Blocks.Interfaces.RealOutput So annotation (Placement(transformation(
-          extent={{88,-10},{108,10}}, rotation=0)));
+          extent={{88,-10},{108,10}})));
 equation
 
   In.Q = 0;
   So = In.So;
 
   annotation (
-    Window(
-      x=0.11,
-      y=0.01,
-      width=0.35,
-      height=0.49),
     Documentation(info="This component measures the dissolved oxygen concentration [g/m3]
 of ASM3 wastewater and provides the result as output signal (to be
 further processed with blocks of the Modelica.Blocks library).
@@ -846,27 +748,21 @@ further processed with blocks of the Modelica.Blocks library).
           fillPattern=FillPattern.Solid),
         Line(
           points={{0,50},{0,38}},
-          color={0,0,0},
           thickness=0.5),
         Line(
           points={{-50,0},{38,0}},
-          color={0,0,0},
           thickness=0.5),
         Line(
           points={{50,0},{38,0}},
-          color={0,0,0},
           thickness=0.5),
         Line(
           points={{-36,34},{-28,26}},
-          color={0,0,0},
           thickness=0.5),
         Line(
           points={{34,36},{26,28}},
-          color={0,0,0},
           thickness=0.5),
         Line(
           points={{0,0},{26,28}},
-          color={0,0,0},
           thickness=0.5),
         Polygon(
           points={{30,32},{10,24},{24,12},{30,32}},
@@ -877,9 +773,8 @@ further processed with blocks of the Modelica.Blocks library).
                                               "O2"),
         Line(
           points={{0,-50},{0,-90}},
-          color={0,0,0},
           thickness=0.5),
-        Line(points={{50,0},{88,0}}, color={0,0,0}),
+        Line(points={{50,0},{88,0}}),
         Text(extent={{-80,100},{80,60}}, textString=
                                              "%name")}));
 end sensor_O2;
@@ -890,9 +785,9 @@ model sensor_Q
 
   extends WasteWater.Icons.sensor_Q;
   Interfaces.WWFlowAsm3in In annotation (Placement(transformation(extent={{-110,
-            -10},{-90,10}}, rotation=0)));
+            -10},{-90,10}})));
   Interfaces.WWFlowAsm3out Out annotation (Placement(transformation(extent={{92,
-            -10},{112,10}}, rotation=0)));
+            -10},{112,10}})));
   Modelica.Blocks.Interfaces.RealOutput Q
     annotation (Placement(transformation(
         origin={0,-100},
@@ -918,11 +813,6 @@ equation
   In.Xss = Out.Xss;
 
   annotation (
-    Window(
-      x=0.45,
-      y=0.01,
-      width=0.35,
-      height=0.49),
     Documentation(info="This component measures the flow of an ASM3 wastewater stream and provides
 the result as output signal (to be further processed with blocks of
 the Modelica.Blocks library).
@@ -935,9 +825,9 @@ model sensor_TKN "Ideal TKN and total nitrogen sensor"
   extends WasteWater.Icons.sensor_TKN;
   extends ASM3.Interfaces.stoichiometry;
   Interfaces.WWFlowAsm3in In annotation (Placement(transformation(extent={{-10,
-            -110},{10,-90}}, rotation=0)));
+            -110},{10,-90}})));
   Modelica.Blocks.Interfaces.RealOutput TKN[2]
-    annotation (Placement(transformation(extent={{88,-10},{108,10}}, rotation=0)));
+    annotation (Placement(transformation(extent={{88,-10},{108,10}})));
 equation
 
   In.Q = 0.0;
@@ -946,11 +836,6 @@ equation
   TKN[2] = TKN[1] + In.Snox;
 
   annotation (
-    Window(
-      x=0.52,
-      y=0.04,
-      width=0.35,
-      height=0.49),
     Documentation(info="This component measures the Total Kjeldal Nitrogen (TKN) and the
 total nitrogen (N_total) concentration [g/m3] of ASM3 wastewater
 and provides the result as output signal (to be further processed
@@ -968,20 +853,15 @@ model sensor_TSS
   extends WasteWater.Icons.sensor_TSS;
 
   Interfaces.WWFlowAsm3in In annotation (Placement(transformation(extent={{-10,
-            -110},{10,-90}}, rotation=0)));
+            -110},{10,-90}})));
   Modelica.Blocks.Interfaces.RealOutput TSS annotation (Placement(
-        transformation(extent={{88,-10},{108,10}}, rotation=0)));
+        transformation(extent={{88,-10},{108,10}})));
 equation
 
   In.Q = 0;
   TSS = In.Xss;
 
   annotation (
-    Window(
-      x=0.45,
-      y=0.01,
-      width=0.35,
-      height=0.49),
     Documentation(info="This component measures the total suspended solids concentration [g/m3]
 of ASM3 wastewater and provides the result as output signal (to be
 further processed with blocks of the Modelica.Blocks library).
@@ -989,13 +869,6 @@ further processed with blocks of the Modelica.Blocks library).
 end sensor_TSS;
 
 annotation (
-  Window(
-    x=0.45,
-    y=0.01,
-    width=0.44,
-    height=0.65,
-    library=1,
-    autolayout=1),
   Documentation(info="This library contains components to build models of biological municipal
 wastewater treatment plants based on the Activated Sludge Model No.3 (ASM3) by the
 International Association on Water Quality (IAWQ) [1].

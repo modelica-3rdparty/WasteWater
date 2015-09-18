@@ -5,11 +5,6 @@ package Icons "Icon definitions for the WasteWater library"
 
   partial block deni "Icon for a denitrification tank"
     annotation (
-      Window(
-        x=0.45,
-        y=0.01,
-        width=0.35,
-        height=0.49),
       Icon(coordinateSystem(
           preserveAspectRatio=false,
           extent={{-100,-100},{100,100}},
@@ -21,15 +16,12 @@ package Icons "Icon definitions for the WasteWater library"
             fillPattern=FillPattern.Solid),
           Line(
             points={{-80,-6},{-80,-80},{80,-80},{80,-6}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-80,6},{-80,20}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{80,6},{80,20}},
-            color={0,0,0},
             thickness=0.5),
           Rectangle(
             extent={{-90,6},{-80,-6}},
@@ -43,19 +35,15 @@ package Icons "Icon definitions for the WasteWater library"
             fillPattern=FillPattern.Solid),
           Line(
             points={{-90,-6},{-80,-6}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-90,6},{-80,6}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{80,6},{90,6}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{80,-6},{90,-6}},
-            color={0,0,0},
             thickness=0.5),
           Ellipse(
             extent={{-2,-34},{2,-38}},
@@ -65,17 +53,14 @@ package Icons "Icon definitions for the WasteWater library"
             fillPattern=FillPattern.Solid),
           Line(
             points={{0,-34},{0,40},{0,44}},
-            color={0,0,0},
             thickness=1),
           Text(extent={{-98,100},{100,60}}, textString=
                                                 "%name"),
           Line(
             points={{-2,-36},{-10,-36}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{10,-36},{2,-36}},
-            color={0,0,0},
             thickness=0.5),
           Ellipse(
             extent={{-62,-32},{-10,-40}},
@@ -240,7 +225,7 @@ package Icons "Icon definitions for the WasteWater library"
             lineColor={0,0,0},
             fillColor={192,192,192},
             fillPattern=FillPattern.Solid),
-          Line(points={{-90,40},{-55,40}}, color={0,0,0}),
+          Line(points={{-90,40},{-55,40}}),
           Rectangle(
             extent={{54,-6},{57,40}},
             lineColor={0,0,0},
@@ -264,15 +249,12 @@ package Icons "Icon definitions for the WasteWater library"
             fillPattern=FillPattern.Solid),
           Line(
             points={{-80,-6},{-80,-80},{80,-80},{80,-6}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-80,6},{-80,20}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{80,6},{80,20}},
-            color={0,0,0},
             thickness=0.5),
           Rectangle(
             extent={{-90,6},{-80,-6}},
@@ -286,19 +268,15 @@ package Icons "Icon definitions for the WasteWater library"
             fillPattern=FillPattern.Solid),
           Line(
             points={{-90,-6},{-80,-6}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-90,6},{-80,6}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{80,6},{90,6}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{80,-6},{90,-6}},
-            color={0,0,0},
             thickness=0.5),
           Ellipse(
             extent={{-2,-34},{2,-38}},
@@ -308,17 +286,14 @@ package Icons "Icon definitions for the WasteWater library"
             fillPattern=FillPattern.Solid),
           Line(
             points={{0,-34},{0,40},{0,44}},
-            color={0,0,0},
             thickness=1),
           Text(extent={{-100,100},{100,60}}, textString=
                                                  "%name"),
           Line(
             points={{-2,-36},{-10,-36}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{10,-36},{2,-36}},
-            color={0,0,0},
             thickness=0.5),
           Ellipse(
             extent={{-62,-32},{-10,-40}},
@@ -483,7 +458,7 @@ package Icons "Icon definitions for the WasteWater library"
             lineColor={0,0,0},
             fillColor={192,192,192},
             fillPattern=FillPattern.Solid),
-          Line(points={{-90,40},{-55,40}}, color={0,0,0}),
+          Line(points={{-90,40},{-55,40}}),
           Rectangle(
             extent={{54,-6},{57,40}},
             lineColor={0,0,0},
@@ -500,11 +475,6 @@ package Icons "Icon definitions for the WasteWater library"
   partial model nitri "Icon for a nitrification tank"
 
     annotation (
-      Window(
-        x=0.45,
-        y=0.01,
-        width=0.35,
-        height=0.49),
       Icon(
         coordinateSystem(
           preserveAspectRatio=false,
@@ -518,15 +488,12 @@ package Icons "Icon definitions for the WasteWater library"
             fillPattern=FillPattern.Solid),
           Line(
             points={{-80,-6},{-80,-80},{80,-80},{80,-6}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-80,6},{-80,20}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{80,6},{80,20}},
-            color={0,0,0},
             thickness=0.5),
           Rectangle(
             extent={{-90,6},{-80,-6}},
@@ -540,33 +507,26 @@ package Icons "Icon definitions for the WasteWater library"
             fillPattern=FillPattern.Solid),
           Line(
             points={{-90,-6},{-80,-6}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-90,6},{-80,6}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{80,6},{90,6}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{80,-6},{90,-6}},
-            color={0,0,0},
             thickness=0.5),
           Text(extent={{-100,100},{100,60}}, textString=
                                                  "%name"),
           Line(
             points={{-70,-74},{70,-74}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{0,-80},{0,-74}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{0,-80},{0,-94}},
-            color={0,0,0},
             thickness=0.5),
           Polygon(
             points={{-70,-70},{-68,-74},{-62,-74},{-60,-70},{-70,-70}},
@@ -1346,7 +1306,7 @@ package Icons "Icon definitions for the WasteWater library"
             lineThickness=0.5,
             fillColor={192,192,192},
             fillPattern=FillPattern.Solid),
-          Line(points={{-90,40},{-53,40}}, color={0,0,0})},
+          Line(points={{-90,40},{-53,40}})},
         Documentation(info="Nitrifikationsbecken")),
       Documentation(info="Icon for a nitrification tank "),
       Diagram(coordinateSystem(
@@ -1360,15 +1320,12 @@ package Icons "Icon definitions for the WasteWater library"
             fillPattern=FillPattern.Solid),
           Line(
             points={{-80,-6},{-80,-80},{80,-80},{80,-6}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-80,6},{-80,20}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{80,6},{80,20}},
-            color={0,0,0},
             thickness=0.5),
           Rectangle(
             extent={{-90,6},{-80,-6}},
@@ -1382,33 +1339,26 @@ package Icons "Icon definitions for the WasteWater library"
             fillPattern=FillPattern.Solid),
           Line(
             points={{-90,-6},{-80,-6}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-90,6},{-80,6}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{80,6},{90,6}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{80,-6},{90,-6}},
-            color={0,0,0},
             thickness=0.5),
           Text(extent={{-100,100},{100,60}}, textString=
                                                  "%name"),
           Line(
             points={{-70,-74},{70,-74}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{0,-80},{0,-74}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{0,-80},{0,-94}},
-            color={0,0,0},
             thickness=0.5),
           Polygon(
             points={{-70,-70},{-68,-74},{-62,-74},{-60,-70},{-70,-70}},
@@ -2187,17 +2137,12 @@ package Icons "Icon definitions for the WasteWater library"
             lineThickness=0.5,
             fillColor={192,192,192},
             fillPattern=FillPattern.Solid),
-          Line(points={{-90,40},{-53,40}}, color={0,0,0})}));
+          Line(points={{-90,40},{-53,40}})}));
   end nitri;
 
   partial model preclar1 "Icon for a dynamic preclarifier tank"
 
     annotation (
-      Window(
-        x=0.45,
-        y=0.01,
-        width=0.35,
-        height=0.49),
       Icon(coordinateSystem(
           preserveAspectRatio=false,
           extent={{-100,-100},{100,100}},
@@ -2214,19 +2159,15 @@ package Icons "Icon definitions for the WasteWater library"
             fillPattern=FillPattern.Solid),
           Line(
             points={{-90,-6},{-80,-6}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-90,6},{-80,6}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{80,6},{90,6}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{80,-6},{90,-6}},
-            color={0,0,0},
             thickness=0.5),
           Rectangle(
             extent={{-80,84},{80,-80}},
@@ -2240,10 +2181,9 @@ package Icons "Icon definitions for the WasteWater library"
             fillPattern=FillPattern.Solid),
           Line(
             points={{-80,-6},{-80,-80},{80,-80},{80,-6}},
-            color={0,0,0},
             thickness=0.5),
-          Line(points={{-44,-48},{50,-48}}, color={0,0,0}),
-          Line(points={{-38,12},{-38,-52}}, color={0,0,0}),
+          Line(points={{-44,-48},{50,-48}}),
+          Line(points={{-38,12},{-38,-52}}),
           Rectangle(
             extent={{-80,28},{80,8}},
             lineColor={255,191,127},
@@ -2251,16 +2191,13 @@ package Icons "Icon definitions for the WasteWater library"
             fillPattern=FillPattern.Solid),
           Line(
             points={{-80,28},{-80,6}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{80,28},{80,6}},
-            color={0,0,0},
             thickness=0.5),
           Line(points={{-38,-48},{-36,-44},{-34,-40},{-32,-36},{-30,-32},{-26,
                 -26},{-24,-24},{-22,-22},{-18,-18},{-14,-14},{-12,-12},{-10,-10},
-                {-6,-8},{-2,-6},{2,-4},{8,-2},{14,0},{20,0},{24,0},{28,0}},
-              color={0,0,0}),
+                {-6,-8},{-2,-6},{2,-4},{8,-2},{14,0},{20,0},{24,0},{28,0}}),
           Line(points={{38,90},{38,14}}, color={160,160,164}),
           Text(extent={{-100,80},{38,40}}, textString=
                                                "%name")}),
@@ -2281,19 +2218,15 @@ package Icons "Icon definitions for the WasteWater library"
             fillPattern=FillPattern.Solid),
           Line(
             points={{-90,-6},{-80,-6}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-90,6},{-80,6}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{80,6},{90,6}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{80,-6},{90,-6}},
-            color={0,0,0},
             thickness=0.5),
           Rectangle(
             extent={{-80,84},{80,-80}},
@@ -2302,10 +2235,9 @@ package Icons "Icon definitions for the WasteWater library"
             fillColor={255,191,127}),
           Line(
             points={{-80,-6},{-80,-80},{80,-80},{80,-6}},
-            color={0,0,0},
             thickness=0.5),
-          Line(points={{-44,-48},{50,-48}}, color={0,0,0}),
-          Line(points={{-38,12},{-38,-52}}, color={0,0,0}),
+          Line(points={{-44,-48},{50,-48}}),
+          Line(points={{-38,12},{-38,-52}}),
           Rectangle(
             extent={{-80,28},{80,8}},
             lineColor={255,191,127},
@@ -2313,16 +2245,13 @@ package Icons "Icon definitions for the WasteWater library"
             fillPattern=FillPattern.Solid),
           Line(
             points={{-80,28},{-80,6}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{80,28},{80,6}},
-            color={0,0,0},
             thickness=0.5),
           Line(points={{-38,-48},{-36,-44},{-34,-40},{-32,-36},{-30,-32},{-26,
                 -26},{-24,-24},{-22,-22},{-18,-18},{-14,-14},{-12,-12},{-10,-10},
-                {-6,-8},{-2,-6},{2,-4},{8,-2},{14,0},{20,0},{24,0},{28,0}},
-              color={0,0,0}),
+                {-6,-8},{-2,-6},{2,-4},{8,-2},{14,0},{20,0},{24,0},{28,0}}),
           Rectangle(
             extent={{-90,86},{84,28}},
             lineColor={255,255,255},
@@ -2335,11 +2264,6 @@ package Icons "Icon definitions for the WasteWater library"
 
   partial model preclar2 "Icon for a static preclarifier tank"
     annotation (
-      Window(
-        x=0.45,
-        y=0.01,
-        width=0.35,
-        height=0.49),
       Icon(coordinateSystem(
           preserveAspectRatio=false,
           extent={{-100,-100},{100,100}},
@@ -2356,19 +2280,15 @@ package Icons "Icon definitions for the WasteWater library"
             fillPattern=FillPattern.Solid),
           Line(
             points={{-90,-6},{-80,-6}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-90,6},{-80,6}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{80,6},{90,6}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{80,-6},{90,-6}},
-            color={0,0,0},
             thickness=0.5),
           Rectangle(
             extent={{-80,84},{80,-80}},
@@ -2382,10 +2302,9 @@ package Icons "Icon definitions for the WasteWater library"
             fillPattern=FillPattern.Solid),
           Line(
             points={{-80,-6},{-80,-80},{80,-80},{80,-6}},
-            color={0,0,0},
             thickness=0.5),
-          Line(points={{-44,-48},{50,-48}}, color={0,0,0}),
-          Line(points={{-38,12},{-38,-52}}, color={0,0,0}),
+          Line(points={{-44,-48},{50,-48}}),
+          Line(points={{-38,12},{-38,-52}}),
           Rectangle(
             extent={{-80,28},{80,8}},
             lineColor={255,191,127},
@@ -2393,13 +2312,11 @@ package Icons "Icon definitions for the WasteWater library"
             fillPattern=FillPattern.Solid),
           Line(
             points={{-80,28},{-80,6}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{80,28},{80,6}},
-            color={0,0,0},
             thickness=0.5),
-          Line(points={{-38,-14},{40,-14}}, color={0,0,0}),
+          Line(points={{-38,-14},{40,-14}}),
           Line(points={{38,90},{38,14}}, color={160,160,164}),
           Text(extent={{-100,80},{40,40}}, textString=
                                                "%name")}),
@@ -2420,19 +2337,15 @@ package Icons "Icon definitions for the WasteWater library"
             fillPattern=FillPattern.Solid),
           Line(
             points={{-90,-6},{-80,-6}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-90,6},{-80,6}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{80,6},{90,6}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{80,-6},{90,-6}},
-            color={0,0,0},
             thickness=0.5),
           Rectangle(
             extent={{-80,84},{80,-80}},
@@ -2446,10 +2359,9 @@ package Icons "Icon definitions for the WasteWater library"
             fillPattern=FillPattern.Solid),
           Line(
             points={{-80,-6},{-80,-80},{80,-80},{80,-6}},
-            color={0,0,0},
             thickness=0.5),
-          Line(points={{-44,-48},{50,-48}}, color={0,0,0}),
-          Line(points={{-38,12},{-38,-52}}, color={0,0,0}),
+          Line(points={{-44,-48},{50,-48}}),
+          Line(points={{-38,12},{-38,-52}}),
           Rectangle(
             extent={{-80,28},{80,8}},
             lineColor={255,191,127},
@@ -2457,13 +2369,11 @@ package Icons "Icon definitions for the WasteWater library"
             fillPattern=FillPattern.Solid),
           Line(
             points={{-80,28},{-80,6}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{80,28},{80,6}},
-            color={0,0,0},
             thickness=0.5),
-          Line(points={{-38,-14},{40,-14}}, color={0,0,0}),
+          Line(points={{-38,-14},{40,-14}}),
           Line(points={{38,90},{38,14}}, color={160,160,164}),
           Text(extent={{-98,80},{38,40}}, textString=
                                               "%name")}));
@@ -2483,15 +2393,12 @@ package Icons "Icon definitions for the WasteWater library"
             fillPattern=FillPattern.Solid),
           Line(
             points={{-60,-6},{-60,-50},{60,-50},{60,-6}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-60,6},{-60,19}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{59,5},{59,19}},
-            color={0,0,0},
             thickness=0.5),
           Rectangle(
             extent={{-90,6},{-59,-6}},
@@ -2505,19 +2412,15 @@ package Icons "Icon definitions for the WasteWater library"
             fillPattern=FillPattern.Solid),
           Line(
             points={{-90,-6},{-60,-6}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-90,6},{-60,6}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{59,6},{90,6}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{60,-6},{90,-6}},
-            color={0,0,0},
             thickness=0.5),
           Text(extent={{-100,-59},{100,-100}}, textString=
                                                    "%name"),
@@ -2572,8 +2475,8 @@ package Icons "Icon definitions for the WasteWater library"
             lineColor={192,192,192},
             fillColor={192,192,192},
             fillPattern=FillPattern.Solid),
-          Line(points={{-30,85},{-6,57}}, color={0,0,0}),
-          Line(points={{30,85},{6,57}}, color={0,0,0}),
+          Line(points={{-30,85},{-6,57}}),
+          Line(points={{30,85},{6,57}}),
           Rectangle(
             extent={{-46,-6},{-43,40}},
             lineColor={0,0,0},
@@ -2585,7 +2488,7 @@ package Icons "Icon definitions for the WasteWater library"
             lineThickness=0.5,
             fillColor={192,192,192},
             fillPattern=FillPattern.Solid),
-          Line(points={{-90,40},{-43,40}}, color={0,0,0}),
+          Line(points={{-90,40},{-43,40}}),
           Rectangle(
             extent={{44,-6},{47,44}},
             lineColor={0,0,0},
@@ -2597,12 +2500,7 @@ package Icons "Icon definitions for the WasteWater library"
             lineThickness=0.5,
             fillColor={192,192,192},
             fillPattern=FillPattern.Solid),
-          Line(points={{44,44},{50,44}}, color={0,0,0})}),
-      Window(
-        x=0.45,
-        y=0.01,
-        width=0.35,
-        height=0.49),
+          Line(points={{44,44},{50,44}})}),
       Diagram(coordinateSystem(
           preserveAspectRatio=false,
           extent={{-100,-100},{100,100}},
@@ -2614,15 +2512,12 @@ package Icons "Icon definitions for the WasteWater library"
             fillPattern=FillPattern.Solid),
           Line(
             points={{-60,-6},{-60,-50},{60,-50},{60,-6}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-60,6},{-60,19}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{59,5},{59,19}},
-            color={0,0,0},
             thickness=0.5),
           Rectangle(
             extent={{-90,6},{-59,-6}},
@@ -2636,19 +2531,15 @@ package Icons "Icon definitions for the WasteWater library"
             fillPattern=FillPattern.Solid),
           Line(
             points={{-90,-6},{-60,-6}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-90,6},{-60,6}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{59,6},{90,6}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{60,-6},{90,-6}},
-            color={0,0,0},
             thickness=0.5),
           Text(extent={{-101,-59},{99,-98}}, textString=
                                                  "%name"),
@@ -2703,8 +2594,8 @@ package Icons "Icon definitions for the WasteWater library"
             lineColor={192,192,192},
             fillColor={192,192,192},
             fillPattern=FillPattern.Solid),
-          Line(points={{-30,85},{-6,57}}, color={0,0,0}),
-          Line(points={{30,85},{6,57}}, color={0,0,0}),
+          Line(points={{-30,85},{-6,57}}),
+          Line(points={{30,85},{6,57}}),
           Rectangle(
             extent={{-46,-6},{-43,40}},
             lineColor={0,0,0},
@@ -2716,7 +2607,7 @@ package Icons "Icon definitions for the WasteWater library"
             lineThickness=0.5,
             fillColor={192,192,192},
             fillPattern=FillPattern.Solid),
-          Line(points={{-90,40},{-43,40}}, color={0,0,0}),
+          Line(points={{-90,40},{-43,40}}),
           Rectangle(
             extent={{44,-6},{47,44}},
             lineColor={0,0,0},
@@ -2728,17 +2619,12 @@ package Icons "Icon definitions for the WasteWater library"
             lineThickness=0.5,
             fillColor={192,192,192},
             fillPattern=FillPattern.Solid),
-          Line(points={{44,44},{50,44}}, color={0,0,0})}),
+          Line(points={{44,44},{50,44}})}),
       Documentation(info="Icon for a precipitation tank"));
   end precipitation;
 
   partial model SecClar "Icon for a secondary clarifier"
     annotation (
-      Window(
-        x=0.45,
-        y=0.01,
-        width=0.35,
-        height=0.49),
       Icon(coordinateSystem(
           preserveAspectRatio=false,
           extent={{-100,-100},{100,100}},
@@ -2782,7 +2668,6 @@ package Icons "Icon definitions for the WasteWater library"
             fillPattern=FillPattern.Solid),
           Line(
             points={{4,-92},{4,-84},{20,-70},{80,-48}},
-            color={0,0,0},
             thickness=0.5),
           Rectangle(
             extent={{-80,-40},{80,-48}},
@@ -2796,23 +2681,18 @@ package Icons "Icon definitions for the WasteWater library"
             fillPattern=FillPattern.Solid),
           Line(
             points={{80,54},{92,54}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-4,-92},{-4,-84},{-20,-70},{-80,-48},{-80,10}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-80,62},{-80,16}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-80,10},{-90,10}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-80,16},{-90,16}},
-            color={0,0,0},
             thickness=0.5),
           Rectangle(
             extent={{0,14},{2,12}},
@@ -2841,19 +2721,15 @@ package Icons "Icon definitions for the WasteWater library"
             fillPattern=FillPattern.Solid),
           Line(
             points={{-20,-92},{-4,-92}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-20,-98},{20,-98}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{20,-92},{4,-92}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{80,-48},{80,54}},
-            color={0,0,0},
             thickness=0.5),
           Text(extent={{-100,-60},{-40,-80}}, textString=
                                                   "return"),
@@ -2865,11 +2741,6 @@ package Icons "Icon definitions for the WasteWater library"
   partial model SecClarKrebs
     "Icon for a secondary clarifier based on Krebs model"
     annotation (
-      Window(
-        x=0.45,
-        y=0.01,
-        width=0.35,
-        height=0.49),
       Icon(coordinateSystem(
           preserveAspectRatio=false,
           extent={{-100,-100},{100,100}},
@@ -2912,7 +2783,6 @@ package Icons "Icon definitions for the WasteWater library"
             fillPattern=FillPattern.Solid),
           Line(
             points={{4,-92},{4,-84},{20,-70},{80,-48}},
-            color={0,0,0},
             thickness=0.5),
           Rectangle(
             extent={{-80,-40},{80,-48}},
@@ -2927,23 +2797,18 @@ package Icons "Icon definitions for the WasteWater library"
             fillPattern=FillPattern.Solid),
           Line(
             points={{80,54},{92,54}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-4,-92},{-4,-84},{-20,-70},{-80,-48},{-80,10}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-80,62},{-80,16}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-80,10},{-90,10}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-80,16},{-90,16}},
-            color={0,0,0},
             thickness=0.5),
           Rectangle(
             extent={{-20,-92},{20,-98}},
@@ -2953,19 +2818,15 @@ package Icons "Icon definitions for the WasteWater library"
             fillPattern=FillPattern.Solid),
           Line(
             points={{-20,-92},{-4,-92}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-20,-98},{20,-98}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{20,-92},{4,-92}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{80,-48},{80,54}},
-            color={0,0,0},
             thickness=0.5),
           Text(extent={{-100,-60},{-40,-80}}, textString=
                                                   "return"),
@@ -2997,11 +2858,6 @@ package Icons "Icon definitions for the WasteWater library"
   partial model SecClarSimple
     "Icon for a secondary clarifier based on simple model"
     annotation (
-      Window(
-        x=0.45,
-        y=0.01,
-        width=0.35,
-        height=0.49),
       Icon(coordinateSystem(
           preserveAspectRatio=false,
           extent={{-100,-100},{100,100}},
@@ -3039,7 +2895,6 @@ package Icons "Icon definitions for the WasteWater library"
             fillPattern=FillPattern.Solid),
           Line(
             points={{4,-92},{4,-84},{20,-70},{80,-48}},
-            color={0,0,0},
             thickness=0.5),
           Rectangle(
             extent={{-80,-40},{80,-48}},
@@ -3054,23 +2909,18 @@ package Icons "Icon definitions for the WasteWater library"
             fillPattern=FillPattern.Solid),
           Line(
             points={{80,54},{92,54}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-4,-92},{-4,-84},{-20,-70},{-80,-48},{-80,10}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-80,62},{-80,16}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-80,10},{-90,10}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-80,16},{-90,16}},
-            color={0,0,0},
             thickness=0.5),
           Rectangle(
             extent={{-20,-92},{20,-98}},
@@ -3080,19 +2930,15 @@ package Icons "Icon definitions for the WasteWater library"
             fillPattern=FillPattern.Solid),
           Line(
             points={{-20,-92},{-4,-92}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-20,-98},{20,-98}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{20,-92},{4,-92}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{80,-48},{80,54}},
-            color={0,0,0},
             thickness=0.5),
           Text(extent={{-100,-60},{-40,-80}}, textString=
                                                   "return"),
@@ -3731,12 +3577,7 @@ package Icons "Icon definitions for the WasteWater library"
             lineColor={0,0,255},
             pattern=LinePattern.None,
             fillColor={159,223,223},
-            fillPattern=FillPattern.Solid)}),
-      Window(
-        x=0.45,
-        y=0.01,
-        width=0.35,
-        height=0.49));
+            fillPattern=FillPattern.Solid)}));
   end blower;
 
   partial model pump "Icon for a wastewater pump"
@@ -4025,12 +3866,7 @@ package Icons "Icon definitions for the WasteWater library"
             lineColor={0,0,255},
             pattern=LinePattern.None,
             fillColor={191,95,0},
-            fillPattern=FillPattern.Solid)}),
-      Window(
-        x=0.45,
-        y=0.01,
-        width=0.35,
-        height=0.49));
+            fillPattern=FillPattern.Solid)}));
   end pump;
 
   partial model FlowSource "Icon for a flow source"
@@ -4071,19 +3907,12 @@ package Icons "Icon definitions for the WasteWater library"
             fillPattern=FillPattern.Solid),
           Line(
             points={{-4,-54},{-4,-74},{88,-74}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{4,-54},{4,-68},{88,-68}},
-            color={0,0,0},
             thickness=0.5),
           Text(extent={{-98,98},{98,60}}, textString=
                                               "%name")}),
-      Window(
-        x=0.45,
-        y=0.01,
-        width=0.35,
-        height=0.49),
       Documentation(info="Icon for a flow source"),
       Diagram(coordinateSystem(
           preserveAspectRatio=false,
@@ -4121,11 +3950,9 @@ package Icons "Icon definitions for the WasteWater library"
             fillPattern=FillPattern.Solid),
           Line(
             points={{-4,-54},{-4,-74},{88,-74}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{4,-54},{4,-68},{88,-68}},
-            color={0,0,0},
             thickness=0.5),
           Text(extent={{-98,98},{98,60}}, textString=
                                               "%name")}));
@@ -4133,11 +3960,6 @@ package Icons "Icon definitions for the WasteWater library"
 
   partial model WWSource "Icon for a wastewater source"
     annotation (
-      Window(
-        x=0.45,
-        y=0.01,
-        width=0.35,
-        height=0.49),
       Icon(coordinateSystem(
           preserveAspectRatio=false,
           extent={{-100,-100},{100,100}},
@@ -4171,11 +3993,9 @@ package Icons "Icon definitions for the WasteWater library"
             fillPattern=FillPattern.Solid),
           Line(
             points={{-4,-54},{-4,-74},{88,-74}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{4,-54},{4,-68},{88,-68}},
-            color={0,0,0},
             thickness=0.5),
           Text(extent={{-98,98},{98,60}}, textString=
                                               "%name")}),
@@ -4213,11 +4033,9 @@ package Icons "Icon definitions for the WasteWater library"
             fillPattern=FillPattern.Solid),
           Line(
             points={{-4,-54},{-4,-74},{88,-74}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{4,-54},{4,-68},{88,-68}},
-            color={0,0,0},
             thickness=0.5),
           Text(extent={{-98,98},{98,60}}, textString=
                                               "%name")}));
@@ -4225,11 +4043,6 @@ package Icons "Icon definitions for the WasteWater library"
 
   partial model EffluentSink "Icon for a water sink e.g. receiving water"
     annotation (
-      Window(
-        x=0.45,
-        y=0.01,
-        width=0.35,
-        height=0.49),
       Icon(coordinateSystem(
           preserveAspectRatio=false,
           extent={{-100,-100},{100,100}},
@@ -4285,7 +4098,6 @@ package Icons "Icon definitions for the WasteWater library"
             fillPattern=FillPattern.Solid),
           Line(
             points={{-40,50},{-40,38}},
-            color={0,0,0},
             thickness=1),
           Text(extent={{-100,100},{100,60}}, textString=
                                                  "%name")}),
@@ -4345,7 +4157,6 @@ package Icons "Icon definitions for the WasteWater library"
             fillPattern=FillPattern.Solid),
           Line(
             points={{-40,50},{-40,38}},
-            color={0,0,0},
             thickness=1),
           Text(extent={{-100,100},{98,60}}, textString=
                                                 "%name")}));
@@ -4353,11 +4164,6 @@ package Icons "Icon definitions for the WasteWater library"
 
   partial model SludgeSink "Icon for a wastewater sink"
     annotation (
-      Window(
-        x=0.45,
-        y=0.01,
-        width=0.35,
-        height=0.49),
       Icon(coordinateSystem(
           preserveAspectRatio=false,
           extent={{-100,-100},{100,100}},
@@ -4379,7 +4185,6 @@ package Icons "Icon definitions for the WasteWater library"
             fillPattern=FillPattern.Solid),
           Line(
             points={{-60,18},{-60,6}},
-            color={0,0,0},
             thickness=1),
           Text(extent={{-100,100},{99,60}}, textString=
                                                 "%name"),
@@ -4402,7 +4207,6 @@ package Icons "Icon definitions for the WasteWater library"
             fillPattern=FillPattern.Solid),
           Line(
             points={{-36,-30},{-36,-80},{80,-80},{80,6}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-36,-14},{-32,-16},{-28,-18},{-26,-22},{-24,-26},{-22,-30},
@@ -4419,7 +4223,7 @@ package Icons "Icon definitions for the WasteWater library"
             lineColor={0,0,0},
             fillColor={160,160,164},
             fillPattern=FillPattern.Solid),
-          Line(points={{62,-36},{80,-36}}, color={0,0,0}),
+          Line(points={{62,-36},{80,-36}}),
           Rectangle(
             extent={{-100,-80},{100,-100}},
             lineColor={160,160,164},
@@ -4447,7 +4251,6 @@ package Icons "Icon definitions for the WasteWater library"
             fillPattern=FillPattern.Solid),
           Line(
             points={{-60,18},{-60,6}},
-            color={0,0,0},
             thickness=1),
           Text(extent={{-99,100},{100,59}}, textString=
                                                 "%name"),
@@ -4470,7 +4273,6 @@ package Icons "Icon definitions for the WasteWater library"
             fillPattern=FillPattern.Solid),
           Line(
             points={{-36,-30},{-36,-80},{80,-80},{80,6}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-36,-14},{-32,-16},{-28,-18},{-26,-22},{-24,-26},{-22,-30},
@@ -4487,7 +4289,7 @@ package Icons "Icon definitions for the WasteWater library"
             lineColor={0,0,0},
             fillColor={160,160,164},
             fillPattern=FillPattern.Solid),
-          Line(points={{62,-36},{80,-36}}, color={0,0,0}),
+          Line(points={{62,-36},{80,-36}}),
           Rectangle(
             extent={{-100,-80},{100,-100}},
             lineColor={160,160,164},
@@ -4498,11 +4300,6 @@ package Icons "Icon definitions for the WasteWater library"
   partial model ControlledDivider2 "Icon for a controlled divider into 2 flows"
 
     annotation (
-      Window(
-        x=0.45,
-        y=0.01,
-        width=0.35,
-        height=0.49),
       Icon(
         coordinateSystem(
           preserveAspectRatio=false,
@@ -4631,11 +4428,6 @@ package Icons "Icon definitions for the WasteWater library"
                                                "%name"),
           Documentation},
         Documentation(info="Icon for a controlled divider into 2 flows")),
-      Window(
-        x=0.4,
-        y=0.31,
-        width=0.6,
-        height=0.6),
       Diagram(coordinateSystem(
           preserveAspectRatio=false,
           extent={{-100,-100},{100,100}},
@@ -4865,11 +4657,6 @@ package Icons "Icon definitions for the WasteWater library"
             pattern=LinePattern.None,
             fillColor={191,95,0},
             fillPattern=FillPattern.Solid)}),
-      Window(
-        x=0.45,
-        y=0.01,
-        width=0.35,
-        height=0.49),
       Diagram(coordinateSystem(
           preserveAspectRatio=false,
           extent={{-100,-100},{100,100}},
@@ -5073,11 +4860,6 @@ package Icons "Icon definitions for the WasteWater library"
             pattern=LinePattern.None,
             fillColor={191,95,0},
             fillPattern=FillPattern.Solid)}),
-      Window(
-        x=0.46,
-        y=0.09,
-        width=0.35,
-        height=0.49),
       Diagram(coordinateSystem(
           preserveAspectRatio=false,
           extent={{-100,-100},{100,100}},
@@ -5322,11 +5104,6 @@ package Icons "Icon definitions for the WasteWater library"
             pattern=LinePattern.None,
             fillColor={191,95,0},
             fillPattern=FillPattern.Solid)}),
-      Window(
-        x=0.45,
-        y=0.01,
-        width=0.35,
-        height=0.49),
       Diagram(coordinateSystem(
           preserveAspectRatio=false,
           extent={{-100,-100},{100,100}},
@@ -5471,11 +5248,6 @@ package Icons "Icon definitions for the WasteWater library"
 
   partial model sensor_COD "Icon for a chemical oxygen demand sensor"
     annotation (
-      Window(
-        x=0.45,
-        y=0.01,
-        width=0.35,
-        height=0.49),
       Icon(coordinateSystem(
           preserveAspectRatio=false,
           extent={{-100,-100},{100,100}},
@@ -5490,27 +5262,21 @@ package Icons "Icon definitions for the WasteWater library"
                                                  "%name"),
           Line(
             points={{0,50},{0,38}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-50,0},{38,0}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{50,0},{38,0}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-36,34},{-28,26}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{34,36},{26,28}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{0,0},{26,28}},
-            color={0,0,0},
             thickness=0.5),
           Polygon(
             points={{30,32},{10,24},{24,12},{30,32}},
@@ -5521,9 +5287,8 @@ package Icons "Icon definitions for the WasteWater library"
                                                 "COD"),
           Line(
             points={{0,-50},{0,-90}},
-            color={0,0,0},
             thickness=0.5),
-          Line(points={{50,0},{88,0}}, color={0,0,0})}),
+          Line(points={{50,0},{88,0}})}),
       Documentation(info="Icon for a chemical oxygen demand sensor "),
       Diagram(coordinateSystem(
           preserveAspectRatio=false,
@@ -5539,27 +5304,21 @@ package Icons "Icon definitions for the WasteWater library"
                                                  "%name"),
           Line(
             points={{0,50},{0,38}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-50,0},{38,0}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{50,0},{38,0}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-36,34},{-28,26}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{34,36},{26,28}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{0,0},{26,28}},
-            color={0,0,0},
             thickness=0.5),
           Polygon(
             points={{30,32},{10,24},{24,12},{30,32}},
@@ -5570,18 +5329,12 @@ package Icons "Icon definitions for the WasteWater library"
                                                 "COD"),
           Line(
             points={{0,-50},{0,-90}},
-            color={0,0,0},
             thickness=0.5),
-          Line(points={{50,0},{88,0}}, color={0,0,0})}));
+          Line(points={{50,0},{88,0}})}));
   end sensor_COD;
 
   partial model sensor_NH "Icon for an ammonium nitrogen sensor"
     annotation (
-      Window(
-        x=0.45,
-        y=0.01,
-        width=0.35,
-        height=0.49),
       Icon(coordinateSystem(
           preserveAspectRatio=false,
           extent={{-100,-100},{100,100}},
@@ -5596,27 +5349,21 @@ package Icons "Icon definitions for the WasteWater library"
                                               "%name"),
           Line(
             points={{0,50},{0,38}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-50,0},{38,0}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{50,0},{38,0}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-36,34},{-28,26}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{34,36},{26,28}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{0,0},{26,28}},
-            color={0,0,0},
             thickness=0.5),
           Polygon(
             points={{30,32},{10,24},{24,12},{30,32}},
@@ -5627,9 +5374,8 @@ package Icons "Icon definitions for the WasteWater library"
                                                 "NH"),
           Line(
             points={{0,-50},{0,-90}},
-            color={0,0,0},
             thickness=0.5),
-          Line(points={{50,0},{88,0}}, color={0,0,0})}),
+          Line(points={{50,0},{88,0}})}),
       Documentation(info="Icon for an ammonium nitrogen sensor "),
       Diagram(coordinateSystem(
           preserveAspectRatio=false,
@@ -5645,27 +5391,21 @@ package Icons "Icon definitions for the WasteWater library"
                                                  "%name"),
           Line(
             points={{0,50},{0,38}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-50,0},{38,0}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{50,0},{38,0}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-36,34},{-28,26}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{34,36},{26,28}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{0,0},{26,28}},
-            color={0,0,0},
             thickness=0.5),
           Polygon(
             points={{30,32},{10,24},{24,12},{30,32}},
@@ -5676,18 +5416,12 @@ package Icons "Icon definitions for the WasteWater library"
                                                 "NH"),
           Line(
             points={{0,-50},{0,-90}},
-            color={0,0,0},
             thickness=0.5),
-          Line(points={{50,0},{88,0}}, color={0,0,0})}));
+          Line(points={{50,0},{88,0}})}));
   end sensor_NH;
 
   partial model sensor_NO "Icon for a nitrate nitrogen sensor"
     annotation (
-      Window(
-        x=0.45,
-        y=0.01,
-        width=0.35,
-        height=0.49),
       Icon(coordinateSystem(
           preserveAspectRatio=false,
           extent={{-100,-100},{100,100}},
@@ -5702,27 +5436,21 @@ package Icons "Icon definitions for the WasteWater library"
                                                  "%name"),
           Line(
             points={{0,50},{0,38}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-50,0},{38,0}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{50,0},{38,0}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-36,34},{-28,26}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{34,36},{26,28}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{0,0},{26,28}},
-            color={0,0,0},
             thickness=0.5),
           Polygon(
             points={{30,32},{10,24},{24,12},{30,32}},
@@ -5733,9 +5461,8 @@ package Icons "Icon definitions for the WasteWater library"
                                                 "NO"),
           Line(
             points={{0,-50},{0,-90}},
-            color={0,0,0},
             thickness=0.5),
-          Line(points={{50,0},{88,0}}, color={0,0,0})}),
+          Line(points={{50,0},{88,0}})}),
       Documentation(info="Icon for a nitrate nitrogen sensor "),
       Diagram(coordinateSystem(
           preserveAspectRatio=false,
@@ -5751,27 +5478,21 @@ package Icons "Icon definitions for the WasteWater library"
                                                  "%name"),
           Line(
             points={{0,50},{0,38}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-50,0},{38,0}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{50,0},{38,0}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-36,34},{-28,26}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{34,36},{26,28}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{0,0},{26,28}},
-            color={0,0,0},
             thickness=0.5),
           Polygon(
             points={{30,32},{10,24},{24,12},{30,32}},
@@ -5782,18 +5503,12 @@ package Icons "Icon definitions for the WasteWater library"
                                                 "NO"),
           Line(
             points={{0,-50},{0,-90}},
-            color={0,0,0},
             thickness=0.5),
-          Line(points={{50,0},{88,0}}, color={0,0,0})}));
+          Line(points={{50,0},{88,0}})}));
   end sensor_NO;
 
   partial model sensor_O2 "Icon for an oxygen sensor"
     annotation (
-      Window(
-        x=0.45,
-        y=0.01,
-        width=0.35,
-        height=0.49),
       Icon(coordinateSystem(
           preserveAspectRatio=false,
           extent={{-100,-100},{100,100}},
@@ -5808,27 +5523,21 @@ package Icons "Icon definitions for the WasteWater library"
                                                "%name"),
           Line(
             points={{0,50},{0,38}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-50,0},{38,0}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{50,0},{38,0}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-36,34},{-28,26}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{34,36},{26,28}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{0,0},{26,28}},
-            color={0,0,0},
             thickness=0.5),
           Polygon(
             points={{30,32},{10,24},{24,12},{30,32}},
@@ -5839,9 +5548,8 @@ package Icons "Icon definitions for the WasteWater library"
                                                 "O2"),
           Line(
             points={{0,-50},{0,-90}},
-            color={0,0,0},
             thickness=0.5),
-          Line(points={{50,0},{88,0}}, color={0,0,0})}),
+          Line(points={{50,0},{88,0}})}),
       Documentation(info="Icon for an oxygen sensor "),
       Diagram(coordinateSystem(
           preserveAspectRatio=false,
@@ -5857,27 +5565,21 @@ package Icons "Icon definitions for the WasteWater library"
                                                 "%name"),
           Line(
             points={{0,50},{0,38}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-50,0},{38,0}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{50,0},{38,0}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-36,34},{-28,26}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{34,36},{26,28}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{0,0},{26,28}},
-            color={0,0,0},
             thickness=0.5),
           Polygon(
             points={{30,32},{10,24},{24,12},{30,32}},
@@ -5888,18 +5590,12 @@ package Icons "Icon definitions for the WasteWater library"
                                                 "O2"),
           Line(
             points={{0,-50},{0,-90}},
-            color={0,0,0},
             thickness=0.5),
-          Line(points={{50,0},{88,0}}, color={0,0,0})}));
+          Line(points={{50,0},{88,0}})}));
   end sensor_O2;
 
   partial model sensor_PO "Icon for a phosphate sensor"
     annotation (
-      Window(
-        x=0.45,
-        y=0.01,
-        width=0.35,
-        height=0.49),
       Icon(coordinateSystem(
           preserveAspectRatio=false,
           extent={{-100,-100},{100,100}},
@@ -5914,27 +5610,21 @@ package Icons "Icon definitions for the WasteWater library"
                                               "%name"),
           Line(
             points={{0,50},{0,38}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-50,0},{38,0}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{50,0},{38,0}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-36,34},{-28,26}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{34,36},{26,28}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{0,0},{26,28}},
-            color={0,0,0},
             thickness=0.5),
           Polygon(
             points={{30,32},{10,24},{24,12},{30,32}},
@@ -5945,9 +5635,8 @@ package Icons "Icon definitions for the WasteWater library"
                                                 "PO"),
           Line(
             points={{0,-50},{0,-90}},
-            color={0,0,0},
             thickness=0.5),
-          Line(points={{50,0},{88,0}}, color={0,0,0})}),
+          Line(points={{50,0},{88,0}})}),
       Documentation(info="Icon for a phosphate sensor "),
       Diagram(coordinateSystem(
           preserveAspectRatio=false,
@@ -5963,27 +5652,21 @@ package Icons "Icon definitions for the WasteWater library"
                                                "%name"),
           Line(
             points={{0,50},{0,38}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-50,0},{38,0}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{50,0},{38,0}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-36,34},{-28,26}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{34,36},{26,28}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{0,0},{26,28}},
-            color={0,0,0},
             thickness=0.5),
           Polygon(
             points={{30,32},{10,24},{24,12},{30,32}},
@@ -5994,18 +5677,12 @@ package Icons "Icon definitions for the WasteWater library"
                                                 "PO"),
           Line(
             points={{0,-50},{0,-90}},
-            color={0,0,0},
             thickness=0.5),
-          Line(points={{50,0},{88,0}}, color={0,0,0})}));
+          Line(points={{50,0},{88,0}})}));
   end sensor_PO;
 
   partial model sensor_Q "Icon for a flow sensor"
     annotation (
-      Window(
-        x=0.45,
-        y=0.01,
-        width=0.35,
-        height=0.49),
       Icon(coordinateSystem(
           preserveAspectRatio=false,
           extent={{-100,-100},{100,100}},
@@ -6020,27 +5697,21 @@ package Icons "Icon definitions for the WasteWater library"
                                               "%name"),
           Line(
             points={{0,50},{0,38}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-50,0},{38,0}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{50,0},{38,0}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-36,34},{-28,26}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{34,36},{26,28}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{0,0},{26,28}},
-            color={0,0,0},
             thickness=0.5),
           Polygon(
             points={{30,32},{10,24},{24,12},{30,32}},
@@ -6051,15 +5722,12 @@ package Icons "Icon definitions for the WasteWater library"
                                                 "Q"),
           Line(
             points={{0,-50},{0,-90}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-90,0},{-2,0}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{4,0},{92,0}},
-            color={0,0,0},
             thickness=0.5)}),
       Documentation(info="Icon for a flow sensor"),
       Diagram(coordinateSystem(
@@ -6076,27 +5744,21 @@ package Icons "Icon definitions for the WasteWater library"
                                               "%name"),
           Line(
             points={{0,50},{0,38}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-50,0},{38,0}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{50,0},{38,0}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-36,34},{-28,26}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{34,36},{26,28}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{0,0},{26,28}},
-            color={0,0,0},
             thickness=0.5),
           Polygon(
             points={{30,32},{10,24},{24,12},{30,32}},
@@ -6107,26 +5769,18 @@ package Icons "Icon definitions for the WasteWater library"
                                                 "Q"),
           Line(
             points={{0,-50},{0,-90}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-90,0},{-2,0}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{4,0},{92,0}},
-            color={0,0,0},
             thickness=0.5)}));
   end sensor_Q;
 
   partial model sensor_TKN
     "Icon for a Kjeldal nitrogen and total nitrogen sensor"
     annotation (
-      Window(
-        x=0.45,
-        y=0.01,
-        width=0.35,
-        height=0.49),
       Icon(coordinateSystem(
           preserveAspectRatio=false,
           extent={{-100,-100},{100,100}},
@@ -6141,27 +5795,21 @@ package Icons "Icon definitions for the WasteWater library"
                                                 "%name"),
           Line(
             points={{0,50},{0,38}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-50,0},{38,0}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{50,0},{38,0}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-36,34},{-28,26}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{34,36},{26,28}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{0,0},{26,28}},
-            color={0,0,0},
             thickness=0.5),
           Polygon(
             points={{30,32},{10,24},{24,12},{30,32}},
@@ -6172,9 +5820,8 @@ package Icons "Icon definitions for the WasteWater library"
                                                 "TKN"),
           Line(
             points={{0,-50},{0,-90}},
-            color={0,0,0},
             thickness=0.5),
-          Line(points={{50,0},{88,0}}, color={0,0,0})}),
+          Line(points={{50,0},{88,0}})}),
       Documentation(info=
             "Icon for a Kjeldal nitrogen and total nitrogen sensor "),
       Diagram(coordinateSystem(
@@ -6191,27 +5838,21 @@ package Icons "Icon definitions for the WasteWater library"
                                                "%name"),
           Line(
             points={{0,50},{0,38}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-50,0},{38,0}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{50,0},{38,0}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-36,34},{-28,26}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{34,36},{26,28}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{0,0},{26,28}},
-            color={0,0,0},
             thickness=0.5),
           Polygon(
             points={{30,32},{10,24},{24,12},{30,32}},
@@ -6222,18 +5863,12 @@ package Icons "Icon definitions for the WasteWater library"
                                                 "TKN"),
           Line(
             points={{0,-50},{0,-90}},
-            color={0,0,0},
             thickness=0.5),
-          Line(points={{50,0},{88,0}}, color={0,0,0})}));
+          Line(points={{50,0},{88,0}})}));
   end sensor_TKN;
 
   partial model sensor_TP "Icon for a total phosphorus sensor"
     annotation (
-      Window(
-        x=0.45,
-        y=0.01,
-        width=0.35,
-        height=0.49),
       Icon(coordinateSystem(
           preserveAspectRatio=false,
           extent={{-100,-100},{100,100}},
@@ -6248,27 +5883,21 @@ package Icons "Icon definitions for the WasteWater library"
                                                 "%name"),
           Line(
             points={{0,50},{0,38}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-50,0},{38,0}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{50,0},{38,0}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-36,34},{-28,26}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{34,36},{26,28}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{0,0},{26,28}},
-            color={0,0,0},
             thickness=0.5),
           Polygon(
             points={{30,32},{10,24},{24,12},{30,32}},
@@ -6279,9 +5908,8 @@ package Icons "Icon definitions for the WasteWater library"
                                                 "TP"),
           Line(
             points={{0,-50},{0,-90}},
-            color={0,0,0},
             thickness=0.5),
-          Line(points={{50,0},{88,0}}, color={0,0,0})}),
+          Line(points={{50,0},{88,0}})}),
       Documentation(info="Icon for a total phosphorus sensor "),
       Diagram(coordinateSystem(
           preserveAspectRatio=false,
@@ -6297,27 +5925,21 @@ package Icons "Icon definitions for the WasteWater library"
                                                "%name"),
           Line(
             points={{0,50},{0,38}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-50,0},{38,0}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{50,0},{38,0}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-36,34},{-28,26}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{34,36},{26,28}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{0,0},{26,28}},
-            color={0,0,0},
             thickness=0.5),
           Polygon(
             points={{30,32},{10,24},{24,12},{30,32}},
@@ -6328,18 +5950,12 @@ package Icons "Icon definitions for the WasteWater library"
                                                 "TP"),
           Line(
             points={{0,-50},{0,-90}},
-            color={0,0,0},
             thickness=0.5),
-          Line(points={{50,0},{88,0}}, color={0,0,0})}));
+          Line(points={{50,0},{88,0}})}));
   end sensor_TP;
 
   partial model sensor_TSS "Icon for a total suspended solids sensor"
     annotation (
-      Window(
-        x=0.45,
-        y=0.01,
-        width=0.35,
-        height=0.49),
       Icon(coordinateSystem(
           preserveAspectRatio=false,
           extent={{-100,-100},{100,100}},
@@ -6354,27 +5970,21 @@ package Icons "Icon definitions for the WasteWater library"
                                                  "%name"),
           Line(
             points={{0,50},{0,38}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-50,0},{38,0}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{50,0},{38,0}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-36,34},{-28,26}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{34,36},{26,28}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{0,0},{26,28}},
-            color={0,0,0},
             thickness=0.5),
           Polygon(
             points={{30,32},{10,24},{24,12},{30,32}},
@@ -6385,9 +5995,8 @@ package Icons "Icon definitions for the WasteWater library"
                                                 "TSS"),
           Line(
             points={{0,-50},{0,-90}},
-            color={0,0,0},
             thickness=0.5),
-          Line(points={{50,0},{88,0}}, color={0,0,0})}),
+          Line(points={{50,0},{88,0}})}),
       Documentation(info="Icon for a total suspended solids sensor "),
       Diagram(coordinateSystem(
           preserveAspectRatio=false,
@@ -6403,27 +6012,21 @@ package Icons "Icon definitions for the WasteWater library"
                                                 "%name"),
           Line(
             points={{0,50},{0,38}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-50,0},{38,0}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{50,0},{38,0}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-36,34},{-28,26}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{34,36},{26,28}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{0,0},{26,28}},
-            color={0,0,0},
             thickness=0.5),
           Polygon(
             points={{30,32},{10,24},{24,12},{30,32}},
@@ -6434,18 +6037,10 @@ package Icons "Icon definitions for the WasteWater library"
                                                 "TSS"),
           Line(
             points={{0,-50},{0,-90}},
-            color={0,0,0},
             thickness=0.5),
-          Line(points={{50,0},{88,0}}, color={0,0,0})}));
+          Line(points={{50,0},{88,0}})}));
   end sensor_TSS;
   annotation (
-    Window(
-      x=0.45,
-      y=0.01,
-      width=0.44,
-      height=0.65,
-      library=1,
-      autolayout=1),
     Documentation(info="This package is part of the WasteWater Library and contains
 definitions for the graphical layout of components which are
 used within the sub-libraries ASM1, ASM2d and ASM3.

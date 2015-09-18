@@ -4,13 +4,6 @@ extends Modelica.Icons.Library;
 
 
 annotation (uses(Modelica(version="3.2.1")),
-  Window(
-    x=0.45,
-    y=0.01,
-    width=0.44,
-    height=0.65,
-    library=1,
-    autolayout=1),
   Documentation(info="<html>
 <p>This package can be used to model and simulate biological municipal
 wastewater treatment plants.</p>

@@ -24,13 +24,13 @@ package Simple "Simple ASM1 Secondary clarifier model"
     WWU.Alkalinity Salk "Alkalinity";
 
     WI.WWFlowAsm1in Feed annotation (Placement(transformation(extent={{-110,4},
-              {-90,24}}, rotation=0)));
+              {-90,24}})));
     WI.WWFlowAsm1out Effluent annotation (Placement(transformation(extent={{92,
-              47},{112,67}}, rotation=0)));
+              47},{112,67}})));
     WI.WWFlowAsm1out Return annotation (Placement(transformation(extent={{-40,
-              -106},{-20,-86}}, rotation=0)));
+              -106},{-20,-86}})));
     WI.WWFlowAsm1out Waste annotation (Placement(transformation(extent={{20,
-              -106},{40,-86}}, rotation=0)));
+              -106},{40,-86}})));
   equation
 
     // total sludge concentration in clarifier feed
@@ -112,18 +112,13 @@ package Simple "Simple ASM1 Secondary clarifier model"
     Waste.Salk = Salk;
 
     annotation (
-      Window(
-        x=0.1,
-        y=0.07,
-        width=0.35,
-        height=0.49),
       Documentation(info="This component models very simple the secondary clarification process by
 just using a single fully mixed tank which removes all particulate substances from the effluent
 and returns the sludge. No sedimentation and compression, etc. is considered (for ASM1).
 
 Parameters:
   hsc -    height of clarifier [m]
-  Asc -    surface area of sec. clar. [m2]  
+  Asc -    surface area of sec. clar. [m2]
 "),   Diagram(coordinateSystem(
           preserveAspectRatio=false,
           extent={{-100,-100},{100,100}},
@@ -161,7 +156,6 @@ Parameters:
             fillPattern=FillPattern.Solid),
           Line(
             points={{4,-92},{4,-84},{20,-70},{80,-48}},
-            color={0,0,0},
             thickness=0.5),
           Rectangle(
             extent={{-80,-40},{80,-48}},
@@ -176,23 +170,18 @@ Parameters:
             fillPattern=FillPattern.Solid),
           Line(
             points={{80,54},{92,54}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-4,-92},{-4,-84},{-20,-70},{-80,-48},{-80,10}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-80,62},{-80,16}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-80,10},{-90,10}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-80,16},{-90,16}},
-            color={0,0,0},
             thickness=0.5),
           Rectangle(
             extent={{-20,-92},{20,-98}},
@@ -202,19 +191,15 @@ Parameters:
             fillPattern=FillPattern.Solid),
           Line(
             points={{-20,-92},{-4,-92}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{-20,-98},{20,-98}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{20,-92},{4,-92}},
-            color={0,0,0},
             thickness=0.5),
           Line(
             points={{80,-48},{80,54}},
-            color={0,0,0},
             thickness=0.5),
           Text(extent={{-100,-60},{-40,-80}}, textString=
                                                   "return"),
@@ -256,13 +241,6 @@ Parameters:
             fillPattern=FillPattern.Solid)}));
   end SimpleSecClarMod;
   annotation (
-    Window(
-      x=0.45,
-      y=0.01,
-      width=0.44,
-      height=0.65,
-      library=1,
-      autolayout=1),
     Documentation(info="This package just provides a very simple ASM1 secondary clarifier model
 with no sludge storage, no sludge sedimentation and no use of layers.
 The model consists of one tank removing all particulate substances.

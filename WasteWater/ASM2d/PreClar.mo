@@ -47,11 +47,11 @@ package PreClar "Primary clarifier modelling based on ASM2d"
     Real H;
 
     ASM2d.Interfaces.WWFlowAsm2din In annotation (Placement(transformation(
-            extent={{-110,-10},{-90,10}}, rotation=0)));
+            extent={{-110,-10},{-90,10}})));
     ASM2d.Interfaces.WWFlowAsm2dout Out annotation (Placement(transformation(
-            extent={{90,-10},{110,10}}, rotation=0)));
+            extent={{90,-10},{110,10}})));
     ASM2d.Interfaces.WWFlowAsm2dout MeasurePort annotation (Placement(
-          transformation(extent={{32,90},{42,100}}, rotation=0)));
+          transformation(extent={{32,90},{42,100}})));
   equation
 
     // calculation of the hydraulic residence time
@@ -150,11 +150,6 @@ package PreClar "Primary clarifier modelling based on ASM2d"
     MeasurePort.Xmep = 0.0;
 
     annotation (
-      Window(
-        x=0.36,
-        y=0.02,
-        width=0.6,
-        height=0.6),
       Documentation(info="This is an ASM2d dynamic primary clarifier model based on the theory
 by Otterpohl and Freund.
 
@@ -205,11 +200,11 @@ Parameter:
     Real H;
 
     ASM2d.Interfaces.WWFlowAsm2din In annotation (Placement(transformation(
-            extent={{-110,-10},{-90,10}}, rotation=0)));
+            extent={{-110,-10},{-90,10}})));
     ASM2d.Interfaces.WWFlowAsm2dout Out annotation (Placement(transformation(
-            extent={{90,-10},{110,10}}, rotation=0)));
+            extent={{90,-10},{110,10}})));
     ASM2d.Interfaces.WWFlowAsm2dout MeasurePort annotation (Placement(
-          transformation(extent={{32,90},{42,100}}, rotation=0)));
+          transformation(extent={{32,90},{42,100}})));
   equation
 
     // calculation of the hydraulic residence time
@@ -305,11 +300,6 @@ Parameter:
     MeasurePort.Xmep = 0.0;
 
     annotation (
-      Window(
-        x=0.45,
-        y=0.01,
-        width=0.35,
-        height=0.49),
       Documentation(info="This is an ASM2d static primary clarifier model based on the theory
 by Otterpohl and Freund.
 
@@ -380,9 +370,9 @@ Parameter:
     Real H;
 
     ASM2d.Interfaces.WWFlowAsm2din In annotation (Placement(transformation(
-            extent={{-110,-10},{-90,10}}, rotation=0)));
+            extent={{-110,-10},{-90,10}})));
     ASM2d.Interfaces.WWFlowAsm2dout Out annotation (Placement(transformation(
-            extent={{90,-10},{110,10}}, rotation=0)));
+            extent={{90,-10},{110,10}})));
     Modelica.Blocks.Interfaces.RealInput MeasurePort[4]
       annotation (Placement(transformation(
           origin={38,90},
@@ -491,11 +481,6 @@ Parameter:
     Out.Xmep = 0.0;
 
     annotation (
-      Window(
-        x=0.62,
-        y=0.01,
-        width=0.35,
-        height=0.49),
       Documentation(info="This is a special case of the ASM2d static primary clarifier model.
 Here measurement data at the end (effluent) of the preclarifier needs to be provided.
 This is typical for some real plants. Influent is then calculated.
@@ -516,13 +501,6 @@ Dimension of InPort is 4.
 "));
   end preclar3;
   annotation (
-    Window(
-      x=0.45,
-      y=0.01,
-      width=0.44,
-      height=0.65,
-      library=1,
-      autolayout=1),
     Documentation(info="This package provides one dynamic and two static ASM2d primary clarifier
 models based on Otterpohl [1].
 

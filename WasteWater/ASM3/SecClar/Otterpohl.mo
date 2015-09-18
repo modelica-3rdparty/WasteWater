@@ -34,11 +34,6 @@ package Otterpohl "Secondary settling tank modelling by Otterpohl"
       WWU.MassConcentration Snox;
       WWU.Alkalinity Salk;
       annotation (
-        Window(
-          x=0.57,
-          y=0.01,
-          width=0.35,
-          height=0.49),
         Documentation(info=
               "Connector for ASM3 information and mass exchange between layers above the influent layer (feed_layer)."));
 
@@ -76,11 +71,6 @@ package Otterpohl "Secondary settling tank modelling by Otterpohl"
       WWU.MassConcentration Snox;
       WWU.Alkalinity Salk;
       annotation (
-        Window(
-          x=0.59,
-          y=0.01,
-          width=0.35,
-          height=0.49),
         Documentation(info=
               "Connector for ASM3 information and mass exchange between layers below the influent layer (feed_layer)."));
 
@@ -98,11 +88,6 @@ package Otterpohl "Secondary settling tank modelling by Otterpohl"
       // 0.01[m/h]*24 -> [m/d]
 
       annotation (
-        Window(
-          x=0.45,
-          y=0.01,
-          width=0.35,
-          height=0.49),
         Documentation(info="partial model providing clarifier parameters"));
 
     end SCParam;
@@ -125,11 +110,6 @@ package Otterpohl "Secondary settling tank modelling by Otterpohl"
       WWU.MassConcentration Snox "Nitrite plus nitrate";
       WWU.Alkalinity Salk "Alkalinity, bicarbonate";
       annotation (
-        Window(
-          x=0.62,
-          y=0.01,
-          width=0.35,
-          height=0.49),
         Documentation(info="partial models providing ASM3 variables"));
 
     end SCVar;
@@ -143,11 +123,6 @@ package Otterpohl "Secondary settling tank modelling by Otterpohl"
       Real rXsto;
       Real rXa;
       annotation (
-        Window(
-          x=0.45,
-          y=0.01,
-          width=0.35,
-          height=0.49),
         Documentation(info="partial model for ASM3 ratios of solid components"));
 
     end ratios;
@@ -174,11 +149,6 @@ package Otterpohl "Secondary settling tank modelling by Otterpohl"
       vS := v0*exp(-nv*X/1000);
 
       annotation (
-        Window(
-          x=0.6,
-          y=0.03,
-          width=0.35,
-          height=0.49),
         Documentation(info="Sedimentation velocity function"));
     end vSfun;
 
@@ -223,22 +193,10 @@ package Otterpohl "Secondary settling tank modelling by Otterpohl"
       omega := min(1.0, omega);
 
       annotation (
-        Window(
-          x=0.45,
-          y=0.01,
-          width=0.35,
-          height=0.49),
         Documentation(info=
               "This is Haertels omega correction function for the settling process."));
     end omega;
     annotation (
-      Window(
-        x=0.45,
-        y=0.01,
-        width=0.44,
-        height=0.65,
-        library=1,
-        autolayout=1),
       Documentation(info="This package contains connectors and interfaces (partial models) for
 the ASM3 secondary clarifier model based on Otterpohl [1] (two settling velocities for
 distinction between micro and macro flocs and omega correction function).
@@ -293,8 +251,7 @@ Copyright (C) 2003, Gerald Reichl
       rXs=rXs,
       rXh=rXh,
       rXsto=rXsto,
-      rXa=rXa) annotation (Placement(transformation(extent={{-35,-93},{35,-78}},
-            rotation=0)));
+      rXa=rXa) annotation (Placement(transformation(extent={{-35,-93},{35,-78}})));
     SCP.lower_layer S2(
       hsc=hsc,
       zm=zm,
@@ -302,8 +259,7 @@ Copyright (C) 2003, Gerald Reichl
       Asc=Asc,
       ISV=ISV,
       i=i,
-      Xf=Xf) annotation (Placement(transformation(extent={{-35,-74},{35,-59}},
-            rotation=0)));
+      Xf=Xf) annotation (Placement(transformation(extent={{-35,-74},{35,-59}})));
     SCP.lower_layer S3(
       hsc=hsc,
       zm=zm,
@@ -311,8 +267,7 @@ Copyright (C) 2003, Gerald Reichl
       Asc=Asc,
       ISV=ISV,
       i=i,
-      Xf=Xf) annotation (Placement(transformation(extent={{-35,-55},{35,-40}},
-            rotation=0)));
+      Xf=Xf) annotation (Placement(transformation(extent={{-35,-55},{35,-40}})));
     SCP.lower_layer S4(
       hsc=hsc,
       zm=zm,
@@ -320,8 +275,7 @@ Copyright (C) 2003, Gerald Reichl
       Asc=Asc,
       ISV=ISV,
       i=i,
-      Xf=Xf) annotation (Placement(transformation(extent={{-35,-36},{35,-21}},
-            rotation=0)));
+      Xf=Xf) annotation (Placement(transformation(extent={{-35,-36},{35,-21}})));
     SCP.lower_layer S5(
       hsc=hsc,
       zm=zm,
@@ -329,8 +283,7 @@ Copyright (C) 2003, Gerald Reichl
       Asc=Asc,
       ISV=ISV,
       i=i,
-      Xf=Xf) annotation (Placement(transformation(extent={{-35,-17},{35,-2}},
-            rotation=0)));
+      Xf=Xf) annotation (Placement(transformation(extent={{-35,-17},{35,-2}})));
     SCP.lower_layer S6(
       hsc=hsc,
       zm=zm,
@@ -338,8 +291,7 @@ Copyright (C) 2003, Gerald Reichl
       Asc=Asc,
       ISV=ISV,
       i=i,
-      Xf=Xf) annotation (Placement(transformation(extent={{-35,2},{35,17}},
-            rotation=0)));
+      Xf=Xf) annotation (Placement(transformation(extent={{-35,2},{35,17}})));
     SCP.lower_layer S7(
       hsc=hsc,
       zm=zm,
@@ -347,8 +299,7 @@ Copyright (C) 2003, Gerald Reichl
       Asc=Asc,
       ISV=ISV,
       i=i,
-      Xf=Xf) annotation (Placement(transformation(extent={{-35,21},{35,36}},
-            rotation=0)));
+      Xf=Xf) annotation (Placement(transformation(extent={{-35,21},{35,36}})));
     SCP.feed_layer S8(
       hsc=hsc,
       zm=zm,
@@ -356,13 +307,11 @@ Copyright (C) 2003, Gerald Reichl
       Asc=Asc,
       ISV=ISV,
       i=i,
-      Xf=Xf) annotation (Placement(transformation(extent={{-35,40},{35,55}},
-            rotation=0)));
+      Xf=Xf) annotation (Placement(transformation(extent={{-35,40},{35,55}})));
     SCP.upper_layer S9(
       zm=zm,
       Asc=Asc,
-      ISV=ISV) annotation (Placement(transformation(extent={{-35,59},{35,74}},
-            rotation=0)));
+      ISV=ISV) annotation (Placement(transformation(extent={{-35,59},{35,74}})));
     SCP.top_layer S10(
       zm=zm,
       Asc=Asc,
@@ -371,16 +320,15 @@ Copyright (C) 2003, Gerald Reichl
       rXs=rXs,
       rXh=rXh,
       rXsto=rXsto,
-      rXa=rXa) annotation (Placement(transformation(extent={{-35,78},{35,93}},
-            rotation=0)));
+      rXa=rXa) annotation (Placement(transformation(extent={{-35,78},{35,93}})));
     WI.WWFlowAsm3in Feed annotation (Placement(transformation(extent={{-110,4},
-              {-90,24}}, rotation=0)));
+              {-90,24}})));
     WI.WWFlowAsm3out Effluent annotation (Placement(transformation(extent={{92,
-              47},{112,67}}, rotation=0)));
+              47},{112,67}})));
     WI.WWFlowAsm3out Return annotation (Placement(transformation(extent={{-40,
-              -106},{-20,-86}}, rotation=0)));
+              -106},{-20,-86}})));
     WI.WWFlowAsm3out Waste annotation (Placement(transformation(extent={{20,
-              -106},{40,-86}}, rotation=0)));
+              -106},{40,-86}})));
   equation
     connect(S1.Up, S2.Dn) annotation (Line(points={{-2.22045e-15,-78},{
             -2.22045e-15,-74}}));
@@ -428,11 +376,7 @@ Parameters:
   Asc -  surface area of sec. clar. [m2]
   ISV -  Sludge Volume Index [ml/g]
   i   -  number of layers above feed layer
-"),   Window(
-        x=0.63,
-        y=0.06,
-        width=0.35,
-        height=0.49));
+"));
   end SecClarModOtter;
 
   model bottom_layer "Bottom layer of Otterpohls`s SC model"
@@ -443,11 +387,11 @@ Parameters:
     extends WWSC.ratios;
 
     ASM3.Interfaces.WWFlowAsm3out PQr annotation (Placement(transformation(
-            extent={{-70,-110},{-50,-90}}, rotation=0)));
+            extent={{-70,-110},{-50,-90}})));
     ASM3.Interfaces.WWFlowAsm3out PQw annotation (Placement(transformation(
-            extent={{40,-110},{60,-90}}, rotation=0)));
+            extent={{40,-110},{60,-90}})));
     WWSC.LowerLayerPin Up annotation (Placement(transformation(extent={{-10,90},
-              {10,110}}, rotation=0)));
+              {10,110}})));
   equation
 
     // sink velocity
@@ -512,11 +456,6 @@ Parameters:
     PQw.Xss = X;
 
     annotation (
-      Window(
-        x=0.45,
-        y=0.01,
-        width=0.35,
-        height=0.49),
       Documentation(info="This class models the lowest layer of an ASM3 secondary clarifier based on Otterpohl.
 
 No sedimentation flux (mass exchange) with underneath but hydraulic and sedimentation flux (same direction)
@@ -592,9 +531,9 @@ From here return and waste sludge is removed.
     Real omega;
 
     WWSC.LowerLayerPin Up annotation (Placement(transformation(extent={{-10,90},
-              {10,110}}, rotation=0)));
+              {10,110}})));
     WWSC.LowerLayerPin Dn annotation (Placement(transformation(extent={{-10,
-              -110},{10,-90}}, rotation=0)));
+              -110},{10,-90}})));
   equation
 
     // sink velocity
@@ -644,11 +583,6 @@ From here return and waste sludge is removed.
     Up.X_dn_S = X_S;
 
     annotation (
-      Window(
-        x=0.45,
-        y=0.01,
-        width=0.35,
-        height=0.49),
       Documentation(info="This class models the layers between the influent layer (feed_layer) and the lowest layer (bottom_layer)
 of an ASM3 secondary clarifier based on Otterpohl.
 
@@ -741,11 +675,11 @@ Sedimentation flux is calculated based on two sedimentation velocities
     Real fl;
 
     WWSC.LowerLayerPin Dn annotation (Placement(transformation(extent={{-10,
-              -110},{10,-90}}, rotation=0)));
+              -110},{10,-90}})));
     WWSC.UpperLayerPin Up annotation (Placement(transformation(extent={{-10,90},
-              {10,110}}, rotation=0)));
+              {10,110}})));
     ASM3.Interfaces.WWFlowAsm3in In annotation (Placement(transformation(extent
-            ={{-110,-6},{-90,14}}, rotation=0)));
+            ={{-110,-6},{-90,14}})));
   equation
 
     // sink velocity
@@ -805,15 +739,6 @@ Sedimentation flux is calculated based on two sedimentation velocities
     Up.Salk = Salk;
 
     annotation (
-      Window(
-        x=0.45,
-        y=0.01,
-        width=0.35,
-        height=0.49),
-      Coordsys(
-        extent=[-100, -100; 100, 100],
-        grid=[2, 2],
-        component=[20, 20]),
       Documentation(info="This class models the influent layer of an ASM3 secondary clarifier based on Otterpohl.
 
 It receives the wastewater stream from the biological part (feed).
@@ -899,9 +824,9 @@ Sedimentation flux is calculated based on two sedimentation velocities
     extends WWSC.SCVar;
 
     WWSC.UpperLayerPin Dn annotation (Placement(transformation(extent={{-10,
-              -110},{10,-90}}, rotation=0)));
+              -110},{10,-90}})));
     WWSC.UpperLayerPin Up annotation (Placement(transformation(extent={{-10,90},
-              {10,110}}, rotation=0)));
+              {10,110}})));
   equation
 
     // sink velocity
@@ -945,11 +870,6 @@ Sedimentation flux is calculated based on two sedimentation velocities
     Up.Salk = Salk;
 
     annotation (
-      Window(
-        x=0.45,
-        y=0.01,
-        width=0.35,
-        height=0.49),
       Documentation(info="This class models the layers between the influent layer (feed_layer) and the effluent layer (top_layer)
 of an ASM3 secondary clarifier based on Otterpohl.
 
@@ -1035,9 +955,9 @@ Sedimentation flux is calculated based on two sedimentation velocities
     extends WWSC.ratios;
 
     WWSC.UpperLayerPin Dn annotation (Placement(transformation(extent={{-10,
-              -110},{10,-90}}, rotation=0)));
+              -110},{10,-90}})));
     ASM3.Interfaces.WWFlowAsm3out Out annotation (Placement(transformation(
-            extent={{90,-10},{110,10}}, rotation=0)));
+            extent={{90,-10},{110,10}})));
   equation
 
     // sink velocity
@@ -1086,11 +1006,6 @@ Sedimentation flux is calculated based on two sedimentation velocities
     Out.Xss = X;
 
     annotation (
-      Window(
-        x=0.45,
-        y=0.01,
-        width=0.35,
-        height=0.49),
       Documentation(info="This class models the top layer of an ASM3 secondary clarifier based on Otterpohl.
 
 No sedimentation flux (mass exchange) with above but hydraulic and sedimentation flux
@@ -1155,15 +1070,8 @@ Sedimentation flux is calculated based on two sedimentation velocities
                                                  "%name")}));
   end top_layer;
   annotation (
-    Window(
-      x=0.45,
-      y=0.01,
-      width=0.44,
-      height=0.65,
-      library=1,
-      autolayout=1),
     Documentation(info="This package contains classes (layer models) to built ASM3 secondary clarifier models, an Interfaces sub-library
-and provides an ASM3 10-layer secondary clarifier model all bases on Otterpohls`s [1] 
+and provides an ASM3 10-layer secondary clarifier model all bases on Otterpohls`s [1]
 sedimentation velocities for macro and micro flocs and the omega correction function.
 
 A secondary clarifier layer model needs at least a top_layer, a feed_layer and a bottom_layer
