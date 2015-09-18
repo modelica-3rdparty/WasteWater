@@ -11,11 +11,9 @@ package Misc "miscellaneous"
     parameter Real out_off=0.0;
     Boolean mode;
     Modelica.Blocks.Interfaces.RealInput e
-      annotation (Placement(transformation(extent={{-120,-10},{-100,10}},
-            rotation=0)));
+      annotation (Placement(transformation(extent={{-120,-10},{-100,10}})));
     Modelica.Blocks.Interfaces.RealOutput u
-      annotation (Placement(transformation(extent={{100,-10},{120,10}},
-            rotation=0)));
+      annotation (Placement(transformation(extent={{100,-10},{120,10}})));
   algorithm
     // 0: Controller is off
     // 1: Controller is on
@@ -55,8 +53,8 @@ package Misc "miscellaneous"
             pattern=LinePattern.None,
             fillColor={192,192,192},
             fillPattern=FillPattern.Solid),
-          Line(points={{-70,-40},{-30,-40},{-30,40},{70,40}}, color={0,0,0}),
-          Line(points={{-30,-40},{30,-40},{30,40}}, color={0,0,0}),
+          Line(points={{-70,-40},{-30,-40},{-30,40},{70,40}}),
+          Line(points={{-30,-40},{30,-40},{30,40}}),
           Line(points={{-72,-40},{-68,-40}}, color={192,192,192})}),
       Diagram(coordinateSystem(
           preserveAspectRatio=false,
@@ -76,8 +74,8 @@ package Misc "miscellaneous"
             pattern=LinePattern.None,
             fillColor={192,192,192},
             fillPattern=FillPattern.Solid),
-          Line(points={{-70,-40},{-30,-40},{-30,40},{70,40}}, color={0,0,0}),
-          Line(points={{-30,-40},{30,-40},{30,40}}, color={0,0,0}),
+          Line(points={{-70,-40},{-30,-40},{-30,40},{70,40}}),
+          Line(points={{-30,-40},{30,-40},{30,40}}),
           Line(
             points={{30,-40},{30,-73}},
             color={192,192,192},
@@ -126,15 +124,10 @@ package Misc "miscellaneous"
             lineColor={192,192,192},
             textString=
                  "TwoPoint-Controller"),
-          Line(points={{-1,-38},{3,-40},{-1,-42}}, color={0,0,0}),
-          Line(points={{3,42},{-2,40},{3,38}}, color={0,0,0}),
-          Line(points={{-32,2},{-30,-3},{-28,2}}, color={0,0,0}),
-          Line(points={{28,-2},{30,3},{32,-2}}, color={0,0,0})}),
-      Window(
-        x=0.04,
-        y=0.03,
-        width=0.35,
-        height=0.49),
+          Line(points={{-1,-38},{3,-40},{-1,-42}}),
+          Line(points={{3,42},{-2,40},{3,38}}),
+          Line(points={{-32,2},{-30,-3},{-28,2}}),
+          Line(points={{28,-2},{30,3},{32,-2}})}),
       Documentation(info="This is an on-off (two-point) controller with hysteresis.
 The hysteresis is the difference beetween the parameter on
 and off.
@@ -157,11 +150,9 @@ is \"out_on\" and when the input signal drops below the
     Real u3;
 
     Modelica.Blocks.Interfaces.RealInput in1
-      annotation (Placement(transformation(extent={{-120,-10},{-100,10}},
-            rotation=0)));
+      annotation (Placement(transformation(extent={{-120,-10},{-100,10}})));
     Modelica.Blocks.Interfaces.RealOutput out
-      annotation (Placement(transformation(extent={{100,-10},{120,10}},
-            rotation=0)));
+      annotation (Placement(transformation(extent={{100,-10},{120,10}})));
   equation
 
     u1 = Qmin;
@@ -192,13 +183,8 @@ is \"out_on\" and when the input signal drops below the
             pattern=LinePattern.None,
             fillColor={192,192,192},
             fillPattern=FillPattern.Solid),
-          Line(points={{-70,-50},{-40,-50},{10,6},{58,21}}, color={0,0,0}),
+          Line(points={{-70,-50},{-40,-50},{10,6},{58,21}}),
           Rectangle(extent={{-100,100},{100,-100}})}),
-      Window(
-        x=0.45,
-        y=0.01,
-        width=0.35,
-        height=0.49),
       Diagram(coordinateSystem(
           preserveAspectRatio=false,
           extent={{-100,-100},{100,100}},
@@ -279,7 +265,7 @@ is \"out_on\" and when the input signal drops below the
             lineColor={192,192,192},
             textString=
                  "Qmax"),
-          Line(points={{-68,-50},{-40,-50},{11,7},{53,15}}, color={0,0,0}),
+          Line(points={{-68,-50},{-40,-50},{11,7},{53,15}}),
           Text(
             extent={{-19,-17},{51,-46}},
             lineColor={192,192,192},
@@ -316,11 +302,9 @@ Therefore no further documentation."));
     Real u3;
 
     Modelica.Blocks.Interfaces.RealInput in1
-      annotation (Placement(transformation(extent={{-120,-10},{-100,10}},
-            rotation=0)));
+      annotation (Placement(transformation(extent={{-120,-10},{-100,10}})));
     Modelica.Blocks.Interfaces.RealOutput out
-      annotation (Placement(transformation(extent={{100,-10},{120,10}},
-            rotation=0)));
+      annotation (Placement(transformation(extent={{100,-10},{120,10}})));
   equation
 
     //red = Pp*dNO3max/100;
@@ -354,13 +338,7 @@ Therefore no further documentation."));
             pattern=LinePattern.None,
             fillColor={192,192,192},
             fillPattern=FillPattern.Solid),
-          Line(points={{-70,30},{-32,30},{-32,-11},{8,-11},{8,-50},{49,-50}},
-              color={0,0,0})}),
-      Window(
-        x=0.45,
-        y=0.01,
-        width=0.35,
-        height=0.49),
+          Line(points={{-70,30},{-32,30},{-32,-11},{8,-11},{8,-50},{49,-50}})}),
       Diagram(coordinateSystem(
           preserveAspectRatio=false,
           extent={{-100,-100},{100,100}},
@@ -412,8 +390,7 @@ Therefore no further documentation."));
             lineColor={192,192,192},
             textString=
                  "Max"),
-          Line(points={{-70,30},{-32,30},{-32,-11},{8,-11},{8,-50},{49,-50}},
-              color={0,0,0}),
+          Line(points={{-70,30},{-32,30},{-32,-11},{8,-11},{8,-50},{49,-50}}),
           Line(points={{-32,-68},{-32,-72}}, color={192,192,192}),
           Line(points={{8,-68},{8,-72}}, color={192,192,192}),
           Text(
@@ -461,11 +438,9 @@ Therefore no further documentation."));
     Real u2;
     Real u3;
     Modelica.Blocks.Interfaces.RealInput in1
-      annotation (Placement(transformation(extent={{-120,-10},{-100,10}},
-            rotation=0)));
+      annotation (Placement(transformation(extent={{-120,-10},{-100,10}})));
     Modelica.Blocks.Interfaces.RealOutput out
-      annotation (Placement(transformation(extent={{100,-10},{120,10}},
-            rotation=0)));
+      annotation (Placement(transformation(extent={{100,-10},{120,10}})));
   equation
 
     //red = Pp*dNO3max/100;
@@ -502,12 +477,7 @@ Therefore no further documentation."));
             fillColor={192,192,192},
             fillPattern=FillPattern.Solid),
           Line(points={{-72,18},{-68,18}}, color={192,192,192}),
-          Line(points={{-70,18},{-37,18},{9,-41},{44,-41}}, color={0,0,0})}),
-      Window(
-        x=0.25,
-        y=0.46,
-        width=0.35,
-        height=0.49),
+          Line(points={{-70,18},{-37,18},{9,-41},{44,-41}})}),
       Diagram(coordinateSystem(
           preserveAspectRatio=false,
           extent={{-100,-100},{100,100}},
@@ -571,7 +541,7 @@ Therefore no further documentation."));
             lineColor={192,192,192},
             textString=
                  "RecycleController"),
-          Line(points={{-70,18},{-37,18},{9,-41},{44,-41}}, color={0,0,0}),
+          Line(points={{-70,18},{-37,18},{9,-41},{44,-41}}),
           Line(points={{9,-68},{9,-72}}, color={192,192,192})}),
       Documentation(info="Input signal is a Nitrate measurement
 Output is a control signal between -1 and 1.
@@ -581,13 +551,6 @@ Therefore no further documentation.
 "));
   end RecycleController2;
   annotation (
-    Window(
-      x=0.45,
-      y=0.01,
-      width=0.44,
-      height=0.65,
-      library=1,
-      autolayout=1),
     Documentation(info="This package provides a collection of \"conrollers\" that are needed for the
 complex wastewater treatment plant example.
 

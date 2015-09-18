@@ -23,13 +23,6 @@ package WasteWaterUnits
          "ml/g");
 
   annotation (
-    Window(
-      x=0.45,
-      y=0.01,
-      width=0.44,
-      height=0.65,
-      library=1,
-      autolayout=1),
     Invisible=true,
     Documentation(info="This package provides special convention for units and types
 for use with the activated sludge models.

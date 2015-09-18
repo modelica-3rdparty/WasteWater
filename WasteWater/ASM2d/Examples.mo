@@ -12,41 +12,40 @@ package Examples
 
     //Q_air=34574.2654508612 is equal to a Kla of 10 h^-1 from COST benchmark
     ASM2d.EffluentSink Effluent annotation (Placement(transformation(extent={{
-              88,-28},{108,-8}}, rotation=0)));
+              88,-28},{108,-8}})));
     ASM2d.SludgeSink WasteSludge annotation (Placement(transformation(extent={{
-              87,-51},{107,-31}}, rotation=0)));
+              87,-51},{107,-31}})));
     ASM2d.divider2 divider annotation (Placement(transformation(extent={{20,-6},
-              {40,14}}, rotation=0)));
+              {40,14}})));
     ASM2d.nitri tank3(V=1333) annotation (Placement(transformation(extent={{-5,
-              -6},{15,14}}, rotation=0)));
+              -6},{15,14}})));
     ASM2d.nitri tank2(V=1333) annotation (Placement(transformation(extent={{-32,
-              -6},{-12,14}}, rotation=0)));
+              -6},{-12,14}})));
     ASM2d.deni tank1(V=3000) annotation (Placement(transformation(extent={{-65,
-              -6},{-45,14}}, rotation=0)));
+              -6},{-45,14}})));
     ASM2d.mixer3 mixer annotation (Placement(transformation(extent={{-104,22},{
-              -84,42}}, rotation=0)));
+              -84,42}})));
     Modelica.Blocks.Sources.CombiTimeTable CombiTableTime(
       fileName=Modelica.Utilities.Files.loadResource("modelica://WasteWater/Resources/ASM2d/Inf_dry.txt"),
       table=[0,0; 1,1],
       columns=integer(({21,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20})),
       tableName="Inf_dry",
       tableOnFile=("Inf_dry") <> "NoName") annotation (Placement(transformation(
-            extent={{-114,78},{-94,98}}, rotation=0)));
+            extent={{-114,78},{-94,98}})));
     ASM2d.WWSource WWSource annotation (Placement(transformation(extent={{-88,
-              78},{-68,98}}, rotation=0)));
+              78},{-68,98}})));
     ASM2d.blower blower1(Q_max=34574.2654508612) annotation (Placement(
-          transformation(extent={{-32,-62},{-12,-42}}, rotation=0)));
+          transformation(extent={{-32,-62},{-12,-42}})));
     ASM2d.blower blower2(Q_max=34574.2654508612) annotation (Placement(
-          transformation(extent={{-4,-62},{16,-42}}, rotation=0)));
+          transformation(extent={{-4,-62},{16,-42}})));
     ASM2d.sensor_O2 sensor_O2 annotation (Placement(transformation(extent={{0,
-              18},{20,38}}, rotation=0)));
+              18},{20,38}})));
     Modelica.Blocks.Math.Feedback Feedback annotation (Placement(transformation(
-            extent={{62,40},{82,60}}, rotation=0)));
+            extent={{62,40},{82,60}})));
     Modelica.Blocks.Continuous.PI PI1(T=0.001, k=500)
-      annotation (Placement(transformation(extent={{88,40},{108,60}}, rotation=
-              0)));
+      annotation (Placement(transformation(extent={{88,40},{108,60}})));
     Modelica.Blocks.Sources.Constant Constant1 annotation (Placement(
-          transformation(extent={{-66,-89},{-46,-69}}, rotation=0)));
+          transformation(extent={{-66,-89},{-46,-69}})));
     ASM2d.pump RecyclePump(Q_max=46115) annotation (Placement(transformation(
           origin={-84,-12},
           extent={{-10,-10},{10,10}},
@@ -56,24 +55,23 @@ package Examples
           extent={{-10,-10},{10,10}},
           rotation=180)));
     ASM2d.pump WastePump(Q_max=193) annotation (Placement(transformation(extent
-            ={{59,-55},{79,-35}}, rotation=0)));
+            ={{59,-55},{79,-35}})));
     Modelica.Blocks.Sources.Constant Constant2 annotation (Placement(
-          transformation(extent={{22,-68},{42,-48}}, rotation=0)));
+          transformation(extent={{22,-68},{42,-48}})));
     Modelica.Blocks.Sources.Constant Temperature(k=15)
-      annotation (Placement(transformation(extent={{-94,50},{-82,62}}, rotation
-            =0)));
+      annotation (Placement(transformation(extent={{-94,50},{-82,62}})));
     sensor_NH sensor_NH1 annotation (Placement(transformation(extent={{64,15},{
-              80,31}}, rotation=0)));
+              80,31}})));
     WasteWater.ASM2d.sensor_NO sensor_NO1 annotation (Placement(transformation(
-            extent={{81,15},{97,31}}, rotation=0)));
+            extent={{81,15},{97,31}})));
     WasteWater.ASM2d.sensor_TKN sensor_TKN1 annotation (Placement(
-          transformation(extent={{97,14},{113,30}}, rotation=0)));
+          transformation(extent={{97,14},{113,30}})));
     WasteWater.ASM2d.sensor_COD sensor_COD1 annotation (Placement(
-          transformation(extent={{97,-5},{113,11}}, rotation=0)));
+          transformation(extent={{97,-5},{113,11}})));
     Modelica.Blocks.Sources.Step OxygenSetpoint(height=1.5)
-      annotation (Placement(transformation(extent={{36,40},{56,60}}, rotation=0)));
+      annotation (Placement(transformation(extent={{36,40},{56,60}})));
     WasteWater.ASM2d.SecClar.Krebs.SecClarModKrebs Settler annotation (Placement(
-          transformation(extent={{49,-7},{69,13}}, rotation=0)));
+          transformation(extent={{49,-7},{69,13}})));
   equation
     connect(tank3.Out, divider.In) annotation (Line(points={{15,4},{20,4}}));
     connect(tank2.Out, tank3.In) annotation (Line(points={{-12,4},{-6,4}}));
@@ -144,11 +142,6 @@ package Examples
             0,255}));
 
     annotation (
-      Window(
-        x=0.45,
-        y=0.01,
-        width=0.39,
-        height=0.58),
       Diagram(coordinateSystem(
           preserveAspectRatio=false,
           extent={{-120,-100},{120,105}},
@@ -186,86 +179,84 @@ Main Author:
     extends Modelica.Icons.Example;
     //Q_air=34574.2654508612 is equal to a Kla of 10 h^-1 from COST benchmark
     ASM2d.EffluentSink Effluent annotation (Placement(transformation(extent={{
-              88,-28},{108,-8}}, rotation=0)));
+              88,-28},{108,-8}})));
     ASM2d.SludgeSink WasteSludge annotation (Placement(transformation(extent={{
-              87,-51},{107,-31}}, rotation=0)));
+              87,-51},{107,-31}})));
     ASM2d.SecClarModTakacs Settler annotation (Placement(transformation(extent=
-              {{49,-5},{69,15}}, rotation=0)));
+              {{49,-5},{69,15}})));
     ASM2d.divider2 divider annotation (Placement(transformation(extent={{20,-6},
-              {40,14}}, rotation=0)));
+              {40,14}})));
     ASM2d.nitri tank5(V=1333) annotation (Placement(transformation(extent={{-6,
-              -6},{14,14}}, rotation=0)));
+              -6},{14,14}})));
     ASM2d.nitri tank4(V=1333) annotation (Placement(transformation(extent={{-32,
-              -6},{-12,14}}, rotation=0)));
+              -6},{-12,14}})));
     ASM2d.nitri tank3(V=1333) annotation (Placement(transformation(extent={{-60,
-              -6},{-40,14}}, rotation=0)));
+              -6},{-40,14}})));
     ASM2d.deni tank2 annotation (Placement(transformation(extent={{-48,22},{-28,
-              42}}, rotation=0)));
+              42}})));
     ASM2d.deni tank1 annotation (Placement(transformation(extent={{-76,22},{-56,
-              42}}, rotation=0)));
+              42}})));
     ASM2d.mixer3 mixer annotation (Placement(transformation(extent={{-104,22},{
-              -84,42}}, rotation=0)));
+              -84,42}})));
     Modelica.Blocks.Sources.CombiTimeTable CombiTableTime(
       fileName=Modelica.Utilities.Files.loadResource("modelica://WasteWater/Resources/ASM2d/Inf_dry.txt"),
       table=[0,0; 1,1],
       columns=integer(({2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20})),
       tableName="Inf_dry",
       tableOnFile=("Inf_dry") <> "NoName") annotation (Placement(transformation(
-            extent={{-114,78},{-94,98}}, rotation=0)));
+            extent={{-114,78},{-94,98}})));
     ASM2d.WWSource WWSource annotation (Placement(transformation(extent={{-88,
-              78},{-68,98}}, rotation=0)));
+              78},{-68,98}})));
     ASM2d.sensor_NO sensor_NO annotation (Placement(transformation(extent={{-42,
-              48},{-22,68}}, rotation=0)));
+              48},{-22,68}})));
     ASM2d.blower blower1(Q_max=34574.2654508612) annotation (Placement(
-          transformation(extent={{-60,-62},{-40,-42}}, rotation=0)));
+          transformation(extent={{-60,-62},{-40,-42}})));
     ASM2d.blower blower2(Q_max=34574.2654508612) annotation (Placement(
-          transformation(extent={{-32,-62},{-12,-42}}, rotation=0)));
+          transformation(extent={{-32,-62},{-12,-42}})));
     ASM2d.blower blower3(Q_max=34574.2654508612) annotation (Placement(
-          transformation(extent={{-6,-62},{14,-42}}, rotation=0)));
+          transformation(extent={{-6,-62},{14,-42}})));
     ASM2d.sensor_O2 sensor_O2 annotation (Placement(transformation(extent={{0,
-              18},{20,38}}, rotation=0)));
+              18},{20,38}})));
     Modelica.Blocks.Math.Feedback Feedback annotation (Placement(transformation(
-            extent={{62,40},{82,60}}, rotation=0)));
+            extent={{62,40},{82,60}})));
     Modelica.Blocks.Continuous.PI PI1(T=0.001, k=500)
-      annotation (Placement(transformation(extent={{88,40},{108,60}}, rotation=
-              0)));
+      annotation (Placement(transformation(extent={{88,40},{108,60}})));
     Modelica.Blocks.Sources.Constant Constant1 annotation (Placement(
-          transformation(extent={{-66,-89},{-46,-69}}, rotation=0)));
+          transformation(extent={{-66,-89},{-46,-69}})));
     ASM2d.pump RecyclePump(Q_max=92230) annotation (Placement(transformation(
           origin={-84,-12},
           extent={{-10,-10},{10,10}},
           rotation=180)));
     Modelica.Blocks.Continuous.PI PI2(T=0.05, k=15000)
-      annotation (Placement(transformation(extent={{58,78},{78,98}}, rotation=0)));
+      annotation (Placement(transformation(extent={{58,78},{78,98}})));
     Modelica.Blocks.Sources.Constant NitrogenSetpoint annotation (Placement(
-          transformation(extent={{-8,78},{12,98}}, rotation=0)));
+          transformation(extent={{-8,78},{12,98}})));
     Modelica.Blocks.Math.Feedback Feedback1 annotation (Placement(
-          transformation(extent={{22,78},{42,98}}, rotation=0)));
+          transformation(extent={{22,78},{42,98}})));
     Modelica.Blocks.Nonlinear.Limiter Limiter1(uMax=10, uMin=0.1)
-      annotation (Placement(transformation(extent={{8,48},{28,68}}, rotation=0)));
+      annotation (Placement(transformation(extent={{8,48},{28,68}})));
     ASM2d.pump ReturnPump(Q_max=18446) annotation (Placement(transformation(
           origin={26,-26},
           extent={{-10,-10},{10,10}},
           rotation=180)));
     ASM2d.pump WastePump(Q_max=385) annotation (Placement(transformation(extent
-            ={{59,-55},{79,-35}}, rotation=0)));
+            ={{59,-55},{79,-35}})));
     Modelica.Blocks.Sources.Constant Constant2 annotation (Placement(
-          transformation(extent={{22,-68},{42,-48}}, rotation=0)));
+          transformation(extent={{22,-68},{42,-48}})));
     Modelica.Blocks.Sources.Constant Temperature(k=15)
-      annotation (Placement(transformation(extent={{-94,50},{-82,62}}, rotation
-            =0)));
+      annotation (Placement(transformation(extent={{-94,50},{-82,62}})));
     Modelica.Blocks.Nonlinear.FixedDelay FixedDelay1(delayTime=1/6/24)
-      annotation (Placement(transformation(extent={{-18,48},{2,68}}, rotation=0)));
+      annotation (Placement(transformation(extent={{-18,48},{2,68}})));
     sensor_NH sensor_NH1 annotation (Placement(transformation(extent={{64,15},{
-              80,31}}, rotation=0)));
+              80,31}})));
     WasteWater.ASM2d.sensor_NO sensor_NO1 annotation (Placement(transformation(
-            extent={{81,15},{97,31}}, rotation=0)));
+            extent={{81,15},{97,31}})));
     WasteWater.ASM2d.sensor_TKN sensor_TKN1 annotation (Placement(
-          transformation(extent={{97,14},{113,30}}, rotation=0)));
+          transformation(extent={{97,14},{113,30}})));
     WasteWater.ASM2d.sensor_COD sensor_COD1 annotation (Placement(
-          transformation(extent={{97,-5},{113,11}}, rotation=0)));
+          transformation(extent={{97,-5},{113,11}})));
     Modelica.Blocks.Sources.Step OxygenSetpoint(height=2)
-      annotation (Placement(transformation(extent={{36,40},{56,60}}, rotation=0)));
+      annotation (Placement(transformation(extent={{36,40},{56,60}})));
   equation
     connect(tank5.Out, divider.In) annotation (Line(points={{14,4},{20,4}}));
     connect(tank4.Out, tank5.In) annotation (Line(points={{-12,4},{-6,4}}));
@@ -355,11 +346,6 @@ Main Author:
             78.5,-17},{78.5,11},{69,11}}));
 
     annotation (
-      Window(
-        x=0.45,
-        y=0.01,
-        width=0.39,
-        height=0.58),
       Diagram(coordinateSystem(
           preserveAspectRatio=false,
           extent={{-120,-100},{120,105}},
@@ -389,38 +375,33 @@ References:
     extends Modelica.Icons.Example;
 
     ControlledDivider2 cdivider1 annotation (Placement(transformation(extent={{
-              -168,65},{-148,85}}, rotation=0)));
+              -168,65},{-148,85}})));
     Modelica.Blocks.Sources.Constant Constant2(k=0.8)
-      annotation (Placement(transformation(extent={{-178,52},{-168,62}},
-            rotation=0)));
+      annotation (Placement(transformation(extent={{-178,52},{-168,62}})));
     blower blower1(Q_max=162816)
       "there exist 4 blowers of 4240 Nm3/h each, Q_max adusted according active aerated tanks"
-       annotation (Placement(transformation(extent={{145,-13},{165,7}},
-            rotation=0)));
+       annotation (Placement(transformation(extent={{145,-13},{165,7}})));
     nitri nitri2(
       V=2772,
       alpha=0.305,
       de=5.24,
-      R_air=20) annotation (Placement(transformation(extent={{110,18},{130,38}},
-            rotation=0)));
+      R_air=20) annotation (Placement(transformation(extent={{110,18},{130,38}})));
     deni anaerob(V=1287) annotation (Placement(transformation(extent={{-138,13},
-              {-118,33}}, rotation=0)));
+              {-118,33}})));
     deni deni1(V=2772) annotation (Placement(transformation(extent={{-80,14},{
-              -60,34}}, rotation=0)));
+              -60,34}})));
     deni deni3(V=2772) annotation (Placement(transformation(extent={{80,18},{
-              100,38}}, rotation=0)));
+              100,38}})));
     deni deni2(V=2772) annotation (Placement(transformation(extent={{-20,14},{0,
-              34}}, rotation=0)));
+              34}})));
     nitri nitri3(
       V=5602,
       alpha=0.305,
       de=5.24,
-      R_air=21) annotation (Placement(transformation(extent={{144,18},{164,38}},
-            rotation=0)));
+      R_air=21) annotation (Placement(transformation(extent={{144,18},{164,38}})));
     blower blower2(Q_max=81408)
       "there exist 4 blowers of 4240 Nm3/h each, Q_max adjusted according active aerated tanks"
-       annotation (Placement(transformation(extent={{111,-13},{131,7}},
-            rotation=0)));
+       annotation (Placement(transformation(extent={{111,-13},{131,7}})));
     pump ReturnPump(Q_max=60480) annotation (Placement(transformation(
           origin={-44,-94},
           extent={{-10,-10},{10,10}},
@@ -430,21 +411,20 @@ References:
           extent={{-10,-10},{10,10}},
           rotation=180)));
     pump WastePump(Q_max=1920) annotation (Placement(transformation(extent={{
-              128,-104},{148,-84}}, rotation=0)));
+              128,-104},{148,-84}})));
     ControlledDivider2 cdivider2 annotation (Placement(transformation(extent={{
-              -42,67},{-22,87}}, rotation=0)));
+              -42,67},{-22,87}})));
     EffluentSink Effluent annotation (Placement(transformation(extent={{170,-72},
-              {190,-52}}, rotation=0)));
+              {190,-52}})));
     SludgeSink WasteSludge annotation (Placement(transformation(extent={{170,
-              -100},{190,-80}}, rotation=0)));
+              -100},{190,-80}})));
     mixer2 mixer2_1 annotation (Placement(transformation(extent={{-47,12},{-27,
-              32}}, rotation=0)));
-    mixer2 mixer2_2 annotation (Placement(transformation(extent={{50,17},{70,37}},
-            rotation=0)));
+              32}})));
+    mixer2 mixer2_2 annotation (Placement(transformation(extent={{50,17},{70,37}})));
     mixer3 mixer3_1 annotation (Placement(transformation(extent={{-106,14},{-86,
-              34}}, rotation=0)));
+              34}})));
     mixer2 mixer2_5 annotation (Placement(transformation(extent={{-140,-15},{
-              -120,5}}, rotation=0)));
+              -120,5}})));
     divider2 divider2_1 annotation (Placement(transformation(
           origin={67,-32},
           extent={{-10,-10},{10,10}},
@@ -454,23 +434,19 @@ References:
           extent={{-10,-10},{10,10}},
           rotation=180)));
     Modelica.Blocks.Sources.Constant Constant4(k=0.5)
-      annotation (Placement(transformation(extent={{-148,-80},{-138,-70}},
-            rotation=0)));
+      annotation (Placement(transformation(extent={{-148,-80},{-138,-70}})));
     nitri nitri1(
       V=5602,
       alpha=0.305,
       de=5.24,
-      R_air=21) annotation (Placement(transformation(extent={{12,14},{32,34}},
-            rotation=0)));
+      R_air=21) annotation (Placement(transformation(extent={{12,14},{32,34}})));
     blower blower3(Q_max=162816)
       "there exist 4 blowers of max 4240 Nm3/h, Q_max adusted according active aerated tanks"
-       annotation (Placement(transformation(extent={{12,-23},{32,-3}}, rotation
-            =0)));
+       annotation (Placement(transformation(extent={{12,-23},{32,-3}})));
     Modelica.Blocks.Sources.Constant Constant7(k=0.56)
-      annotation (Placement(transformation(extent={{-66,98},{-56,108}},
-            rotation=0)));
+      annotation (Placement(transformation(extent={{-66,98},{-56,108}})));
     mixer2 mixer2_3 annotation (Placement(transformation(extent={{-168,18},{
-              -148,38}}, rotation=0)));
+              -148,38}})));
     PreClar.preclar3 Preclaryfier(
       V=1372,
       aSi=2.5/100,
@@ -480,117 +456,110 @@ References:
       aXs=34/100,
       aXh=0/100,
       n_corr=2.138) annotation (Placement(transformation(extent={{-136,68},{
-              -116,88}}, rotation=0)));
+              -116,88}})));
     FlowSource FlowInput annotation (Placement(transformation(extent={{-178,95},
-              {-158,115}}, rotation=0)));
+              {-158,115}})));
     ControlledDivider2 ControlledDivider2_1 annotation (Placement(
           transformation(
           origin={-42,-36},
           extent={{-10,-10},{10,10}},
           rotation=180)));
     Modelica.Blocks.Sources.Constant Constant6 annotation (Placement(
-          transformation(extent={{-46,-10},{-36,0}}, rotation=0)));
+          transformation(extent={{-46,-10},{-36,0}})));
     sensor_NO sensor_NO1 annotation (Placement(transformation(extent={{-14,40},
-              {6,60}}, rotation=0)));
+              {6,60}})));
     sensor_NO sensor_NO3 annotation (Placement(transformation(extent={{90,-56},
-              {110,-36}}, rotation=0)));
+              {110,-36}})));
     sensor_NH sensor_NH2 annotation (Placement(transformation(extent={{112,-56},
-              {132,-36}}, rotation=0)));
+              {132,-36}})));
     sensor_TSS sensor_TSS1 annotation (Placement(transformation(extent={{-6,-86},
-              {14,-66}}, rotation=0)));
+              {14,-66}})));
     Modelica.Blocks.Sources.Constant Temperature(k=11.5)
-      annotation (Placement(transformation(extent={{58,44},{78,64}}, rotation=0)));
+      annotation (Placement(transformation(extent={{58,44},{78,64}})));
     precipitation precipitation1(V=22, beta=8) annotation (Placement(
-          transformation(extent={{42,-82},{62,-62}}, rotation=0)));
+          transformation(extent={{42,-82},{62,-62}})));
     WasteWater.Misc.RecycleController2 RecycleController1(NO3min=1.5)
-      annotation (Placement(transformation(extent={{15,-63},{29,-49}}, rotation
-            =0)));
+      annotation (Placement(transformation(extent={{15,-63},{29,-49}})));
     WasteWater.Misc.ReturnController ReturnController1 annotation (Placement(
-          transformation(extent={{-28,-115},{-14,-101}}, rotation=0)));
+          transformation(extent={{-28,-115},{-14,-101}})));
     sensor_Q sensor_Q1 annotation (Placement(transformation(extent={{-194,66},{
-              -174,86}}, rotation=0)));
+              -174,86}})));
     WasteWater.Misc.TwoPoint TwoPoint1(
       on=4.5,
       off=4.0,
       out_on=2.5,
-      out_off=1.5) annotation (Placement(transformation(extent={{-8,100},{2,110}},
-            rotation=0)));
+      out_off=1.5) annotation (Placement(transformation(extent={{-8,100},{2,110}})));
     WasteWater.Misc.TwoPoint TwoPoint2(
       on=4.5,
       off=4.0,
       out_on=2.5,
       out_off=1.5) annotation (Placement(transformation(extent={{110,100},{120,
-              110}}, rotation=0)));
+              110}})));
     WasteWater.ASM2d.sensor_NH sensor_NH1 annotation (Placement(transformation(
-            extent={{142,38},{162,58}}, rotation=0)));
+            extent={{142,38},{162,58}})));
     Modelica.Blocks.Math.Feedback Feedback1 annotation (Placement(
-          transformation(extent={{12,100},{22,110}}, rotation=0)));
+          transformation(extent={{12,100},{22,110}})));
     Modelica.Blocks.Math.Feedback Feedback2 annotation (Placement(
-          transformation(extent={{127,99},{137,109}}, rotation=0)));
+          transformation(extent={{127,99},{137,109}})));
     WasteWater.ASM2d.sensor_O2 sensor_O2_1 annotation (Placement(transformation(
-            extent={{164,38},{184,58}}, rotation=0)));
+            extent={{164,38},{184,58}})));
     WasteWater.ASM2d.sensor_O2 sensor_O2_2 annotation (Placement(transformation(
-            extent={{14,38},{34,58}}, rotation=0)));
+            extent={{14,38},{34,58}})));
     WasteWater.ASM2d.sensor_COD sensor_COD1 annotation (Placement(
-          transformation(extent={{134,-56},{154,-36}}, rotation=0)));
+          transformation(extent={{134,-56},{154,-36}})));
     WasteWater.ASM2d.sensor_COD sensor_COD2 annotation (Placement(
-          transformation(extent={{-116,95},{-97,114}}, rotation=0)));
+          transformation(extent={{-116,95},{-97,114}})));
     WasteWater.ASM2d.Examples.JenaSecClarModTakacs Settler(hsc=3.46, Asc=3704)
       "The depth is calculated based on V and A of the settler and not the true depth."
-       annotation (Placement(transformation(extent={{68,-84},{88,-64}},
-            rotation=0)));
+       annotation (Placement(transformation(extent={{68,-84},{88,-64}})));
 
     WasteWater.ASM2d.sensor_TP sensor_TP1 annotation (Placement(transformation(
-            extent={{-93,94},{-74,114}}, rotation=0)));
+            extent={{-93,94},{-74,114}})));
     WasteWater.ASM2d.sensor_TKN sensor_TKN1 annotation (Placement(
-          transformation(extent={{68,-56},{88,-36}}, rotation=0)));
+          transformation(extent={{68,-56},{88,-36}})));
     WasteWater.ASM2d.sensor_TP sensor_TP2 annotation (Placement(transformation(
-            extent={{-150,98},{-136,112}}, rotation=0)));
+            extent={{-150,98},{-136,112}})));
     WasteWater.ASM2d.sensor_TP sensor_TP3 annotation (Placement(transformation(
-            extent={{156,-54},{174,-36}}, rotation=0)));
+            extent={{156,-54},{174,-36}})));
     Modelica.Blocks.Sources.CombiTimeTable CombiTableTime1(
       fileName=Modelica.Utilities.Files.loadResource("modelica://WasteWater/Resources/ASM2d/drysim130303.txt"),
       table=[0,0; 1,1],
       columns=integer(({2})),
       tableName="drysim130303",
       tableOnFile=("drysim130303") <> "NoName")
-      annotation (Placement(transformation(extent={{-198,97},{-184,113}},
-            rotation=0)));
+      annotation (Placement(transformation(extent={{-198,97},{-184,113}})));
     Modelica.Blocks.Sources.CombiTimeTable CombiTableTime2(
       fileName=Modelica.Utilities.Files.loadResource("modelica://WasteWater/Resources/ASM2d/drysim130303.txt"),
       table=[0,0; 1,1],
       columns=integer(({3,4,5,6})),
       tableName="drysim130303",
       tableOnFile=("drysim130303") <> "NoName")
-      annotation (Placement(transformation(extent={{-134,96},{-118,112}},
-            rotation=0)));
+      annotation (Placement(transformation(extent={{-134,96},{-118,112}})));
     Modelica.Blocks.Nonlinear.FixedDelay FixedDelay1(delayTime=1/24/6)
-      annotation (Placement(transformation(extent={{-16,-63},{-2,-49}},
-            rotation=0)));
+      annotation (Placement(transformation(extent={{-16,-63},{-2,-49}})));
     Modelica.Blocks.Math.Feedback Feedback3 annotation (Placement(
           transformation(
           origin={84,-13},
           extent={{5,-5},{-5,5}},
           rotation=180)));
     WasteWater.ASM2d.sensor_O2 sensor_O2_3 annotation (Placement(transformation(
-            extent={{116,40},{134,58}}, rotation=0)));
+            extent={{116,40},{134,58}})));
     Modelica.Blocks.Math.Gain Gain1(k=500) annotation (Placement(transformation(
-            extent={{29,95},{49,115}}, rotation=0)));
+            extent={{29,95},{49,115}})));
     Modelica.Blocks.Math.Gain Gain2(k=500) annotation (Placement(transformation(
-            extent={{144,93},{164,113}}, rotation=0)));
+            extent={{144,93},{164,113}})));
     Modelica.Blocks.Math.Gain Gain3(k=500) annotation (Placement(transformation(
-            extent={{94,-28},{108,-14}}, rotation=0)));
+            extent={{94,-28},{108,-14}})));
     WasteWater.Misc.TwoPoint TwoPoint3(
       on=4.5,
       off=4.0,
       out_on=2.0,
-      out_off=1.0) annotation (Placement(transformation(extent={{63,-19},{75,-7}},
-            rotation=0)));
+      out_off=1.0) annotation (Placement(transformation(extent={{63,-19},{75,-7}})));
     Modelica.Blocks.Sources.Step Step1(
       height=0.125,
       offset=-0.5,
       startTime=2.375) annotation (Placement(transformation(extent={{100,-90},{
-              110,-80}}, rotation=0)));
+              110,-80}})));
   equation
     connect(deni3.Out, nitri2.In) annotation (Line(points={{100,28},{110,28}}));
     connect(nitri2.Out, nitri3.In) annotation (Line(points={{130,28},{144,28}}));
@@ -768,11 +737,6 @@ References:
             {165,-68},{88,-68}}));
 
     annotation (
-      Window(
-        x=0.14,
-        y=0.01,
-        width=0.66,
-        height=0.88),
       Diagram(coordinateSystem(
           preserveAspectRatio=false,
           extent={{-200,-120},{200,120}},
@@ -825,13 +789,13 @@ Main Author:
     WWU.MassConcentration Xf;
     // layers 1 to 10
     WI.WWFlowAsm2din Feed annotation (Placement(transformation(extent={{-110,4},
-              {-90,24}}, rotation=0)));
+              {-90,24}})));
     WI.WWFlowAsm2dout Effluent annotation (Placement(transformation(extent={{92,
-              47},{112,67}}, rotation=0)));
+              47},{112,67}})));
     WI.WWFlowAsm2dout Return annotation (Placement(transformation(extent={{-40,
-              -106},{-20,-86}}, rotation=0)));
+              -106},{-20,-86}})));
     WI.WWFlowAsm2dout Waste annotation (Placement(transformation(extent={{20,
-              -106},{40,-86}}, rotation=0)));
+              -106},{40,-86}})));
     SCP.bottom_layer S1(
       zm=zm,
       Asc=Asc,
@@ -845,52 +809,44 @@ Main Author:
       rXa=rXa,
       rXmeoh=rXmeoh,
       rXmep=rXmep) annotation (Placement(transformation(extent={{-35,-93},{35,
-              -78}}, rotation=0)));
+              -78}})));
     SCP.lower_layer S2(
       zm=zm,
       Asc=Asc,
-      Xf=Xf) annotation (Placement(transformation(extent={{-35,-74},{35,-59}},
-            rotation=0)));
+      Xf=Xf) annotation (Placement(transformation(extent={{-35,-74},{35,-59}})));
     SCP.lower_layer S3(
       zm=zm,
       Asc=Asc,
-      Xf=Xf) annotation (Placement(transformation(extent={{-35,-55},{35,-40}},
-            rotation=0)));
+      Xf=Xf) annotation (Placement(transformation(extent={{-35,-55},{35,-40}})));
     SCP.feed_layer S4(
       zm=zm,
       Asc=Asc,
-      Xf=Xf) annotation (Placement(transformation(extent={{-36,-36},{34,-22}},
-            rotation=0)));
+      Xf=Xf) annotation (Placement(transformation(extent={{-36,-36},{34,-22}})));
     SCP.upper_layer S5(
       zm=zm,
       Asc=Asc,
       Xf=Xf,
-      Xt=Xt) annotation (Placement(transformation(extent={{-36,-16},{34,-4}},
-            rotation=0)));
+      Xt=Xt) annotation (Placement(transformation(extent={{-36,-16},{34,-4}})));
     SCP.upper_layer S6(
       zm=zm,
       Asc=Asc,
       Xf=Xf,
-      Xt=Xt) annotation (Placement(transformation(extent={{-36,2},{34,16}},
-            rotation=0)));
+      Xt=Xt) annotation (Placement(transformation(extent={{-36,2},{34,16}})));
     SCP.upper_layer S7(
       zm=zm,
       Asc=Asc,
       Xf=Xf,
-      Xt=Xt) annotation (Placement(transformation(extent={{-35,21},{35,36}},
-            rotation=0)));
+      Xt=Xt) annotation (Placement(transformation(extent={{-35,21},{35,36}})));
     SCP.upper_layer S8(
       zm=zm,
       Asc=Asc,
       Xt=Xt,
-      Xf=Xf) annotation (Placement(transformation(extent={{-35,40},{35,55}},
-            rotation=0)));
+      Xf=Xf) annotation (Placement(transformation(extent={{-35,40},{35,55}})));
     SCP.upper_layer S9(
       zm=zm,
       Asc=Asc,
       Xf=Xf,
-      Xt=Xt) annotation (Placement(transformation(extent={{-35,59},{35,74}},
-            rotation=0)));
+      Xt=Xt) annotation (Placement(transformation(extent={{-35,59},{35,74}})));
     SCP.top_layer S10(
       zm=zm,
       Asc=Asc,
@@ -904,8 +860,7 @@ Main Author:
       rXpha=rXpha,
       rXa=rXa,
       rXmeoh=rXmeoh,
-      rXmep=rXmep) annotation (Placement(transformation(extent={{-35,78},{35,93}},
-            rotation=0)));
+      rXmep=rXmep) annotation (Placement(transformation(extent={{-35,78},{35,93}})));
   equation
 
     connect(S1.Up, S2.Dn) annotation (Line(points={{-2.22045e-15,-78},{
@@ -946,11 +901,6 @@ Main Author:
     rXmep = Feed.Xmep/Xf;
 
     annotation (
-      Window(
-        x=0.45,
-        y=0.46,
-        width=0.35,
-        height=0.49),
       Documentation(info="This component models an ASM2d 10 - layer secondary clarifier with 6 layers above the feed_layer (including top_layer)
 and 3 layers below the feed_layer (including bottom_layer).
 
@@ -962,13 +912,6 @@ Parameters:
 "));
   end JenaSecClarModTakacs;
   annotation (
-    Window(
-      x=0.45,
-      y=0.01,
-      width=0.44,
-      height=0.65,
-      library=1,
-      autolayout=1),
     Documentation(info="This package contains example ASM2d wastewater treatment plant models to demonstrate the usage of
 the WasteWater.ASM2d library.
 Open the models and simulate them according to the description provided in the models.

@@ -1,5 +1,5 @@
 
-How to use the WasteWater library (with dymola) 
+How to use the WasteWater library (with dymola)
 ===============================================
 
 
@@ -13,10 +13,10 @@ How to use the WasteWater library (with dymola)
 4. Before translating a model change into current ASMx sub-directory from dymola
    command line (e.g. ..\WasteWater\ASM1) and then translate it.
 
-5. To initalize the given examples with initial state values you can use the appropriate 
+5. To initalize the given examples with initial state values you can use the appropriate
    *.mos script-files at the ASMx directories.
 
-6. The examples usually include dry-weather-influent-files about a period of 14 days for dynamic simualtions, 
+6. The examples usually include dry-weather-influent-files about a period of 14 days for dynamic simualtions,
    for beyond simulations adequate influent-files will be needed.
 
 7. Specify simulation parameters like start and stop time and if needed the number of intervals.
@@ -25,7 +25,7 @@ How to use the WasteWater library (with dymola)
 8. Simulation.
 
 
-Because of the complexity of some wastewater treatment plant models 
+Because of the complexity of some wastewater treatment plant models
 simulations could take a while, dependent on your hardware!
 
 The WasteWater library only includes the biological standart values from ASMx distributions,
@@ -52,7 +52,7 @@ Main Author:
 
 
 This package is free software; it can be redistributed and/or modified under the terms of the Modelica license,
-see the license conditions and the accompanying disclaimer in the documentation of package Modelica 
+see the license conditions and the accompanying disclaimer in the documentation of package Modelica
 in file "Modelica/package.mo".
 
 Copyright (C) 2000 - 2003 Gerald Reichl

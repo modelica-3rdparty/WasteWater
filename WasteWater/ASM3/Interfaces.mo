@@ -23,11 +23,6 @@ package Interfaces
     WWU.MassConcentration Xss;
 
     annotation (
-      Window(
-        x=0.45,
-        y=0.01,
-        width=0.35,
-        height=0.49),
       Icon(coordinateSystem(
           preserveAspectRatio=false,
           extent={{-100,-100},{100,100}},
@@ -69,11 +64,6 @@ The connector consists of one flow variable and 13 potential variables (ASM3 con
     WWU.MassConcentration Xss;
 
     annotation (
-      Window(
-        x=0.45,
-        y=0.01,
-        width=0.35,
-        height=0.49),
       Icon(coordinateSystem(
           preserveAspectRatio=false,
           extent={{-100,-100},{100,100}},
@@ -93,11 +83,6 @@ The connector consists of one flow variable and 13 potential variables (ASM3 con
     package WWU = WasteWater.WasteWaterUnits;
     flow WWU.VolumeFlowRate Q_air;
     annotation (
-      Window(
-        x=0.45,
-        y=0.01,
-        width=0.35,
-        height=0.49),
       Documentation(info="The Airflow connector consists of a flow variable describing the exchange of
 air between blower and nitrification tank."));
 
@@ -131,11 +116,6 @@ air between blower and nitrification tank."));
       "SS to COD ratio for biomass Xh,Xa [g SS/(g COD_Xbm)]";
 
     annotation (
-      Window(
-        x=0.45,
-        y=0.01,
-        width=0.35,
-        height=0.49),
       Documentation(info=
             "This is a partial model providing the stoichiometric coefficients of the ASM3 model."));
 
@@ -306,13 +286,13 @@ air between blower and nitrification tank."));
     Real aeration;
 
     Interfaces.WWFlowAsm3in In annotation (Placement(transformation(extent={{
-              -110,-10},{-90,10}}, rotation=0)));
+              -110,-10},{-90,10}})));
     Interfaces.WWFlowAsm3out Out annotation (Placement(transformation(extent={{
-              90,-10},{110,10}}, rotation=0)));
+              90,-10},{110,10}})));
     Interfaces.WWFlowAsm3out MeasurePort annotation (Placement(transformation(
-            extent={{50,40},{60,50}}, rotation=0)));
+            extent={{50,40},{60,50}})));
     Modelica.Blocks.Interfaces.RealInput T annotation (Placement(transformation(
-            extent={{-110,30},{-90,50}}, rotation=0)));
+            extent={{-110,30},{-90,50}})));
   equation
 
     // Temperature dependent Kinetic parameters based on 20 deg C
@@ -407,12 +387,7 @@ air between blower and nitrification tank."));
     MeasurePort.Xss = Xss;
 
     annotation (
-      Window(
-        x=0.45,
-        y=0.01,
-        width=0.35,
-        height=0.49),
-      Documentation(info="This partial model provides connectors and equations that are needed in the biological 
+      Documentation(info="This partial model provides connectors and equations that are needed in the biological
 components (nitrification and denitrification tank) for ASM3 wastewater treatment plant models.
 Parameters are coded according the ASM3 [1] standard distribution.
 Changes to this parameters are subject to the modeller.
@@ -442,13 +417,6 @@ Copyright (C) 2002 - 2003, Gerald Reichl
 "));
   end ASM3base;
   annotation (
-    Window(
-      x=0.45,
-      y=0.01,
-      width=0.44,
-      height=0.65,
-      library=1,
-      autolayout=1),
     Documentation(info="This package contains connectors and interfaces (partial models) for
 wastewater treatment components based on the Acticated Sludge Model No.3 (ASM3).
 

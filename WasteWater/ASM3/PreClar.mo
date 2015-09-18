@@ -39,11 +39,11 @@ package PreClar "Primary clarifier modelling based on ASM3"
     WWU.MassConcentration Xa "Autotrophic nitrifying biomass";
     //WWU.MassConcentration Xss "Total suspend solids";
     ASM3.Interfaces.WWFlowAsm3in In annotation (Placement(transformation(extent
-            ={{-110,-10},{-90,10}}, rotation=0)));
+            ={{-110,-10},{-90,10}})));
     ASM3.Interfaces.WWFlowAsm3out Out annotation (Placement(transformation(
-            extent={{90,-10},{110,10}}, rotation=0)));
+            extent={{90,-10},{110,10}})));
     ASM3.Interfaces.WWFlowAsm3out MeasurePort annotation (Placement(
-          transformation(extent={{32,90},{42,100}}, rotation=0)));
+          transformation(extent={{32,90},{42,100}})));
   equation
 
     // calculation of the hydraulic residence time
@@ -127,11 +127,7 @@ by Otterpohl and Freund.
 
 Parameter:
   V - volume of the preclarifier
-"),   Window(
-        x=0.4,
-        y=0.28,
-        width=0.6,
-        height=0.6));
+"));
   end preclar1;
 
   model preclar2 "Static ASM3 Primary Clarifier Model"
@@ -170,11 +166,11 @@ Parameter:
     WWU.MassConcentration Xa "Autotrophic nitrifying biomass";
     //WWU.MassConcentration Xss "Total suspend solids";
     ASM3.Interfaces.WWFlowAsm3in In annotation (Placement(transformation(extent
-            ={{-110,-10},{-90,10}}, rotation=0)));
+            ={{-110,-10},{-90,10}})));
     ASM3.Interfaces.WWFlowAsm3out Out annotation (Placement(transformation(
-            extent={{90,-10},{110,10}}, rotation=0)));
+            extent={{90,-10},{110,10}})));
     ASM3.Interfaces.WWFlowAsm3out MeasurePort annotation (Placement(
-          transformation(extent={{32,90},{42,100}}, rotation=0)));
+          transformation(extent={{32,90},{42,100}})));
   equation
 
     // calculation of the hydraulic residence time
@@ -258,11 +254,7 @@ by Otterpohl and Freund.
 Parameter:
   V - volume of the preclarifier
 
-"),   Window(
-        x=0.45,
-        y=0.01,
-        width=0.35,
-        height=0.49));
+"));
   end preclar2;
 
   model preclar3 "Inverse ASM3 Static Primary Clarifier Model"
@@ -317,9 +309,9 @@ Parameter:
     //WWU.MassConcentration Xss "Total suspend solids";
 
     ASM3.Interfaces.WWFlowAsm3in In annotation (Placement(transformation(extent
-            ={{-110,-10},{-90,10}}, rotation=0)));
+            ={{-110,-10},{-90,10}})));
     ASM3.Interfaces.WWFlowAsm3out Out annotation (Placement(transformation(
-            extent={{90,-10},{110,10}}, rotation=0)));
+            extent={{90,-10},{110,10}})));
     Modelica.Blocks.Interfaces.RealInput MeasurePort[4]
       annotation (Placement(transformation(
           origin={38,90},
@@ -424,20 +416,9 @@ Dimension of InPort is 4.
   3 - ammonium nitrogen (Snh) at effluent of primary clarifier
   4 - pH-value at effluent of primary clarifier
 
-"),   Window(
-        x=0.63,
-        y=0.13,
-        width=0.35,
-        height=0.49));
+"));
   end preclar3;
   annotation (
-    Window(
-      x=0.45,
-      y=0.01,
-      width=0.44,
-      height=0.65,
-      library=1,
-      autolayout=1),
     Documentation(info="This package provides one dynamic and two static ASM3 primary clarifier
 models based on Otterpohl [1].
 

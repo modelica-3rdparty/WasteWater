@@ -42,11 +42,6 @@ package Krebs "Secondary settling tank modelling by Krebs (ASM1)"
       WWU.Alkalinity Salk2
         "Alkalinity in second stirrer tank of the excess layer";
       annotation (
-        Window(
-          x=0.45,
-          y=0.01,
-          width=0.35,
-          height=0.49),
         Documentation(info="partial models providing ASM1 variables"));
     end SCVar;
 
@@ -59,21 +54,9 @@ package Krebs "Secondary settling tank modelling by Krebs (ASM1)"
       Real rXp;
       Real rXnd;
       annotation (
-        Window(
-          x=0.45,
-          y=0.01,
-          width=0.35,
-          height=0.49),
         Documentation(info="partial model for ASM1 ratios of solid components"));
     end ratios;
     annotation (
-      Window(
-        x=0.45,
-        y=0.01,
-        width=0.44,
-        height=0.65,
-        library=1,
-        autolayout=1),
       Documentation(info="This package contains partial models for ASM1 secondary clarifier models.
 
 Main Author:
@@ -109,13 +92,13 @@ Copyright (C) 2003, Gerald Reichl
     SI.Length hs "height of sludge layer";
     SI.Length he "height of excess layer";
     WI.WWFlowAsm1in Feed annotation (Placement(transformation(extent={{-110,4},
-              {-90,24}}, rotation=0)));
+              {-90,24}})));
     WI.WWFlowAsm1out Effluent annotation (Placement(transformation(extent={{92,
-              47},{112,67}}, rotation=0)));
+              47},{112,67}})));
     WI.WWFlowAsm1out Return annotation (Placement(transformation(extent={{-40,
-              -106},{-20,-86}}, rotation=0)));
+              -106},{-20,-86}})));
     WI.WWFlowAsm1out Waste annotation (Placement(transformation(extent={{20,
-              -106},{40,-86}}, rotation=0)));
+              -106},{40,-86}})));
   equation
 
     // total sludge concentration in clarifier feed
@@ -225,11 +208,6 @@ Copyright (C) 2003, Gerald Reichl
     Waste.Xp = rXp*XR;
     Waste.Xnd = rXnd*XR;
     annotation (
-      Window(
-        x=0.45,
-        y=0.01,
-        width=0.35,
-        height=0.49),
       Documentation(info="This component models an ASM1 secondary clarifier based on Krebs conceptional model.
 It consists of two compartments: a \"sludge-bed\" and a clear water zone above.
 
@@ -270,20 +248,9 @@ Parameters:
           Line(
             points={{-90,48},{92,48}},
             color={0,0,255},
-            pattern=LinePattern.Dash)}),
-      Icon(coordinateSystem(
-          preserveAspectRatio=false,
-          extent={{-100,-100},{100,100}},
-          grid={2,2}), graphics));
+            pattern=LinePattern.Dash)}));
   end SecClarModKrebs;
   annotation (
-    Window(
-      x=0.45,
-      y=0.01,
-      width=0.44,
-      height=0.65,
-      library=1,
-      autolayout=1),
     Documentation(info="This package contains an ASM1 secondary clarifier model and an Interfaces sub-library
 based on Krebs conceptional model [1].
 The settler model consists of two compartments, a \"sludge-bed\" and a clear water zone above.

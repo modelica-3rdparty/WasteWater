@@ -34,11 +34,6 @@ package Takacs "Secondary settling tank modelling by Takacs"
       WWU.Alkalinity Salk;
       WWU.MassConcentration Sn2;
       annotation (
-        Window(
-          x=0.45,
-          y=0.01,
-          width=0.35,
-          height=0.49),
         Documentation(info=
               "Connector for ASM2d information and mass exchange between layers above the influent layer (feed_layer)."));
 
@@ -73,11 +68,6 @@ package Takacs "Secondary settling tank modelling by Takacs"
       WWU.Alkalinity Salk;
       WWU.MassConcentration Sn2;
       annotation (
-        Window(
-          x=0.45,
-          y=0.01,
-          width=0.35,
-          height=0.49),
         Documentation(info=
               "Connector for ASM2d information and mass exchange between layers below the influent layer (feed_layer)."));
 
@@ -90,11 +80,6 @@ package Takacs "Secondary settling tank modelling by Takacs"
       parameter SI.Area Asc;
 
       annotation (
-        Window(
-          x=0.45,
-          y=0.01,
-          width=0.35,
-          height=0.49),
         Documentation(info="partial model providing clarifier parameters"));
 
     end SCParam;
@@ -117,11 +102,6 @@ package Takacs "Secondary settling tank modelling by Takacs"
       WWU.Alkalinity Salk "Bicarbonate alkalinity";
       WWU.MassConcentration Sn2 "Dinitrogen";
       annotation (
-        Window(
-          x=0.45,
-          y=0.01,
-          width=0.35,
-          height=0.49),
         Documentation(info="partial models providing ASM2d variables"));
 
     end SCVar;
@@ -139,11 +119,6 @@ package Takacs "Secondary settling tank modelling by Takacs"
       Real rXmeoh;
       Real rXmep;
       annotation (
-        Window(
-          x=0.45,
-          y=0.01,
-          width=0.35,
-          height=0.49),
         Documentation(info="partial model for ASM2d ratios of solid components"));
 
     end ratios;
@@ -171,22 +146,10 @@ package Takacs "Secondary settling tank modelling by Takacs"
         Xf)))));
 
       annotation (
-        Window(
-          x=0.45,
-          y=0.01,
-          width=0.35,
-          height=0.49),
         Documentation(info=
               "Takacs double-exponential sedimentation velocity function."));
     end vSfun;
     annotation (
-      Window(
-        x=0.45,
-        y=0.01,
-        width=0.44,
-        height=0.65,
-        library=1,
-        autolayout=1),
       Documentation(info="This package contains connectors and interfaces (partial models) for
 the ASM2d secondary clarifier model based on Takacs [1] (double-exponential settling velocity).
 
@@ -231,13 +194,13 @@ Copyright (C) 2001 - 2002, Gerald Reichl
     WWU.MassConcentration Xf;
 
     WI.WWFlowAsm2din Feed annotation (Placement(transformation(extent={{-110,4},
-              {-90,24}}, rotation=0)));
+              {-90,24}})));
     WI.WWFlowAsm2dout Effluent annotation (Placement(transformation(extent={{92,
-              47},{112,67}}, rotation=0)));
+              47},{112,67}})));
     WI.WWFlowAsm2dout Return annotation (Placement(transformation(extent={{-40,
-              -106},{-20,-86}}, rotation=0)));
+              -106},{-20,-86}})));
     WI.WWFlowAsm2dout Waste annotation (Placement(transformation(extent={{20,
-              -106},{40,-86}}, rotation=0)));
+              -106},{40,-86}})));
     // layers 1 to 10
     SCP.bottom_layer S1(
       zm=zm,
@@ -252,50 +215,42 @@ Copyright (C) 2001 - 2002, Gerald Reichl
       rXa=rXa,
       rXmeoh=rXmeoh,
       rXmep=rXmep) annotation (Placement(transformation(extent={{-35,-93},{35,
-              -78}}, rotation=0)));
+              -78}})));
     SCP.lower_layer S2(
       zm=zm,
       Asc=Asc,
-      Xf=Xf) annotation (Placement(transformation(extent={{-35,-74},{35,-59}},
-            rotation=0)));
+      Xf=Xf) annotation (Placement(transformation(extent={{-35,-74},{35,-59}})));
     SCP.lower_layer S3(
       zm=zm,
       Asc=Asc,
-      Xf=Xf) annotation (Placement(transformation(extent={{-35,-55},{35,-40}},
-            rotation=0)));
+      Xf=Xf) annotation (Placement(transformation(extent={{-35,-55},{35,-40}})));
     SCP.lower_layer S4(
       zm=zm,
       Asc=Asc,
-      Xf=Xf) annotation (Placement(transformation(extent={{-35,-36},{35,-21}},
-            rotation=0)));
+      Xf=Xf) annotation (Placement(transformation(extent={{-35,-36},{35,-21}})));
     SCP.lower_layer S5(
       zm=zm,
       Asc=Asc,
-      Xf=Xf) annotation (Placement(transformation(extent={{-35,-17},{35,-2}},
-            rotation=0)));
+      Xf=Xf) annotation (Placement(transformation(extent={{-35,-17},{35,-2}})));
     SCP.feed_layer S6(
       zm=zm,
       Asc=Asc,
-      Xf=Xf) annotation (Placement(transformation(extent={{-35,2},{35,17}},
-            rotation=0)));
+      Xf=Xf) annotation (Placement(transformation(extent={{-35,2},{35,17}})));
     SCP.upper_layer S7(
       zm=zm,
       Asc=Asc,
       Xf=Xf,
-      Xt=Xt) annotation (Placement(transformation(extent={{-35,21},{35,36}},
-            rotation=0)));
+      Xt=Xt) annotation (Placement(transformation(extent={{-35,21},{35,36}})));
     SCP.upper_layer S8(
       zm=zm,
       Asc=Asc,
       Xt=Xt,
-      Xf=Xf) annotation (Placement(transformation(extent={{-35,40},{35,55}},
-            rotation=0)));
+      Xf=Xf) annotation (Placement(transformation(extent={{-35,40},{35,55}})));
     SCP.upper_layer S9(
       zm=zm,
       Asc=Asc,
       Xf=Xf,
-      Xt=Xt) annotation (Placement(transformation(extent={{-35,59},{35,74}},
-            rotation=0)));
+      Xt=Xt) annotation (Placement(transformation(extent={{-35,59},{35,74}})));
     SCP.top_layer S10(
       zm=zm,
       Asc=Asc,
@@ -309,8 +264,7 @@ Copyright (C) 2001 - 2002, Gerald Reichl
       rXpha=rXpha,
       rXa=rXa,
       rXmeoh=rXmeoh,
-      rXmep=rXmep) annotation (Placement(transformation(extent={{-35,78},{35,93}},
-            rotation=0)));
+      rXmep=rXmep) annotation (Placement(transformation(extent={{-35,78},{35,93}})));
   equation
 
     connect(S1.Up, S2.Dn) annotation (Line(points={{-2.22045e-15,-78},{
@@ -355,11 +309,6 @@ Copyright (C) 2001 - 2002, Gerald Reichl
     rXmep = Feed.Xmep/Xf;
 
     annotation (
-      Window(
-        x=0.63,
-        y=0.47,
-        width=0.35,
-        height=0.49),
       Documentation(info="This component models an ASM2d 10 - layer secondary clarifier model with 4 layers above the feed_layer (including top_layer)
 and 5 layers below the feed_layer (including bottom_layer) based on Takac`s theory.
 
@@ -380,11 +329,11 @@ Parameters:
     extends WWSC.ratios;
 
     ASM2d.Interfaces.WWFlowAsm2dout PQr annotation (Placement(transformation(
-            extent={{-70,-110},{-50,-90}}, rotation=0)));
+            extent={{-70,-110},{-50,-90}})));
     ASM2d.Interfaces.WWFlowAsm2dout PQw annotation (Placement(transformation(
-            extent={{40,-110},{60,-90}}, rotation=0)));
+            extent={{40,-110},{60,-90}})));
     WWSC.LowerLayerPin Up annotation (Placement(transformation(extent={{-10,90},
-              {10,110}}, rotation=0)));
+              {10,110}})));
   equation
 
     // sink velocity
@@ -456,11 +405,6 @@ Parameters:
     PQw.Xmep = rXmep*X;
 
     annotation (
-      Window(
-        x=0.45,
-        y=0.01,
-        width=0.35,
-        height=0.49),
       Documentation(info="This class models the lowest layer of an ASM2d secondary clarifier based on Takacs.
 
 No sedimentation flux (mass exchange) with underneath but hydraulic and sedimentation flux (same direction)
@@ -529,9 +473,9 @@ From here return and waste sludge is removed.
     extends WWSC.SCVar;
 
     WWSC.LowerLayerPin Up annotation (Placement(transformation(extent={{-10,90},
-              {10,110}}, rotation=0)));
+              {10,110}})));
     WWSC.LowerLayerPin Dn annotation (Placement(transformation(extent={{-10,
-              -110},{10,-90}}, rotation=0)));
+              -110},{10,-90}})));
   equation
 
     // sink velocity
@@ -575,11 +519,6 @@ From here return and waste sludge is removed.
     Up.vS_dn = vS;
     Up.X_dn = X;
     annotation (
-      Window(
-        x=0.45,
-        y=0.01,
-        width=0.35,
-        height=0.49),
       Documentation(info="This class models the layers between the influent layer (feed_layer) and the lowest layer (bottom_layer)
 of an ASM2d secondary clarifier based on Takacs.
 
@@ -663,11 +602,11 @@ function by Takacs."),
     extends WWSC.SCParam;
     extends WWSC.SCVar;
     WWSC.LowerLayerPin Dn annotation (Placement(transformation(extent={{-10,
-              -110},{10,-90}}, rotation=0)));
+              -110},{10,-90}})));
     WWSC.UpperLayerPin Up annotation (Placement(transformation(extent={{-10,90},
-              {10,110}}, rotation=0)));
+              {10,110}})));
     ASM2d.Interfaces.WWFlowAsm2din In annotation (Placement(transformation(
-            extent={{-110,-6},{-90,14}}, rotation=0)));
+            extent={{-110,-6},{-90,14}})));
   equation
 
     // sink velocity
@@ -722,15 +661,6 @@ function by Takacs."),
     Up.Sn2 = Sn2;
 
     annotation (
-      Window(
-        x=0.45,
-        y=0.01,
-        width=0.35,
-        height=0.49),
-      Coordsys(
-        extent=[-100, -100; 100, 100],
-        grid=[2, 2],
-        component=[20, 20]),
       Documentation(info="This class models the influent layer of an ASM2d secondary clarifier based on Takacs.
 
 It receives the wastewater stream from the biological part (feed).
@@ -819,9 +749,9 @@ function by Takacs."),
     // Xt = Xthreshold
 
     WWSC.UpperLayerPin Dn annotation (Placement(transformation(extent={{-10,
-              -110},{10,-90}}, rotation=0)));
+              -110},{10,-90}})));
     WWSC.UpperLayerPin Up annotation (Placement(transformation(extent={{-10,90},
-              {10,110}}, rotation=0)));
+              {10,110}})));
   equation
 
     // sink velocity
@@ -864,11 +794,6 @@ function by Takacs."),
     Up.Sn2 = Sn2;
 
     annotation (
-      Window(
-        x=0.45,
-        y=0.01,
-        width=0.35,
-        height=0.49),
       Documentation(info="This class models the layers between the influent layer (feed_layer) and the effluent layer (top_layer)
 an ASM2d secondary clarifier based on Takacs.
 
@@ -957,9 +882,9 @@ function by Takacs."),
     // Xt = Xthreshold
 
     WWSC.UpperLayerPin Dn annotation (Placement(transformation(extent={{-10,
-              -110},{10,-90}}, rotation=0)));
+              -110},{10,-90}})));
     ASM2d.Interfaces.WWFlowAsm2dout Out annotation (Placement(transformation(
-            extent={{90,-10},{110,10}}, rotation=0)));
+            extent={{90,-10},{110,10}})));
   equation
 
     // sink velocity
@@ -1009,11 +934,6 @@ function by Takacs."),
     Out.Xmeoh = rXmeoh*X;
     Out.Xmep = rXmep*X;
     annotation (
-      Window(
-        x=0.45,
-        y=0.01,
-        width=0.35,
-        height=0.49),
       Documentation(info="This class models the top layer of an ASM2d secondary clarifier based on Takacs.
 
 No sedimentation flux (mass exchange) with above but hydraulic and sedimentation flux
@@ -1078,15 +998,8 @@ function by Takacs."),
             fillPattern=FillPattern.Solid)}));
   end top_layer;
   annotation (
-    Window(
-      x=0.45,
-      y=0.01,
-      width=0.44,
-      height=0.65,
-      library=1,
-      autolayout=1),
     Documentation(info="This package contains classes (layer models) to built ASM1 secondary clarifier models, an Interfaces sub-library
-and provides an ASM2d 10-layer secondary clarifier model all bases on Takacs [1] 
+and provides an ASM2d 10-layer secondary clarifier model all bases on Takacs [1]
 double exponential sedimentation velocity function.
 
 A secondary clarifier layer model needs at least a top_layer, a feed_layer and a bottom_layer
