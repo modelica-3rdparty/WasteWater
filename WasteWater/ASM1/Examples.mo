@@ -41,7 +41,7 @@ package Examples "Demonstration examples of the components of the ASM1 library"
               {20,44}})));
     Modelica.Blocks.Math.Feedback Feedback annotation (Placement(transformation(
             extent={{62,40},{82,60}})));
-    Modelica.Blocks.Continuous.PI PI1(T=0.001, k=500)
+    Modelica.Blocks.Continuous.PI PI1(T=0.001, k=500, initType=Modelica.Blocks.Types.Init.InitialState)
       annotation (Placement(transformation(extent={{88,40},{108,60}})));
     Modelica.Blocks.Sources.Constant Constant1 annotation (Placement(
           transformation(extent={{-67,-87},{-47,-67}})));
