@@ -12,34 +12,34 @@ package Krebs "Secondary settling tank modelling by Krebs (ASM1)"
       WWU.MassConcentration XB "sludge concentration in sludge layer";
       WWU.MassConcentration XR "sludge concentration of return";
 
-      WWU.MassConcentration Si1
+      WWU.MassConcentration Si1(fixed=true)
         "Soluble inert organic matter in first stirrer tank of the excess layer";
-      WWU.MassConcentration Ss1
+      WWU.MassConcentration Ss1(fixed=true)
         "Readily biodegradable substrate in first stirrer tank of the excess layer";
-      WWU.MassConcentration So1
+      WWU.MassConcentration So1(fixed=true)
         "Dissolved oxygen in first stirrer tank of the excess layer";
-      WWU.MassConcentration Sno1
+      WWU.MassConcentration Sno1(fixed=true)
         "Nitrate and nitrite nitrogen in first stirrer tank of the excess layer";
-      WWU.MassConcentration Snh1
+      WWU.MassConcentration Snh1(fixed=true)
         "Ammonium nitrogen in first stirrer tank of the excess layer";
-      WWU.MassConcentration Snd1
+      WWU.MassConcentration Snd1(fixed=true)
         "Soluble biodegradable organic nitrogen in first stirrer tank of the excess layer";
-      WWU.Alkalinity Salk1
+      WWU.Alkalinity Salk1(fixed=true)
         "Alkalinity in first stirrer tank of the excess layer";
 
-      WWU.MassConcentration Si2
+      WWU.MassConcentration Si2(fixed=true)
         "Soluble inert organic matter in second stirrer tank of the excess layer";
-      WWU.MassConcentration Ss2
+      WWU.MassConcentration Ss2(fixed=true)
         "Readily biodegradable substrate in second stirrer tank of the excess layer";
-      WWU.MassConcentration So2
+      WWU.MassConcentration So2(fixed=true)
         "Dissolved oxygen in second stirrer tank of the excess layer";
-      WWU.MassConcentration Sno2
+      WWU.MassConcentration Sno2(fixed=true)
         "Nitrate and nitrite nitrogen in second stirrer tank of the excess layer";
-      WWU.MassConcentration Snh2
+      WWU.MassConcentration Snh2(fixed=true)
         "Ammonium nitrogen in second stirrer tank of the excess layer";
-      WWU.MassConcentration Snd2
+      WWU.MassConcentration Snd2(fixed=true)
         "Soluble biodegradable organic nitrogen in second stirrer tank of the excess layer";
-      WWU.Alkalinity Salk2
+      WWU.Alkalinity Salk2(fixed=true)
         "Alkalinity in second stirrer tank of the excess layer";
       annotation (
         Documentation(info="partial models providing ASM1 variables"));
